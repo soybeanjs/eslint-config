@@ -1,0 +1,20 @@
+{
+  "name": "eslint-config-soybeanjs",
+  "version": "0.0.1",
+  "private": true,
+  "description": "SoybeanJS's eslint config presets with prettier",
+  "author": "Soybean <honghuangdc@gmail.com> (https://github.com/honghuangdc)",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "pnpm -r run stub",
+    "lint": "eslint . --fix",
+    "test": "pnpm -r run test",
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
+  },
+  "devDependencies": {
+    "bumpp": "^8.2.1",
+    "eslint": "^8.22.0",
+    "eslint-config-soybeanjs-base": "workspace:*",
+    "typescript": "^4.7.4"
+  }
+}

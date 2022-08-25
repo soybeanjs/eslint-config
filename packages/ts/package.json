@@ -1,0 +1,13 @@
+{
+  "name": "eslint-config-soybeanjs-ts",
+  "version": "0.0.1",
+  "description": "Soybean's eslint config presets with prettier",
+  "author": "Soybean <honghuangdc@gmail.com> (https://github.com/honghuangdc)",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint . --config=index.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.22.0"
+  }
+}
