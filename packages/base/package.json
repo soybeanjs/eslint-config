@@ -4,17 +4,19 @@
   "description": "SoybeanJS's eslint config presets with prettier",
   "author": "Soybean <honghuangdc@gmail.com> (https://github.com/honghuangdc)",
   "license": "MIT",
+  "main": "index.js",
   "scripts": {
     "lint": "eslint . --config=index.js"
   },
   "dependencies": {
-    "@html-eslint/eslint-plugin": "^0.13.2",
-    "@html-eslint/parser": "^0.13.2",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-html": "^7.1.0",
     "eslint-plugin-jsonc": "^2.4.0",
+    "eslint-plugin-md": "^1.0.19",
     "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.7.1"
+    "eslint-plugin-yml": "^1.1.0",
+    "markdown-eslint-parser": "^1.2.1",
+    "prettier": "^2.7.1",
+    "yaml-eslint-parser": "^1.1.0"
   },
   "devDependencies": {
     "eslint": "^8.22.0"

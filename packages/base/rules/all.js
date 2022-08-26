@@ -544,7 +544,7 @@ module.exports = {
      * @description Enforce a particular style for multiline comments
      * @link https://eslint.org/docs/latest/rules/multiline-comment-style
      */
-    'multiline-comment-style': 'error',
+    'multiline-comment-style': 'off',
 
     /**
      * @description Require constructor names to begin with a capital letter

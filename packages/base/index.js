@@ -13,8 +13,14 @@ module.exports = {
     commonjs: true,
     es2022: true
   },
-  extends: ['./rules/all.js', 'plugin:jsonc/recommended-with-jsonc', 'plugin:prettier/recommended'],
-  plugins: ['html', '@html-eslint'],
+  extends: [
+    './rules/all.js',
+    'plugin:jsonc/recommended-with-jsonc',
+    'plugin:md/recommended',
+    'plugin:yml/standard',
+    'plugin:prettier/recommended'
+  ],
+  // plugins: [],
   ignorePatterns: [
     'node_modules',
     '*.min.*',
@@ -34,20 +40,6 @@ module.exports = {
     '!.vscode'
   ],
   overrides: [
-    {
-      files: ['*.html'],
-      parser: '@html-eslint/parser',
-      extends: ['plugin:@html-eslint/recommended'],
-      rules: {
-        // https://yeonjuan.github.io/html-eslint/docs/all-rules
-        '@html-eslint/indent': 'off', // 由prettier控制
-        '@html-eslint/require-closing-tags': 'off',
-        '@html-eslint/no-extra-spacing-attrs': 'off',
-
-        // prettier
-        'prettier/prettier': ['error', { parser: 'html' }]
-      }
-    },
     {
       files: ['*.json', '*.json5', '*.jsonc'],
       parser: 'jsonc-eslint-parser'
@@ -116,6 +108,33 @@ module.exports = {
           }
         ]
       }
+    },
+    {
+      files: ['*.md'],
+      parser: 'markdown-eslint-parser',
+      rules: {
+        'prettier/prettier': ['error', { parser: 'markdown' }]
+      }
+    },
+    {
+      files: ['*.md.js', '*.md.javascript', '*.md.json'],
+      rules: {
+        indent: ['error', 2],
+        'no-multiple-empty-lines': ['error', { max: 1, maxBOF: 0, maxEOF: 0 }],
+        'no-trailing-spaces': 'error',
+        'jsonc/indent': ['error', 2, {}],
+        'import/no-unresolved': 'off',
+        'no-alert': 'off',
+        'no-console': 'off',
+        'no-restricted-imports': 'off',
+        'no-undef': 'off',
+        'no-unused-expressions': 'off',
+        'no-unused-vars': 'off'
+      }
+    },
+    {
+      files: ['*.yaml', '*.yml'],
+      parser: 'yaml-eslint-parser'
     }
   ],
   rules: {}
