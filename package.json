@@ -10,7 +10,7 @@
     "lint": "eslint . --fix",
     "test": "pnpm -r run test",
     "pub": "pnpm -r publish --access public",
-    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pub"
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm pub"
   },
   "devDependencies": {
     "bumpp": "^8.2.1",
