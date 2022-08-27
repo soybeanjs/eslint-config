@@ -1,0 +1,20 @@
+{
+  "name": "eslint-config-soybeanjs",
+  "version": "0.0.2",
+  "description": "SoybeanJS's eslint config presets with prettier, it equal to soybeanjs-ts",
+  "author": "Soybean <honghuangdc@gmail.com> (https://github.com/honghuangdc)",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --config=index.js"
+  },
+  "dependencies": {
+    "eslint-config-soybeanjs-ts": "workspace:*"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.22.0"
+  }
+}

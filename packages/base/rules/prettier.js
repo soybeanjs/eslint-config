@@ -11,7 +11,7 @@ module.exports = {
   bracketSameLine: false, // JSX 标签的反尖括号需要换行
   arrowParens: 'avoid', // 箭头函数，只有一个参数的时候，也需要括号
   rangeStart: 0, // 每个文件格式化的范围是文件的全部内容
-  rangeEnd: Infinity,
+  rangeEnd: Number.POSITIVE_INFINITY,
   requirePragma: false, // 不需要写文件开头的 @prettier
   insertPragma: false, // 不需要自动在文件开头插入 @prettier
   proseWrap: 'preserve', // 使用默认的折行标准

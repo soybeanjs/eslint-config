@@ -17,6 +17,8 @@ module.exports = {
   },
   extends: [
     './rules/all.js',
+    'plugin:n/recommended',
+    'plugin:promise/recommended',
     'plugin:import/recommended',
     'plugin:jsonc/recommended-with-jsonc',
     'plugin:md/recommended',
@@ -137,5 +139,26 @@ module.exports = {
       files: ['*.yaml', '*.yml'],
       parser: 'yaml-eslint-parser'
     }
-  ]
+  ],
+  rules: {
+    // import
+    'import/no-mutable-exports': 'error',
+
+    // md
+    'md/remark': [
+      'error',
+      {
+        plugins: [
+          'remark-preset-lint-markdown-style-guide',
+          ['lint-maximum-line-length', false],
+          ['remark-lint-table-pipe-alignment', false],
+          ['remark-lint-list-item-indent', 'space']
+        ]
+      }
+    ],
+
+    // yml
+    'yml/quotes': ['error', { prefer: 'single', avoidEscape: false }],
+    'yml/no-empty-document': 'off'
+  }
 };

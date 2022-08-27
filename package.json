@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-soybeanjs",
+  "name": "eslint-config-soybeanjs-monorepo",
   "version": "0.0.2",
   "private": true,
   "description": "SoybeanJS's eslint config presets with prettier",
@@ -10,7 +10,8 @@
     "lint": "eslint . --fix",
     "test": "pnpm -r run test",
     "pub": "pnpm -r publish --access public",
-    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm pub"
+    "version": "bumpp package.json packages/*/package.json --commit --tag",
+    "release": "version && pnpm pub"
   },
   "devDependencies": {
     "bumpp": "^8.2.1",

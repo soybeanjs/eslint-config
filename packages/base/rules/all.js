@@ -129,7 +129,7 @@ module.exports = {
      * @description Disallow duplicate module imports
      * @link https://eslint.org/docs/latest/rules/no-duplicate-imports
      */
-    'no-duplicate-imports': 'error',
+    'no-duplicate-imports': 'off',
 
     /**
      * @description Disallow empty character classes in regular expressions
@@ -321,7 +321,7 @@ module.exports = {
      * @description Disallow the use of variables before they are defined
      * @link https://eslint.org/docs/latest/rules/no-use-before-define
      */
-    'no-use-before-define': 'error',
+    'no-use-before-define': ['error', { functions: false, classes: false, variables: true }],
 
     /**
      * @description Disallow useless backreferences in regular expressions
@@ -358,7 +358,7 @@ module.exports = {
      * @description Enforce getter and setter pairs in objects and classes
      * @link https://eslint.org/docs/latest/rules/accessor-pairs
      */
-    'accessor-pairs': 'error',
+    'accessor-pairs': ['error', { setWithoutGet: true, enforceForClassMembers: true }],
 
     /**
      * @description Require braces around arrow function bodies
@@ -376,7 +376,7 @@ module.exports = {
      * @description Enforce camelcase naming convention
      * @link https://eslint.org/docs/latest/rules/camelcase
      */
-    camelcase: 'error',
+    camelcase: 'off',
 
     /**
      * @description Enforce or disallow capitalization of the first letter of a comment
@@ -496,13 +496,13 @@ module.exports = {
      * @description Require or disallow initialization in variable declarations
      * @link https://eslint.org/docs/latest/rules/init-declarations
      */
-    'init-declarations': 'error',
+    'init-declarations': 'off',
 
     /**
      * @description Enforce a maximum number of classes per file
      * @link https://eslint.org/docs/latest/rules/max-classes-per-file
      */
-    'max-classes-per-file': 'error',
+    'max-classes-per-file': 'off',
 
     /**
      * @description Enforce a maximum depth that blocks can be nested
@@ -520,7 +520,7 @@ module.exports = {
      * @description Enforce a maximum number of lines of code in a function
      * @link https://eslint.org/docs/latest/rules/max-lines-per-function
      */
-    'max-lines-per-function': 'error',
+    'max-lines-per-function': 'off',
 
     /**
      * @description Enforce a maximum depth that callbacks can be nested
@@ -538,7 +538,7 @@ module.exports = {
      * @description Enforce a maximum number of statements allowed in function blocks
      * @link https://eslint.org/docs/latest/rules/max-statements
      */
-    'max-statements': 'error',
+    'max-statements': 'off',
 
     /**
      * @description Enforce a particular style for multiline comments
@@ -550,7 +550,7 @@ module.exports = {
      * @description Require constructor names to begin with a capital letter
      * @link https://eslint.org/docs/latest/rules/new-cap
      */
-    'new-cap': 'error',
+    'new-cap': ['error', { newIsCap: true, capIsNew: false, properties: true }],
 
     /**
      * @description Disallow the use of `alert`, `confirm`, and `prompt`
@@ -622,7 +622,12 @@ module.exports = {
      * @description Disallow empty block statements
      * @link https://eslint.org/docs/latest/rules/no-empty
      */
-    'no-empty': 'error',
+    'no-empty': [
+      'error',
+      {
+        allowEmptyCatch: true
+      }
+    ],
 
     /**
      * @description Disallow empty functions
@@ -760,7 +765,19 @@ module.exports = {
      * @description Disallow mixed binary operators
      * @link https://eslint.org/docs/latest/rules/no-mixed-operators
      */
-    'no-mixed-operators': 'error',
+    'no-mixed-operators': [
+      'error',
+      {
+        groups: [
+          ['+', '-', '*', '/', '%', '**'],
+          ['&', '|', '^', '~', '<<', '>>', '>>>'],
+          ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
+          ['&&', '||'],
+          ['in', 'instanceof']
+        ],
+        allowSamePrecedence: true
+      }
+    ],
 
     /**
      * @description Disallow use of chained assignment expressions
@@ -778,7 +795,7 @@ module.exports = {
      * @description Disallow negated conditions
      * @link https://eslint.org/docs/latest/rules/no-negated-condition
      */
-    'no-negated-condition': 'error',
+    'no-negated-condition': 'off',
 
     /**
      * @description Disallow nested ternary expressions
@@ -886,7 +903,7 @@ module.exports = {
      * @description Disallow specified syntax
      * @link https://eslint.org/docs/latest/rules/no-restricted-syntax
      */
-    'no-restricted-syntax': 'error',
+    'no-restricted-syntax': ['error', 'DebuggerStatement', 'LabeledStatement', 'WithStatement'],
 
     /**
      * @description Disallow assignment operators in `return` statements
@@ -928,7 +945,7 @@ module.exports = {
      * @description Disallow ternary operators
      * @link https://eslint.org/docs/latest/rules/no-ternary
      */
-    'no-ternary': 'error',
+    'no-ternary': 'off',
 
     /**
      * @description Disallow throwing literals as exceptions
@@ -1048,7 +1065,14 @@ module.exports = {
      * @description Require or disallow method and property shorthand syntax for object literals
      * @link https://eslint.org/docs/latest/rules/object-shorthand
      */
-    'object-shorthand': 'error',
+    'object-shorthand': [
+      'error',
+      'always',
+      {
+        ignoreConstructors: false,
+        avoidQuotes: true
+      }
+    ],
 
     /**
      * @description Enforce variables to be declared either together or separately in functions
@@ -1084,7 +1108,7 @@ module.exports = {
      * @description Require destructuring from arrays and/or objects
      * @link https://eslint.org/docs/latest/rules/prefer-destructuring
      */
-    'prefer-destructuring': 'error',
+    'prefer-destructuring': 'off',
 
     /**
      * @description Disallow the use of `Math.pow` in favor of the `**` operator
@@ -1096,7 +1120,7 @@ module.exports = {
      * @description Enforce using named capture group in regular expression
      * @link https://eslint.org/docs/latest/rules/prefer-named-capture-group
      */
-    'prefer-named-capture-group': 'error',
+    'prefer-named-capture-group': 'off',
 
     /**
      * @description Disallow `parseInt()` and `Number.parseInt()` in favor of binary, octal, and hexadecimal literals
@@ -1162,13 +1186,13 @@ module.exports = {
      * @description Disallow async functions which have no `await` expression
      * @link https://eslint.org/docs/latest/rules/require-await
      */
-    'require-await': 'error',
+    'require-await': 'off',
 
     /**
      * @description Enforce the use of `u` flag on RegExp
      * @link https://eslint.org/docs/latest/rules/require-unicode-regexp
      */
-    'require-unicode-regexp': 'error',
+    'require-unicode-regexp': 'off',
 
     /**
      * @description Require generator functions to contain `yield`
@@ -1180,7 +1204,7 @@ module.exports = {
      * @description Enforce sorted import declarations within modules
      * @link https://eslint.org/docs/latest/rules/sort-imports
      */
-    'sort-imports': 'error',
+    'sort-imports': 'off',
 
     /**
      * @description Require object keys to be sorted
@@ -1253,7 +1277,7 @@ module.exports = {
      * @description Require parentheses around arrow function arguments
      * @link https://eslint.org/docs/latest/rules/arrow-parens
      */
-    'arrow-parens': 'error',
+    'arrow-parens': ['error', 'as-needed'],
 
     /**
      * @description Enforce consistent spacing before and after the arrow in arrow functions
@@ -1301,7 +1325,7 @@ module.exports = {
      * @description Enforce consistent newlines before and after dots
      * @link https://eslint.org/docs/latest/rules/dot-location
      */
-    'dot-location': 'error',
+    'dot-location': ['error', 'property'],
 
     /**
      * @description Require or disallow newline at the end of files
@@ -1343,7 +1367,44 @@ module.exports = {
      * @description Enforce consistent indentation
      * @link https://eslint.org/docs/latest/rules/indent
      */
-    indent: 'error',
+    indent: [
+      'error',
+      2,
+      {
+        SwitchCase: 1,
+        VariableDeclarator: 1,
+        outerIIFEBody: 1,
+        MemberExpression: 1,
+        FunctionDeclaration: { parameters: 1, body: 1 },
+        FunctionExpression: { parameters: 1, body: 1 },
+        CallExpression: { arguments: 1 },
+        ArrayExpression: 1,
+        ObjectExpression: 1,
+        ImportDeclaration: 1,
+        flatTernaryExpressions: false,
+        ignoreComments: false,
+        ignoredNodes: [
+          'TemplateLiteral *',
+          'JSXElement',
+          'JSXElement > *',
+          'JSXAttribute',
+          'JSXIdentifier',
+          'JSXNamespacedName',
+          'JSXMemberExpression',
+          'JSXSpreadAttribute',
+          'JSXExpressionContainer',
+          'JSXOpeningElement',
+          'JSXClosingElement',
+          'JSXFragment',
+          'JSXOpeningFragment',
+          'JSXClosingFragment',
+          'JSXText',
+          'JSXEmptyExpression',
+          'JSXSpreadChild'
+        ],
+        offsetTernaryExpressions: true
+      }
+    ],
 
     /**
      * @description Enforce the consistent use of either double or single quotes in JSX attributes
@@ -1397,13 +1458,13 @@ module.exports = {
      * @description Enforce a maximum number of statements allowed per line
      * @link https://eslint.org/docs/latest/rules/max-statements-per-line
      */
-    'max-statements-per-line': 'error',
+    'max-statements-per-line': 'off',
 
     /**
      * @description Enforce newlines between operands of ternary expressions
      * @link https://eslint.org/docs/latest/rules/multiline-ternary
      */
-    'multiline-ternary': 'error',
+    'multiline-ternary': ['error', 'always-multiline'],
 
     /**
      * @description Enforce or disallow parentheses when invoking a constructor with no arguments
@@ -1439,7 +1500,7 @@ module.exports = {
      * @description Disallow multiple empty lines
      * @link https://eslint.org/docs/latest/rules/no-multiple-empty-lines
      */
-    'no-multiple-empty-lines': 'error',
+    'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0 }],
 
     /**
      * @description Disallow all tabs

@@ -2,7 +2,6 @@ const base = require('eslint-config-soybeanjs-base/base');
 const baseRules = require('eslint-config-soybeanjs-base/rules');
 
 module.exports = {
-  parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
   extends: [
     'soybeanjs-base/base',
@@ -12,6 +11,10 @@ module.exports = {
   ],
   overrides: [
     ...base.overrides,
+    {
+      files: ['*.ts', '*.tsx', '*.mts', '*.cts'],
+      parser: '@typescript-eslint/parser'
+    },
     {
       files: ['*.md.ts', '*.md.typescript'],
       rules: baseRules.markdownCodeRules
@@ -44,6 +47,7 @@ module.exports = {
     // off
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
-    '@typescript-eslint/no-non-null-assertion': 'off'
+    '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/no-var-requires': 'off'
   }
 };
