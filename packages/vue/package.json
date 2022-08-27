@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-soybeanjs-ts",
+  "name": "eslint-config-soybeanjs-vue",
   "version": "0.0.1",
-  "description": "SoybeanJS's base eslint config presets with prettier",
+  "description": "SoybeanJS's vue3 eslint config presets with prettier",
   "author": "Soybean <honghuangdc@gmail.com> (https://github.com/honghuangdc)",
   "license": "MIT",
   "main": "index.js",
@@ -9,9 +9,8 @@
     "lint": "eslint . --config=index.js"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.35.1",
-    "@typescript-eslint/parser": "^5.35.1",
-    "eslint-config-soybeanjs-base": "workspace:*"
+    "eslint-config-soybeanjs-ts": "workspace:*",
+    "eslint-plugin-vue": "^9.4.0"
   },
   "peerDependencies": {
     "eslint": ">=7.4.0"

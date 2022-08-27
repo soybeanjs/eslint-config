@@ -460,7 +460,7 @@ module.exports = {
      * @description Enforce the consistent use of either `function` declarations or expressions
      * @link https://eslint.org/docs/latest/rules/func-style
      */
-    'func-style': 'error',
+    'func-style': 'off',
 
     /**
      * @description Require grouped accessor pairs in object literals and classes
@@ -946,7 +946,7 @@ module.exports = {
      * @description Disallow the use of `undefined` as an identifier
      * @link https://eslint.org/docs/latest/rules/no-undefined
      */
-    'no-undefined': 'error',
+    'no-undefined': 'off',
 
     /**
      * @description Disallow dangling underscores in identifiers
@@ -1054,7 +1054,7 @@ module.exports = {
      * @description Enforce variables to be declared either together or separately in functions
      * @link https://eslint.org/docs/latest/rules/one-var
      */
-    'one-var': 'error',
+    'one-var': ['error', 'never'],
 
     /**
      * @description Require or disallow newlines around variable declarations

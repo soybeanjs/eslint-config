@@ -1,15 +1,23 @@
 {
   "name": "eslint-config-soybeanjs-base",
   "version": "0.0.1",
-  "description": "SoybeanJS's eslint config presets with prettier",
+  "description": "SoybeanJS's base eslint config presets with prettier",
   "author": "Soybean <honghuangdc@gmail.com> (https://github.com/honghuangdc)",
   "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./base": "./base.js",
+    "./prettier": "./prettier.js",
+    "./rules": "./rules/index.js"
+  },
   "main": "index.js",
   "scripts": {
     "lint": "eslint . --config=index.js"
   },
   "dependencies": {
     "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsonc": "^2.4.0",
     "eslint-plugin-md": "^1.0.19",
     "eslint-plugin-prettier": "^4.2.1",
@@ -17,6 +25,9 @@
     "markdown-eslint-parser": "^1.2.1",
     "prettier": "^2.7.1",
     "yaml-eslint-parser": "^1.1.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
   },
   "devDependencies": {
     "eslint": "^8.22.0"

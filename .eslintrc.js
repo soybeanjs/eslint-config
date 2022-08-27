@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ["soybeanjs-base"],
+  extends: ['soybeanjs-ts']
 };
