@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-soybeanjs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "SoybeanJS's eslint config presets with prettier, it equal to soybeanjs-ts",
   "author": "Soybean <honghuangdc@gmail.com> (https://github.com/honghuangdc)",
   "license": "MIT",
