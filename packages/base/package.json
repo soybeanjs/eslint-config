@@ -15,8 +15,10 @@
     "lint": "eslint . --config=index.js"
   },
   "dependencies": {
+    "@html-eslint/parser": "^0.13.2",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-html": "^7.1.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsonc": "^2.4.0",
     "eslint-plugin-md": "^1.0.19",

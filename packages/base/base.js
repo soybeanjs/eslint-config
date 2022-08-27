@@ -1,4 +1,4 @@
-const { markdownCodeRules } = require('./rules');
+const { markdownCodeRules, prettierRules } = require('./rules');
 
 module.exports = {
   root: true,
@@ -17,13 +17,12 @@ module.exports = {
   },
   extends: [
     './rules/all.js',
-    'plugin:promise/recommended',
     'plugin:import/recommended',
     'plugin:jsonc/recommended-with-jsonc',
     'plugin:md/recommended',
     'plugin:yml/standard'
   ],
-  plugins: ['n'],
+  plugins: ['n', 'promise', 'html'],
   ignorePatterns: [
     'node_modules',
     '*.min.*',
@@ -54,6 +53,14 @@ module.exports = {
     }
   },
   overrides: [
+    {
+      files: '*.html',
+      parser: '@html-eslint/parser',
+      rules: {
+        'prettier/prettier': ['error', { parser: 'html', ...prettierRules }],
+        'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0 }]
+      }
+    },
     {
       files: ['*.json', '*.json5', '*.jsonc'],
       parser: 'jsonc-eslint-parser'
@@ -127,7 +134,7 @@ module.exports = {
       files: ['*.md'],
       parser: 'markdown-eslint-parser',
       rules: {
-        'prettier/prettier': ['error', { parser: 'markdown' }]
+        'prettier/prettier': ['error', { parser: 'markdown', ...prettierRules }]
       }
     },
     {
