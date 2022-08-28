@@ -1222,7 +1222,14 @@ module.exports = {
      * @description Enforce consistent spacing after the `//` or `/*` in a comment
      * @link https://eslint.org/docs/latest/rules/spaced-comment
      */
-    'spaced-comment': 'error',
+    'spaced-comment': [
+      'error',
+      'always',
+      {
+        line: { markers: ['*package', '!', '/', ',', '='] },
+        block: { balanced: true, markers: ['*package', '!', ',', ':', '::', 'flow-include'], exceptions: ['*'] }
+      }
+    ],
 
     /**
      * @description Require or disallow strict mode directives
