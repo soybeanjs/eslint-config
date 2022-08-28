@@ -17,14 +17,13 @@ module.exports = {
   },
   extends: [
     './rules/all.js',
-    'plugin:n/recommended',
     'plugin:promise/recommended',
     'plugin:import/recommended',
     'plugin:jsonc/recommended-with-jsonc',
     'plugin:md/recommended',
     'plugin:yml/standard'
   ],
-  // plugins: [],
+  plugins: ['n'],
   ignorePatterns: [
     'node_modules',
     '*.min.*',
