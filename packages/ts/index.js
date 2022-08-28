@@ -17,7 +17,10 @@ module.exports = {
     },
     {
       files: ['*.md.ts', '*.md.typescript'],
-      rules: baseRules.markdownCodeRules
+      rules: {
+        ...baseRules.markdownCodeRules,
+        '@typescript-eslint/no-unused-vars': 'off'
+      }
     }
   ],
   rules: {
