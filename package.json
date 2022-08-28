@@ -11,12 +11,14 @@
     "test": "pnpm -r run test",
     "update-version": "bumpp package.json packages/*/package.json",
     "publish-pkg": "pnpm -r publish --access public",
-    "release": "version && pnpm pub"
+    "release": "version && pnpm pub",
+    "sync": "node ./scripts/sync.mjs"
   },
   "devDependencies": {
     "bumpp": "^8.2.1",
     "eslint": "^8.22.0",
     "eslint-config-soybeanjs-ts": "workspace:*",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "zx": "^7.0.8"
   }
 }
