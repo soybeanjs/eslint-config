@@ -5,7 +5,8 @@ module.exports = {
       files: ['*.vue'],
       parser: 'vue-eslint-parser',
       parserOptions: {
-        parser: '@typescript-eslint/parser'
+        parser: '@typescript-eslint/parser',
+        extraFileExtensions: ['.vue']
       },
       rules: {
         'no-undef': 'off'

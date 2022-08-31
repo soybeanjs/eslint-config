@@ -1,0 +1,13 @@
+{
+  "name": "vue-demo",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Soybean <honghuangdc@gmail.com> (https://github.com/honghuangdc)",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint . --fix"
+  },
+  "dependencies": {
+    "eslint-config-soybeanjs-vue": "workspace:*"
+  }
+}
