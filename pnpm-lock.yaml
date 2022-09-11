@@ -7,12 +7,14 @@ importers:
       bumpp: ^8.2.1
       eslint: ^8.23.0
       eslint-config-soybeanjs-ts: workspace:*
+      husky: ^8.0.1
       typescript: ^4.8.2
       zx: ^7.0.8
     devDependencies:
       bumpp: 8.2.1
       eslint: 8.23.0
       eslint-config-soybeanjs-ts: link:packages/ts
+      husky: 8.0.1
       typescript: 4.8.2
       zx: 7.0.8
 
@@ -1816,6 +1818,12 @@ packages:
       domutils: 3.0.1
       entities: 4.3.1
     dev: false
+
+  /husky/8.0.1:
+    resolution: {integrity: sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
 
   /iconv-lite/0.4.24:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}

@@ -12,13 +12,20 @@
     "update-version": "bumpp package.json packages/*/package.json",
     "publish-pkg": "pnpm -r publish --access public",
     "release": "pnpm update-version && pnpm publish-pkg",
-    "sync": "node ./scripts/sync.mjs"
+    "sync": "node ./scripts/sync.mjs",
+    "init-husky": "pnpm husky install"
   },
   "devDependencies": {
     "bumpp": "^8.2.1",
     "eslint": "^8.23.0",
     "eslint-config-soybeanjs-ts": "workspace:*",
+    "husky": "^8.0.1",
     "typescript": "^4.8.2",
     "zx": "^7.0.8"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pnpm lint"
+    }
   }
 }
