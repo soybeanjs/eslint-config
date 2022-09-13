@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['plugin:vue/vue-recommended', 'soybeanjs-ts'],
+  extends: ['plugin:vue/recommended', 'soybeanjs-ts'],
   overrides: [
     {
       files: ['*.vue'],
