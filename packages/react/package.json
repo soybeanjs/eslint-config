@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-soybeanjs-react",
   "version": "0.0.10",
-  "description": "SoybeanJS's react eslint config presets with prettier",
+  "description": "SoybeanJS's React eslint config presets with prettier",
   "author": "Soybean <honghuangdc@gmail.com> (https://github.com/honghuangdc)",
   "license": "MIT",
   "main": "index.js",
@@ -10,13 +10,13 @@
   },
   "dependencies": {
     "eslint-config-soybeanjs-ts": "workspace:*",
-    "eslint-plugin-react": "^7.31.1",
+    "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-react-hooks": "^4.6.0"
   },
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },
   "devDependencies": {
-    "eslint": "^8.23.0"
+    "eslint": "^8.23.1"
   }
 }

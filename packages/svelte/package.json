@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-soybeanjs-svelte",
   "version": "0.0.10",
-  "description": "SoybeanJS's svelte eslint config presets with prettier",
+  "description": "SoybeanJS's Svelte eslint config presets with prettier",
   "author": "Soybean <honghuangdc@gmail.com> (https://github.com/honghuangdc)",
   "license": "MIT",
   "main": "index.js",
@@ -16,6 +16,6 @@
     "eslint": ">=7.4.0"
   },
   "devDependencies": {
-    "eslint": "^8.23.0"
+    "eslint": "^8.23.1"
   }
 }

@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['soybeanjs-ts'],
+  extends: ['soybeanjs'],
   settings: {
     'import/core-modules': ['zx']
   }

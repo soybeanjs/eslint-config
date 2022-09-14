@@ -16,6 +16,12 @@ module.exports = {
       parser: '@typescript-eslint/parser'
     },
     {
+      files: ['*.js', '*.cjs', 'cts'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off'
+      }
+    },
+    {
       files: ['*.md.ts', '*.md.typescript'],
       rules: {
         ...baseRules.markdownCodeRules,
@@ -50,7 +56,6 @@ module.exports = {
     // off
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
-    '@typescript-eslint/no-non-null-assertion': 'off',
-    '@typescript-eslint/no-var-requires': 'off'
+    '@typescript-eslint/no-non-null-assertion': 'off'
   }
 };
