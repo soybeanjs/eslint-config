@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-soybeanjs-react-native",
-  "version": "0.0.11",
+  "version": "0.1.0",
   "description": "SoybeanJS's ReactNative eslint config presets with prettier",
   "author": "Soybean <honghuangdc@gmail.com> (https://github.com/honghuangdc)",
   "license": "MIT",
