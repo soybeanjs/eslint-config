@@ -2,7 +2,7 @@
 
 ## SoybeanJS's eslint config presets with prettier
 
-it equal to soybeanjs-ts
+this config equals to soybeanjs-ts
 
 ## Usage
 
@@ -28,7 +28,7 @@ You don't need .eslintignore normally as it has been provided by the preset.
 {
   "settings": {
     "import/resolver": {
-      "alias": {
+      "alias": { // default alias
         "map": [
           ["~", "."],
           ["@", "./src"]
@@ -47,8 +47,7 @@ For example:
 ```json
 {
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint": "eslint . --fix"
   }
 }
 ```

@@ -1,8 +1,8 @@
 # eslint-config-soybeanjs-svelte
 
-## SoybeanJS's svelte eslint config presets
+## SoybeanJS's Svelte eslint config presets
 
-this config extends ts config
+this config extends soybeanjs-ts
 
 ## Usage
 
@@ -28,7 +28,7 @@ You don't need .eslintignore normally as it has been provided by the preset.
 {
   "settings": {
     "import/resolver": {
-      "alias": {
+      "alias": { // default alias
         "map": [
           ["~", "."],
           ["@", "./src"]
@@ -47,8 +47,7 @@ For example:
 ```json
 {
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint": "eslint . --fix"
   }
 }
 ```

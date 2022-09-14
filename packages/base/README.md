@@ -3,8 +3,8 @@
 ## SoybeanJS's base eslint config presets
 
 - Auto fix for formatting with prettier
-- lint js
-- Lint also for json, yaml, markdown
+- lint JavaScript
+- Lint also for JSON, yaml, markdown
 - Sorted imports, dangling commas for cleaner commit diff
 - Reasonable defaults, best practices, only one-line of config
 - Default Alias mapping "@" => "src", "~" => "./"
@@ -14,7 +14,7 @@
 ### Install
 
 ```bash
-pnpm add -D eslint eslint-config-soybeanjs-base
+pnpm i -D eslint eslint-config-soybeanjs-base
 ```
 
 ### Config eslint (.eslintrc | .eslintrc.js | .eslintrc.json)
@@ -33,7 +33,7 @@ You don't need .eslintignore normally as it has been provided by the preset.
 {
   "settings": {
     "import/resolver": {
-      "alias": {
+      "alias": { // default alias
         "map": [
           ["~", "."],
           ["@", "./src"]
@@ -52,8 +52,7 @@ For example:
 ```json
 {
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint": "eslint . --fix"
   }
 }
 ```

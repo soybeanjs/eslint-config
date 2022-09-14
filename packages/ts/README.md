@@ -1,6 +1,8 @@
 # eslint-config-soybeanjs-ts
 
-## SoybeanJS's ts eslint config presets extends base config
+## SoybeanJS's TypeScript eslint config presets
+
+this config extends soybeanjs-base
 
 ## Usage
 
@@ -26,7 +28,7 @@ You don't need .eslintignore normally as it has been provided by the preset.
 {
   "settings": {
     "import/resolver": {
-      "alias": {
+      "alias": { // default alias
         "map": [
           ["~", "."],
           ["@", "./src"]
@@ -45,8 +47,7 @@ For example:
 ```json
 {
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint": "eslint . --fix"
   }
 }
 ```

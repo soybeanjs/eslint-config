@@ -1,6 +1,8 @@
 # eslint-config-soybeanjs-vue2
 
-## SoybeanJS's vue2 eslint config presets extends ts config
+## SoybeanJS's Vue2 eslint config presets
+
+this config extends soybeanjs-ts
 
 ## Usage
 
@@ -26,7 +28,7 @@ You don't need .eslintignore normally as it has been provided by the preset.
 {
   "settings": {
     "import/resolver": {
-      "alias": {
+      "alias": { // default alias
         "map": [
           ["~", "."],
           ["@", "./src"]
@@ -45,8 +47,7 @@ For example:
 ```json
 {
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint": "eslint . --fix"
   }
 }
 ```
