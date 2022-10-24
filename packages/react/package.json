@@ -10,13 +10,13 @@
   },
   "dependencies": {
     "eslint-config-soybeanjs-ts": "workspace:*",
-    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^4.6.0"
   },
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },
   "devDependencies": {
-    "eslint": "^8.23.1"
+    "eslint": "^8.26.0"
   }
 }

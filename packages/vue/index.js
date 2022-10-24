@@ -5,8 +5,16 @@ module.exports = {
       files: ['*.vue'],
       parser: 'vue-eslint-parser',
       parserOptions: {
-        parser: '@typescript-eslint/parser',
-        extraFileExtensions: ['.vue']
+        parser: {
+          js: 'espree',
+          jsx: 'espree',
+          ts: '@typescript-eslint/parser',
+          tsx: '@typescript-eslint/parser'
+        },
+        extraFileExtensions: ['.vue'],
+        ecmaFeatures: {
+          jsx: true
+        }
       },
       rules: {
         'no-undef': 'off'

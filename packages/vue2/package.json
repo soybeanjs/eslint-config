@@ -10,12 +10,12 @@
   },
   "dependencies": {
     "eslint-config-soybeanjs-ts": "workspace:*",
-    "eslint-plugin-vue": "^9.4.0"
+    "eslint-plugin-vue": "^9.6.0"
   },
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },
   "devDependencies": {
-    "eslint": "^8.23.1"
+    "eslint": "^8.26.0"
   }
 }
