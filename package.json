@@ -3,23 +3,43 @@
   "version": "0.1.1",
   "private": true,
   "description": "SoybeanJS's eslint config presets with prettier",
-  "author": "Soybean <honghuangdc@gmail.com> (https://github.com/honghuangdc)",
+  "author": {
+    "name": "Soybean",
+    "email": "honghuangdc@gmail.com",
+    "url": "https://github.com/honghuangdc"
+  },
   "license": "MIT",
+  "homepage": "https://github.com/honghuangdc/eslint-config-soybeanjs",
+  "repository": {
+    "url": "https://github.com/honghuangdc/eslint-config-soybeanjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/honghuangdc/eslint-config-soybeanjs/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
-    "prepare": "pnpm -r run stub",
+    "cleanup": "rm -rf ./node_modules ./**/node_modules ./dist ./**/dist ./pnpm-lock.yaml ./**/pnpm-lock.yaml",
+    "commit": "soybean git-commit",
+    "esno": "esno",
     "lint": "eslint . --fix",
-    "test": "pnpm -r run test",
-    "update-version": "bumpp package.json packages/*/package.json",
+    "update-pkg": "ncu --deep -u",
+    "update-version": "bumpp package.json",
     "publish-pkg": "pnpm -r publish --access public",
     "release": "pnpm update-version && pnpm publish-pkg",
-    "sync": "node ./scripts/sync.mjs",
-    "init-husky": "pnpm husky install"
+    "sync-pkg": "esno ./scripts/sync.ts",
+    "prepare": "pnpm -r run stub && husky install"
   },
   "devDependencies": {
+    "@soybeanjs/cli": "^0.1.0",
     "bumpp": "^8.2.1",
     "eslint": "^8.26.0",
     "eslint-config-soybeanjs": "workspace:*",
+    "esno": "^0.16.3",
     "husky": "^8.0.1",
+    "npm-check-updates": "^16.3.16",
+    "tsup": "^6.3.0",
     "typescript": "^4.8.4",
     "zx": "^7.1.1"
   }

@@ -2,15 +2,29 @@
   "name": "eslint-config-soybeanjs-solid",
   "version": "0.1.1",
   "description": "SoybeanJS's Solid eslint config presets with prettier",
-  "author": "Soybean <honghuangdc@gmail.com> (https://github.com/honghuangdc)",
+  "author": {
+    "name": "Soybean",
+    "email": "honghuangdc@gmail.com",
+    "url": "https://github.com/honghuangdc"
+  },
   "license": "MIT",
+  "homepage": "https://github.com/honghuangdc/eslint-config-soybeanjs",
+  "repository": {
+    "url": "https://github.com/honghuangdc/eslint-config-soybeanjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/honghuangdc/eslint-config-soybeanjs/issues"
+  },
   "main": "index.js",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "lint": "eslint . --config=index.js"
   },
   "dependencies": {
     "eslint-config-soybeanjs-ts": "workspace:*",
-    "eslint-plugin-solid": "^0.7.4"
+    "eslint-plugin-solid": "^0.8.0"
   },
   "peerDependencies": {
     "eslint": ">=7.4.0"
