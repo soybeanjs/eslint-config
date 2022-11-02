@@ -20,10 +20,10 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "cleanup": "rm -rf ./node_modules ./**/node_modules ./dist ./**/dist ./pnpm-lock.yaml ./**/pnpm-lock.yaml",
+    "lint": "eslint . --fix",
     "commit": "soybean git-commit",
     "esno": "esno",
-    "lint": "eslint . --fix",
+    "cleanup": "esno ./scripts/cleanup.ts",
     "update-pkg": "ncu --deep -u",
     "update-version": "bumpp package.json packages/*/package.json",
     "publish-pkg": "pnpm -r publish --access public",
@@ -39,6 +39,7 @@
     "esno": "^0.16.3",
     "husky": "^8.0.1",
     "npm-check-updates": "^16.3.16",
+    "rimraf": "^3.0.2",
     "tsup": "^6.3.0",
     "typescript": "^4.8.4",
     "zx": "^7.1.1"
