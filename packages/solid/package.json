@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-soybeanjs-solid",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "SoybeanJS's Solid eslint config presets with prettier",
   "author": {
     "name": "Soybean",
