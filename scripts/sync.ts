@@ -7,4 +7,8 @@ const pkgs = ['base', 'ts', '', 'vue', 'vue2', 'react', 'react-native', 'svelte'
 
 const requestUrls = pkgs.map(item => requestUrl + (item ? `-${item}` : ''));
 
-await Promise.all(requestUrls.map(url => fetch(url)));
+async function sync() {
+  await Promise.all(requestUrls.map(url => fetch(url)));
+}
+
+sync();
