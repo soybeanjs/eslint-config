@@ -1,0 +1,13 @@
+{
+  "name": "vue-example",
+  "version": "0.1.2",
+  "private": true,
+  "scripts": {
+    "lint": "eslint . --fix"
+  },
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "eslint-config-soybeanjs-vue": "workspace:*",
+    "typescript": "^4.8.4"
+  }
+}
