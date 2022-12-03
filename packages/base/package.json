@@ -29,25 +29,25 @@
     "lint": "eslint . --config=index.js"
   },
   "dependencies": {
-    "@html-eslint/parser": "^0.15.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-import-resolver-alias": "^1.1.2",
-    "eslint-plugin-html": "^7.1.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsonc": "^2.5.0",
-    "eslint-plugin-md": "^1.0.19",
-    "eslint-plugin-n": "^15.4.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-yml": "^1.2.0",
-    "markdown-eslint-parser": "^1.2.1",
-    "prettier": "^2.7.1",
-    "yaml-eslint-parser": "^1.1.0"
+    "@html-eslint/parser": "0.15.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-import-resolver-alias": "1.1.2",
+    "eslint-plugin-html": "7.1.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jsonc": "2.5.0",
+    "eslint-plugin-md": "1.0.19",
+    "eslint-plugin-n": "15.5.1",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-yml": "1.2.0",
+    "markdown-eslint-parser": "1.2.1",
+    "prettier": "2.8.0",
+    "yaml-eslint-parser": "1.1.0"
   },
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },
   "devDependencies": {
-    "eslint": "^8.26.0"
+    "eslint": "8.29.0"
   }
 }

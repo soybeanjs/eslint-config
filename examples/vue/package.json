@@ -6,8 +6,8 @@
     "lint": "eslint . --fix"
   },
   "devDependencies": {
-    "eslint": "^8.26.0",
+    "eslint": "8.29.0",
     "eslint-config-soybeanjs-vue": "workspace:*",
-    "typescript": "^4.8.4"
+    "typescript": "4.9.3"
   }
 }

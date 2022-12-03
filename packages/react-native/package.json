@@ -24,12 +24,12 @@
   },
   "dependencies": {
     "eslint-config-soybeanjs-react": "workspace:*",
-    "eslint-plugin-react-native": "^4.0.0"
+    "eslint-plugin-react-native": "4.0.0"
   },
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },
   "devDependencies": {
-    "eslint": "^8.26.0"
+    "eslint": "8.29.0"
   }
 }

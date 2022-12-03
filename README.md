@@ -1,5 +1,7 @@
 # SoybeanJS's eslint config presets
 
+English | [中文](./README.zh_CN.md)
+
 - Auto fix for formatting with prettier
 - Mulit config presets: JavaScript, TypeScript, Vue, React, ReactNative, Svelte and Solid
 - Lint also for html, json, yaml, markdown
@@ -48,21 +50,40 @@ this config extends soybeanjs-ts, and it lints for Solid
 
 ### Install
 
+- Firstly, install the following packages
+
 ```bash
 pnpm i -D eslint
-
-pnpm i -D eslint-config-soybeanjs # equals to soybeanjs-ts
-pnpm i -D eslint-config-soybeanjs-base # base
-pnpm i -D eslint-config-soybeanjs-ts # for TypeScript
-pnpm i -D eslint-config-soybeanjs-vue # for Vue3
-pnpm i -D eslint-config-soybeanjs-vue2 # for Vue2
-pnpm i -D eslint-config-soybeanjs-react # for React
-pnpm i -D eslint-config-soybeanjs-react-native # for React Native
-pnpm i -D eslint-config-soybeanjs-svelte # for Svelte
-pnpm i -D eslint-config-soybeanjs-solid # for Solid
+pnpm i -D typescript # if the project use eslint-config-soybeanjs-base, there is no need to install typescript
 ```
 
-### Config eslint (.eslintrc | .eslintrc.js | .eslintrc.json)
+- Then install one of the following packages through the technology used in the project
+
+```bash
+pnpm i -D eslint-config-soybeanjs # equals to soybeanjs-ts
+pnpm i -D eslint-config-soybeanjs-base # base
+pnpm i -D eslint-config-soybeanjs-ts # TypeScript
+pnpm i -D eslint-config-soybeanjs-vue # Vue3
+pnpm i -D eslint-config-soybeanjs-vue2 # Vue2
+pnpm i -D eslint-config-soybeanjs-react # React
+pnpm i -D eslint-config-soybeanjs-react-native # ReactNative
+pnpm i -D eslint-config-soybeanjs-svelte # Svelte
+pnpm i -D eslint-config-soybeanjs-solid # Solid
+```
+
+### Eslint config file
+
+create a file, one of .eslintrc, .eslintrc.js, .eslintrc.json
+
+- .eslintrc.js
+
+```js
+module.exports = {
+  extends: "soybeanjs" // soybeanjs-base | soybeanjs-ts | soybeanjs-vue | soybeanjs-vue2 | soybeanjs-react | soybeanjs-react-native | soybeanjs-svelte | soybeanjs-solid
+}
+```
+
+- .eslintrc.json、.eslintrc
 
 ```json
 {
@@ -72,13 +93,15 @@ pnpm i -D eslint-config-soybeanjs-solid # for Solid
 
 You don't need .eslintignore normally as it has been provided by the preset.
 
-### Change import alias
+### Config alias
+
+the following code is the default config(there is no need to add), please change the alias follow the following code if need
 
 ```json
 {
   "settings": {
     "import/resolver": {
-      "alias": { // default alias
+      "alias": {
         "map": [
           ["~", "."],
           ["@", "./src"]
@@ -92,12 +115,19 @@ You don't need .eslintignore normally as it has been provided by the preset.
 
 ### Add scripts for package.json
 
-For example:
-
 ```json
 {
   "scripts": {
     "lint": "eslint . --fix"
   }
 }
+```
+
+then use the following scripts to format and fix the project code
+
+```bash
+npm run lint # npm
+yarn lint # yarn
+pnpm lint # pnpm
+
 ```
