@@ -2,7 +2,7 @@
 
 ## SoybeanJS 的 eslint 预设配置
 
-该配置等同于 TypeScript 配置 [soybeanjs-ts](https://www.npmjs.com/package/eslint-config-soybeanjs-ts)
+该配置等同于 TypeScript 配置 [soybeanjs-ts](https://github.com/honghuangdc/eslint-config-soybeanjs/blob/main/packages/ts/README.md)
 
 ## 用法
 

@@ -2,7 +2,7 @@
 
 ## SoybeanJS 的 eslint 预设 Vue3 配置
 
-扩展了 TypeScript 配置 [soybeanjs-ts](https://www.npmjs.com/package/eslint-config-soybeanjs-ts)，用来格式化 Vue3
+扩展了 TypeScript 配置 [soybeanjs-ts](https://github.com/honghuangdc/eslint-config-soybeanjs/blob/main/packages/ts/README.md)，用来格式化 Vue3
 
 ## 用法
 

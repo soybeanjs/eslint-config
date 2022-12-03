@@ -2,7 +2,7 @@
 
 ## SoybeanJS's React Native eslint config presets
 
-this config extends [soybeanjs-react](https://www.npmjs.com/package/eslint-config-soybeanjs-react)
+this config extends [soybeanjs-react](https://github.com/honghuangdc/eslint-config-soybeanjs/blob/main/packages/react/README.md)
 
 ## Usage
 

@@ -4,7 +4,7 @@ English | [中文](./README.zh_CN.md)
 
 ## SoybeanJS's eslint config presets with prettier
 
-this config equals to [soybeanjs-ts](https://www.npmjs.com/package/eslint-config-soybeanjs-ts)
+this config equals to [soybeanjs-ts](https://github.com/honghuangdc/eslint-config-soybeanjs/blob/main/packages/ts/README.md)
 
 ## Usage
 

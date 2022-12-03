@@ -2,7 +2,7 @@
 
 ## SoybeanJS 的 eslint 预设 TypeScript 配置
 
-扩展了基础配置 [soybeanjs-base](https://www.npmjs.com/package/eslint-config-soybeanjs-base)，用来格式化 TypeScript
+扩展了基础配置 [soybeanjs-base](https://github.com/honghuangdc/eslint-config-soybeanjs/blob/main/packages/base/README.md)，用来格式化 TypeScript
 
 ## 用法
 

@@ -2,7 +2,7 @@
 
 ## SoybeanJS's Vue2 eslint config presets
 
-this config extends [soybeanjs-ts](https://www.npmjs.com/package/eslint-config-soybeanjs-ts)
+this config extends [soybeanjs-ts](https://github.com/honghuangdc/eslint-config-soybeanjs/blob/main/packages/ts/README.md)
 
 ## Usage
 

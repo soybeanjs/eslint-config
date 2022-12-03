@@ -4,7 +4,7 @@ English | [中文](./README.zh_CN.md)
 
 ## SoybeanJS's TypeScript eslint config presets
 
-this config extends [soybeanjs-base](https://www.npmjs.com/package/eslint-config-soybeanjs-base)
+this config extends [soybeanjs-base](https://github.com/honghuangdc/eslint-config-soybeanjs/blob/main/packages/base/README.md)
 
 ## Usage
 

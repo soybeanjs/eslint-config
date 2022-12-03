@@ -2,7 +2,7 @@
 
 ## SoybeanJS 的 eslint 预设 ReactNative 配置
 
-扩展了 React 配置 [soybeanjs-react](https://www.npmjs.com/package/eslint-config-soybeanjs-react)，用来格式化 ReactNative
+扩展了 React 配置 [soybeanjs-react](https://github.com/honghuangdc/eslint-config-soybeanjs/blob/main/packages/react/README.md)，用来格式化 ReactNative
 
 ## 用法
 
