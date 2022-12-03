@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-soybeanjs-svelte",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "SoybeanJS's Svelte eslint config presets with prettier",
   "author": {
     "name": "Soybean",
