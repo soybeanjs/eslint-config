@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-soybeanjs-vue2",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "SoybeanJS's Vue2 eslint config presets with prettier",
   "author": {
     "name": "Soybean",
