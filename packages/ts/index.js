@@ -31,7 +31,6 @@ module.exports = {
   ],
   rules: {
     // TS
-    '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
     '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports', disallowTypeAnnotations: false }],
     '@typescript-eslint/no-empty-interface': [
       'error',
@@ -54,6 +53,7 @@ module.exports = {
     '@typescript-eslint/no-shadow': 'error',
 
     // off
+    '@typescript-eslint/consistent-type-definitions': 'off',
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off'

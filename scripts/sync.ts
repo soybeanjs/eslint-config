@@ -1,4 +1,3 @@
-#!/usr/bin/env zx
 import { fetch } from 'zx';
 
 const requestUrl = 'https://npmmirror.com/sync/eslint-config-soybeanjs';

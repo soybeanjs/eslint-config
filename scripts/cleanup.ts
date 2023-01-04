@@ -1,5 +1,3 @@
-#!/usr/bin/env zx
 import { $ } from 'zx';
 
-// eslint-disable-next-line no-unused-expressions
-$`pnpm rimraf node_modules packages/**/node_modules pnpm-local.yaml packages/**/pnpm-lock.yaml`;
+$`pnpm rimraf node_modules packages/**/node_modules examples/**/node_modules pnpm-lock.yaml packages/**/pnpm-lock.yaml examples/**/pnpm-lock.yaml`;
