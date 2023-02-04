@@ -3,17 +3,17 @@
   "version": "0.2.2",
   "description": "SoybeanJS's Vue3 eslint config presets with prettier",
   "author": {
-    "name": "Soybean",
+    "name": "SoybeanJS",
     "email": "honghuangdc@gmail.com",
-    "url": "https://github.com/honghuangdc"
+    "url": "https://github.com/soybeanjs"
   },
   "license": "MIT",
-  "homepage": "https://github.com/honghuangdc/eslint-config-soybeanjs",
+  "homepage": "https://github.com/soybeanjs/eslint-config",
   "repository": {
-    "url": "https://github.com/honghuangdc/eslint-config-soybeanjs.git"
+    "url": "https://github.com/soybeanjs/eslint-config.git"
   },
   "bugs": {
-    "url": "https://github.com/honghuangdc/eslint-config-soybeanjs/issues"
+    "url": "https://github.com/soybeanjs/eslint-config/issues"
   },
   "main": "index.js",
   "publishConfig": {
@@ -24,12 +24,12 @@
   },
   "dependencies": {
     "eslint-config-soybeanjs-ts": "workspace:*",
-    "eslint-plugin-vue": "9.8.0"
+    "eslint-plugin-vue": "9.9.0"
   },
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },
   "devDependencies": {
-    "eslint": "8.31.0"
+    "eslint": "8.33.0"
   }
 }

@@ -3,17 +3,17 @@
   "version": "0.2.2",
   "description": "SoybeanJS's Svelte eslint config presets with prettier",
   "author": {
-    "name": "Soybean",
+    "name": "SoybeanJS",
     "email": "honghuangdc@gmail.com",
-    "url": "https://github.com/honghuangdc"
+    "url": "https://github.com/soybeanjs"
   },
   "license": "MIT",
-  "homepage": "https://github.com/honghuangdc/eslint-config-soybeanjs",
+  "homepage": "https://github.com/soybeanjs/eslint-config",
   "repository": {
-    "url": "https://github.com/honghuangdc/eslint-config-soybeanjs.git"
+    "url": "https://github.com/soybeanjs/eslint-config.git"
   },
   "bugs": {
-    "url": "https://github.com/honghuangdc/eslint-config-soybeanjs/issues"
+    "url": "https://github.com/soybeanjs/eslint-config/issues"
   },
   "main": "index.js",
   "publishConfig": {
@@ -30,6 +30,6 @@
     "eslint": ">=7.4.0"
   },
   "devDependencies": {
-    "eslint": "8.31.0"
+    "eslint": "8.33.0"
   }
 }
