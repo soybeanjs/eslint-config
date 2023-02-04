@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-soybeanjs-base",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "SoybeanJS's base eslint config presets with prettier",
   "author": {
     "name": "SoybeanJS",
