@@ -20,8 +20,8 @@ pnpm add -D eslint eslint-config-soybeanjs-vue
 
 ```js
 module.exports = {
-  extends: "soybeanjs-vue"
-}
+  extends: "soybeanjs-vue",
+};
 ```
 
 - .eslintrc.json、.eslintrc

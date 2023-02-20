@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-soybeanjs",
   "version": "0.2.3",
-  "description": "SoybeanJS's eslint config presets with prettier, it equals to soybeanjs-ts",
+  "description": "SoybeanJS's eslint config presets with prettier",
   "author": {
     "name": "SoybeanJS",
     "email": "honghuangdc@gmail.com",
@@ -23,12 +23,21 @@
     "lint": "eslint . --config=index.js"
   },
   "dependencies": {
-    "eslint-config-soybeanjs-ts": "workspace:*"
+    "@typescript-eslint/eslint-plugin": "5.52.0",
+    "@typescript-eslint/parser": "5.52.0",
+    "eslint-config-prettier": "8.6.0",
+    "eslint-import-resolver-alias": "1.1.2",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsonc": "2.6.0",
+    "eslint-plugin-n": "15.6.1",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-promise": "6.1.1",
+    "prettier": "2.8.4"
   },
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },
   "devDependencies": {
-    "eslint": "8.33.0"
+    "eslint": "8.34.0"
   }
 }

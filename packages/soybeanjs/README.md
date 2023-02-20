@@ -4,8 +4,6 @@ English | [中文](./README.zh_CN.md)
 
 ## SoybeanJS's eslint config presets with prettier
 
-this config equals to [soybeanjs-ts](https://github.com/honghuangdc/eslint-config-soybeanjs/blob/main/packages/ts/README.md)
-
 ## Usage
 
 ### Install
@@ -22,8 +20,8 @@ create a file, one of .eslintrc, .eslintrc.js, .eslintrc.json
 
 ```js
 module.exports = {
-  extends: "soybeanjs"
-}
+  extends: "soybeanjs",
+};
 ```
 
 - .eslintrc.json、.eslintrc

@@ -79,8 +79,8 @@ create a file, one of .eslintrc, .eslintrc.js, .eslintrc.json
 
 ```js
 module.exports = {
-  extends: "soybeanjs" // soybeanjs-base | soybeanjs-ts | soybeanjs-vue | soybeanjs-vue2 | soybeanjs-react | soybeanjs-react-native | soybeanjs-svelte | soybeanjs-solid
-}
+  extends: "soybeanjs", // soybeanjs-base | soybeanjs-ts | soybeanjs-vue | soybeanjs-vue2 | soybeanjs-react | soybeanjs-react-native | soybeanjs-svelte | soybeanjs-solid
+};
 ```
 
 - .eslintrc.json、.eslintrc

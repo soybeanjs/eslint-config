@@ -20,8 +20,8 @@ create a file, one of .eslintrc, .eslintrc.js, .eslintrc.json
 
 ```js
 module.exports = {
-  extends: "soybeanjs-vue"
-}
+  extends: "soybeanjs-vue",
+};
 ```
 
 - .eslintrc.json、.eslintrc

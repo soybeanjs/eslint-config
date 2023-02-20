@@ -20,8 +20,8 @@ pnpm add -D eslint eslint-config-soybeanjs-ts
 
 ```js
 module.exports = {
-  extends: "soybeanjs-ts"
-}
+  extends: "soybeanjs-ts",
+};
 ```
 
 - .eslintrc.json、.eslintrc

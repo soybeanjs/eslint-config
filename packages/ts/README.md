@@ -22,8 +22,8 @@ create a file, one of .eslintrc, .eslintrc.js, .eslintrc.json
 
 ```js
 module.exports = {
-  extends: "soybeanjs-ts"
-}
+  extends: "soybeanjs-ts",
+};
 ```
 
 - .eslintrc.json、.eslintrc

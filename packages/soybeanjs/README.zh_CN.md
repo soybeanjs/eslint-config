@@ -1,8 +1,6 @@
 # eslint-config-soybeanjs
 
-## SoybeanJS 的 eslint 预设配置
-
-该配置等同于 TypeScript 配置 [soybeanjs-ts](https://github.com/honghuangdc/eslint-config-soybeanjs/blob/main/packages/ts/README.md)
+## SoybeanJS 的 eslint 基本预设配置
 
 ## 用法
 
@@ -20,8 +18,8 @@ pnpm add -D eslint eslint-config-soybeanjs
 
 ```js
 module.exports = {
-  extends: "soybeanjs"
-}
+  extends: "soybeanjs",
+};
 ```
 
 - .eslintrc.json、.eslintrc

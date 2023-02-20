@@ -24,8 +24,8 @@ pnpm i -D eslint eslint-config-soybeanjs-base
 
 ```js
 module.exports = {
-  extends: "soybeanjs-base"
-}
+  extends: "soybeanjs-base",
+};
 ```
 
 - .eslintrc.json、.eslintrc
