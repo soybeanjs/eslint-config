@@ -1,7 +1,6 @@
 {
-  "name": "eslint-config-soybeanjs-monorepo",
+  "name": "@soybeanjs/eslint-plugin",
   "version": "0.2.3",
-  "private": true,
   "description": "SoybeanJS's eslint config presets with prettier",
   "author": {
     "name": "SoybeanJS",
@@ -16,41 +15,61 @@
   "bugs": {
     "url": "https://github.com/soybeanjs/eslint-config/issues"
   },
+  "main": "src/index.js",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
     "lint": "eslint . --fix",
-    "format": "prettier --write . '!**/*.{js,jsx,ts,tsx,d.ts,json,jsonc,json5,vue,astro,svelte}'",
+    "format": "prettier --write . '!**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,json,jsonc,json5,vue,astro,svelte}'",
     "commit": "soy git-commit",
     "cleanup": "soy cleanup",
     "update-pkg": "soy update-pkg",
     "init-git": "soy init-git-hooks",
     "tsx": "tsx",
-    "update-version": "bumpp package.json packages/*/package.json",
+    "update-version": "bumpp package.json",
     "publish-pkg": "pnpm -r publish --access public",
     "release": "pnpm update-version && pnpm publish-pkg",
-    "prepare": "pnpm -r run stub",
-    "sync-pkg": "tsx ./scripts/sync.ts"
+    "prepare": "pnpm -r run stub"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "5.54.1",
+    "@typescript-eslint/parser": "5.54.1",
+    "eslint-config-prettier": "8.7.0",
+    "eslint-import-resolver-alias": "1.1.2",
+    "eslint-plugin-astro": "^0.24.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsonc": "2.6.0",
+    "eslint-plugin-n": "15.6.1",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-react-native": "4.0.0",
+    "eslint-plugin-svelte3": "4.0.0",
+    "eslint-plugin-vue": "9.9.0",
+    "prettier": "2.8.4",
+    "prettier-plugin-astro": "^0.8.0",
+    "prettier-plugin-svelte": "^2.9.0"
   },
   "devDependencies": {
     "@soybeanjs/cli": "0.1.6",
-    "bumpp": "8.2.1",
-    "eslint": "8.34.0",
-    "eslint-config-soybeanjs": "workspace:*",
+    "@types/eslint": "^8.21.1",
+    "bumpp": "9.0.0",
+    "eslint": "8.35.0",
     "lint-staged": "^13.1.2",
     "simple-git-hooks": "^2.8.1",
     "tsup": "6.6.3",
     "tsx": "^3.12.3",
     "typescript": "4.9.5",
-    "zx": "7.1.1"
+    "zx": "7.2.0"
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soybean git-commit-verify",
     "pre-commit": "pnpm exec lint-staged --concurrent false"
   },
   "lint-staged": {
-    "*.{js,ts,jsx,tsx,cjs,mjs,.d.ts}": [
+    "*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,d.ts,json,json5,jsonc,vue,astro,svelte}": [
       "eslint . --fix"
     ]
   }

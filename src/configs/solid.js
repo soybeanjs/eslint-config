@@ -2,5 +2,6 @@
  * @type {import('eslint').ESLint.ConfigData}
  */
 module.exports = {
-  extends: ['./src/configs/astro.js']
+  plugins: ['solid'],
+  extends: ['plugin:solid/typescript', './base.js']
 };
