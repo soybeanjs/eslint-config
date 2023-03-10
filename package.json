@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-soybeanjs",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "SoybeanJS's eslint plugin",
   "author": {
     "name": "SoybeanJS",
