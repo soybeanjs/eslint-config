@@ -17,9 +17,7 @@
     "vue",
     "svelte",
     "astro",
-    "json",
-    "jsonc",
-    "json5"
+    "json"
   ],
   "files.associations": {
     "*.env.*": "dotenv",

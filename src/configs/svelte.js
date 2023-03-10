@@ -4,26 +4,25 @@ const prettierRules = require('../rules/prettier');
  * @type {import('eslint').ESLint.ConfigData}
  */
 module.exports = {
-  plugins: ['svelte3'],
-  extends: ['./ts.js', 'plugin:prettier/recommended'],
+  extends: ['./base.js', 'plugin:svelte/recommended'],
   overrides: [
     {
       files: ['*.svelte'],
-      parser: '@typescript-eslint/parser',
-      processor: 'svelte3/svelte3',
+      parser: 'svelte-eslint-parser',
+      parserOptions: {
+        parser: '@typescript-eslint/parser',
+        extraFileExtensions: ['.svelte']
+      },
       rules: {
         'prettier/prettier': [
           'error',
-          { ...prettierRules, paser: 'svelte', plugins: [require.resolve('prettier-plugin-svelte')] }
+          {
+            ...prettierRules,
+            parser: 'svelte',
+            plugins: [require.resolve('prettier-plugin-svelte')]
+          }
         ]
       }
     }
-  ],
-  settings: {
-    'svelte3/typescript': require('typescript'),
-    'svelte3/ignore-styles': () => true
-  },
-  rules: {
-    'prettier/prettier': ['error', prettierRules]
-  }
+  ]
 };

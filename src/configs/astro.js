@@ -16,7 +16,11 @@ module.exports = {
       rules: {
         'prettier/prettier': [
           'error',
-          { ...prettierRules, parser: 'astro', plugins: [require.resolve('prettier-plugin-astro')] }
+          {
+            ...prettierRules,
+            parser: 'astro',
+            plugins: [require.resolve('prettier-plugin-astro')]
+          }
         ]
       }
     },

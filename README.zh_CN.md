@@ -1,72 +1,15 @@
-# SoybeanJS 的 eslint 预设配置
+# SoybeanJS 的 eslint 配置插件
 
 - 集成了 prettier，自动修复并格式化
-- 多种预设的配置: JavaScript, TypeScript, Vue, React, ReactNative, Svelte and Solid
-- 同样也可以格式化 html、json、yaml、markdown
-- 合理的默认配置, 最佳实践, 仅需一行配置
-- 默认的别名映射 "@" => "src", "~" => "./"
-
-## 依赖
-
-### eslint-config-soybeanjs-base
-
-这个是基础配置, 可以格式化 JacaScript, HTML, JSON, yaml, markdown.
-
-### eslint-config-soybeanjs-ts
-
-扩展了基础配置，用来格式化 TypeScript
-
-### eslint-config-soybeanjs
-
-该依赖等同于 eslint-config-soybeanjs-ts
-
-### eslint-config-soybeanjs-vue
-
-扩展了 TypeScript 配置，用来格式化 Vue3 的
-
-### eslint-config-soybeanjs-vue2
-
-扩展了 TypeScript 配置，用来格式化 Vue2 的
-
-### eslint-config-soybeanjs-react
-
-扩展了 TypeScript 配置，用来格式化 React 的
-
-### eslint-config-soybeanjs-react-native
-
-扩展了 React 配置，用来格式化 ReactNative 的
-
-### eslint-config-soybeanjs-svelte
-
-扩展了 TypeScript 配置，用来格式化 Svelte 的
-
-### eslint-config-soybeanjs-solid
-
-扩展了 TypeScript 配置，用来格式化 Solid 的
+- eslint 支持多种格式化: JavaScript, JSON, TypeScript, Vue, React, ReactNative, Svelte, Solid 和 Astro
+- 其他类型文件如 HTML、CSS、markdown、yaml 等通过 prettier 去格式化
 
 ## 用法
 
 ### 安装
 
-- 首先安装 eslint 和 typescript 依赖
-
 ```bash
-pnpm i -D eslint
-pnpm i -D typescript # 如果使用基础配置eslint-config-soybeanjs-base，可以不安装typescript
-```
-
-- 然后根据项目中使用的技术，安装下面的其中一个
-
-```bash
-pnpm i -D eslint-config-soybeanjs # 等同于soybeanjs-ts
-pnpm i -D eslint-config-soybeanjs-base # 基础的
-pnpm i -D eslint-config-soybeanjs-ts # TypeScript
-pnpm i -D eslint-config-soybeanjs-vue # Vue3
-pnpm i -D eslint-config-soybeanjs-vue2 # Vue2
-pnpm i -D eslint-config-soybeanjs-react # React
-pnpm i -D eslint-config-soybeanjs-react-native # ReactNative
-pnpm i -D eslint-config-soybeanjs-svelte # Svelte
-pnpm i -D eslint-config-soybeanjs-solid # Solid
+pnpm i -D eslint typescript @soybeanjs/eslint-plugin
 ```
 
 ### eslint 配置文件

@@ -1,7 +1,7 @@
 {
-  "name": "@soybeanjs/eslint-plugin",
-  "version": "0.2.3",
-  "description": "SoybeanJS's eslint config presets with prettier",
+  "name": "eslint-plugin-soybeanjs",
+  "version": "0.0.1",
+  "description": "SoybeanJS's eslint plugin",
   "author": {
     "name": "SoybeanJS",
     "email": "honghuangdc@gmail.com",
@@ -21,7 +21,7 @@
   },
   "scripts": {
     "lint": "eslint . --fix",
-    "format": "prettier --write . '!**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,json,jsonc,json5,vue,astro,svelte}'",
+    "format": "prettier . --write '!**/*.{js,jsx,mjs,cjs,json,ts,tsx,mts,cts,vue,svelte,astro}'",
     "commit": "soy git-commit",
     "cleanup": "soy cleanup",
     "update-pkg": "soy update-pkg",
@@ -46,31 +46,39 @@
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-react-native": "4.0.0",
-    "eslint-plugin-svelte3": "4.0.0",
+    "eslint-plugin-svelte": "^2.21.0",
     "eslint-plugin-vue": "9.9.0",
-    "prettier": "2.8.4",
+    "prettier": "^2.8.4",
     "prettier-plugin-astro": "^0.8.0",
     "prettier-plugin-svelte": "^2.9.0"
   },
   "devDependencies": {
     "@soybeanjs/cli": "0.1.6",
     "@types/eslint": "^8.21.1",
+    "astro": "^2.1.2",
     "bumpp": "9.0.0",
     "eslint": "8.35.0",
+    "eslint-plugin-solid": "^0.11.0",
     "lint-staged": "^13.1.2",
+    "react": "^18.2.0",
     "simple-git-hooks": "^2.8.1",
+    "solid": "^0.2.1",
+    "svelte": "^3.56.0",
     "tsup": "6.6.3",
     "tsx": "^3.12.3",
     "typescript": "4.9.5",
+    "vue": "^3.2.47",
     "zx": "7.2.0"
+  },
+  "peerDependencies": {
+    "eslint": "8.35.0",
+    "typescript": "4.9.5"
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soybean git-commit-verify",
-    "pre-commit": "pnpm exec lint-staged --concurrent false"
+    "pre-commit": "pnpm lint && pnpm lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,d.ts,json,json5,jsonc,vue,astro,svelte}": [
-      "eslint . --fix"
-    ]
+    "*.{html,css,less,sass,scss,yaml,yml,md,mdx}": "prettier . --write"
   }
 }
