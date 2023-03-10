@@ -15,6 +15,9 @@
   "bugs": {
     "url": "https://github.com/soybeanjs/eslint-config/issues"
   },
+  "files": [
+    "src"
+  ],
   "main": "src/index.js",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
@@ -59,7 +62,7 @@
     "bumpp": "9.0.0",
     "eslint": "8.35.0",
     "eslint-plugin-solid": "^0.11.0",
-    "lint-staged": "^13.1.2",
+    "lint-staged": "^13.2.0",
     "react": "^18.2.0",
     "simple-git-hooks": "^2.8.1",
     "solid": "^0.2.1",
