@@ -2,7 +2,7 @@
  * @type {import('eslint').ESLint.ConfigData}
  */
 module.exports = {
-  extends: ['plugin:vue/recommended', './base.js'],
+  extends: ['plugin:vue/recommended', require.resolve('./base.js')],
   overrides: [
     {
       files: ['*.vue'],

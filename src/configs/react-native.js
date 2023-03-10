@@ -5,5 +5,5 @@ module.exports = {
   env: {
     'react-native/react-native': true
   },
-  extends: ['./react.js', 'react-native']
+  extends: [require.resolve('./react.js'), 'react-native']
 };

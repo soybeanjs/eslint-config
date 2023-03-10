@@ -4,7 +4,7 @@ const prettierRules = require('../rules/prettier');
  * @type {import('eslint').ESLint.ConfigData}
  */
 module.exports = {
-  extends: ['./base.js', 'plugin:svelte/recommended'],
+  extends: [require.resolve('./base.js'), 'plugin:svelte/recommended'],
   overrides: [
     {
       files: ['*.svelte'],

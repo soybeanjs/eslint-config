@@ -4,7 +4,7 @@ const prettierRules = require('../rules/prettier');
  * @type {import('eslint').ESLint.ConfigData}
  */
 module.exports = {
-  extends: ['./base.js', 'plugin:astro/recommended'],
+  extends: [require.resolve('./base.js'), 'plugin:astro/recommended'],
   overrides: [
     {
       files: ['*.astro'],

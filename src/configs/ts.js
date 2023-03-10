@@ -3,7 +3,7 @@
  */
 module.exports = {
   plugins: ['@typescript-eslint'],
-  extends: ['./js.js', 'plugin:import/typescript', 'plugin:@typescript-eslint/recommended'],
+  extends: [require.resolve('./js.js'), 'plugin:import/typescript', 'plugin:@typescript-eslint/recommended'],
   overrides: [
     {
       files: ['*.ts', '*.tsx', '*.mts', '*.cts'],

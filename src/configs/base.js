@@ -2,5 +2,5 @@
  * @type {import('eslint').ESLint.ConfigData}
  */
 module.exports = {
-  extends: ['./ts.js', './prettier.js']
+  extends: [require.resolve('./ts.js'), require.resolve('./prettier.js')]
 };

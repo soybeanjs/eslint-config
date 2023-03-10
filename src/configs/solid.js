@@ -3,5 +3,5 @@
  */
 module.exports = {
   plugins: ['solid'],
-  extends: ['plugin:solid/typescript', './base.js']
+  extends: ['plugin:solid/typescript', require.resolve('./base.js')]
 };

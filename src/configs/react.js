@@ -2,7 +2,7 @@
  * @type {import('eslint').ESLint.ConfigData}
  */
 module.exports = {
-  extends: ['plugin:react/recommended', 'plugin:react-hooks/recommended', './base.js'],
+  extends: ['plugin:react/recommended', 'plugin:react-hooks/recommended', require.resolve('./base.js')],
   settings: {
     react: {
       version: 'detect'

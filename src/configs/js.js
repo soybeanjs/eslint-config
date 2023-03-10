@@ -35,7 +35,7 @@ module.exports = {
     '!.vscode'
   ],
   plugins: ['n', 'promise'],
-  extends: ['../rules/all.js', 'plugin:import/recommended', 'plugin:jsonc/recommended-with-jsonc'],
+  extends: [require.resolve('../rules/all.js'), 'plugin:import/recommended', 'plugin:jsonc/recommended-with-jsonc'],
   settings: {
     'import/resolver': {
       alias: {

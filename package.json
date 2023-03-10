@@ -24,7 +24,7 @@
   },
   "scripts": {
     "lint": "eslint . --fix",
-    "format": "prettier . --write '!**/*.{js,jsx,mjs,cjs,json,ts,tsx,mts,cts,vue,svelte,astro}'",
+    "format": "prettier . --write '!**/*.{js,jsx,mjs,cjs,json,ts,tsx,mts,cts,vue,svelte,astro}' '!pnpm-lock.yaml'",
     "commit": "soy git-commit",
     "cleanup": "soy cleanup",
     "update-pkg": "soy update-pkg",
@@ -62,7 +62,7 @@
     "bumpp": "9.0.0",
     "eslint": "8.35.0",
     "eslint-plugin-solid": "^0.11.0",
-    "lint-staged": "^13.2.0",
+    "eslint-plugin-soybeanjs": "link:",
     "react": "^18.2.0",
     "simple-git-hooks": "^2.8.1",
     "solid": "^0.2.1",
@@ -79,10 +79,6 @@
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soybean git-commit-verify",
-    "pre-commit": "pnpm lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,jsx,mjs,cjs,json,ts,tsx,mts,cts,vue,svelte,astro}": "eslint . --fix",
-    "*.{html,css,less,sass,scss,yaml,yml,md,mdx}": "prettier . --write"
+    "pre-commit": "pnpm format && pnpm lint"
   }
 }
