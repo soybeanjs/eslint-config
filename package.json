@@ -76,9 +76,10 @@
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soybean git-commit-verify",
-    "pre-commit": "pnpm lint && pnpm lint-staged"
+    "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
+    "*.{js,jsx,mjs,cjs,json,ts,tsx,mts,cts,vue,svelte,astro}": "eslint . --fix",
     "*.{html,css,less,sass,scss,yaml,yml,md,mdx}": "prettier . --write"
   }
 }
