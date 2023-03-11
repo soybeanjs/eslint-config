@@ -39,7 +39,7 @@ module.exports = {
 
 **set multi eslint configs in a project**
 
-For example, there are some tsx files written by Solid under the folder "solid", and there are some tsx files written by React under the folder "react", then you can create the eslint config file under the folder, which are "plugin:soybeanjs/solid" and "plugin:soybeanjs/react"
+For example, there are some tsx files written by Solid under the folder "solid", and there are some tsx files written by React under the folder "react", then you can create the eslint config file under the folder, which are "soybeanjs/solid" and "soybeanjs/react"
 
 ### Config alias
 
@@ -67,10 +67,11 @@ the following code is the default config(there is no need to add), please change
 {
   "scripts": {
     "lint": "eslint . --fix",
-    "format": "prettier . --write '!**/*.{js,jsx,mjs,cjs,json,ts,tsx,mts,cts,vue,svelte,astro}'"
+    "format": "soy prettier-format"
   }
 }
 ```
+> soy is the command of the package [@soybeanjs/cli](https://github.com/soybeanjs/cli)
 
 - then use the following scripts to format and fix the project code
 

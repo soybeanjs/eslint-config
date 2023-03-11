@@ -39,7 +39,7 @@ module.exports = {
 
 **一个项目中配置多个 eslint 配置**
 
-例如：文件夹 solid 下面是用 SolidJS 写的 TSX，文件夹 react 下面是用 React 写的 TSX，那么分别在对应文件夹下面创建配置文件 .eslintrc.js, 配置值分别为 plugin:soybeanjs/solid 和 plugin:soybeanjs/react
+例如：文件夹 solid 下面是用 SolidJS 写的 TSX，文件夹 react 下面是用 React 写的 TSX，那么分别在对应文件夹下面创建配置文件 .eslintrc.js, 配置值分别为 "soybeanjs/solid" 和 "soybeanjs/react"
 
 ### 别名配置
 
@@ -67,10 +67,11 @@ module.exports = {
 {
   "scripts": {
     "lint": "eslint . --fix",
-    "format": "prettier . --write '!**/*.{js,jsx,mjs,cjs,json,ts,tsx,mts,cts,vue,svelte,astro}'"
+    "format": "soy prettier-format"
   }
 }
 ```
+> soy 是依赖包 [@soybeanjs/cli](https://github.com/soybeanjs/cli) 的一个命令
 
 - 然后在项目中可以使用下面的命令对代码进行格式化修复
 

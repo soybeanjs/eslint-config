@@ -33,7 +33,7 @@
   },
   "scripts": {
     "lint": "eslint . --fix",
-    "format": "prettier . --write '!**/*.{js,jsx,mjs,cjs,json,ts,tsx,mts,cts,vue,svelte,astro}' '!pnpm-lock.yaml'",
+    "format": "soy prettier-format",
     "commit": "soy git-commit",
     "cleanup": "soy cleanup",
     "update-pkg": "soy update-pkg",
@@ -66,13 +66,13 @@
     "prettier-plugin-svelte": "^2.9.0"
   },
   "devDependencies": {
-    "@soybeanjs/cli": "0.1.6",
+    "@soybeanjs/cli": "0.1.7",
     "@types/eslint": "^8.21.1",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "astro": "^2.1.2",
     "bumpp": "9.0.0",
-    "eslint": "8.35.0",
+    "eslint": "8.36.0",
     "eslint-plugin-soybeanjs": "link:",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
