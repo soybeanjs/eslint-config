@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-soybeanjs",
   "version": "0.3.0",
-  "description": "SoybeanJS's eslint plugin",
+  "description": "SoybeanJS's eslint config resets",
   "author": {
     "name": "SoybeanJS",
     "email": "honghuangdc@gmail.com",
@@ -88,6 +88,6 @@
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soybean git-commit-verify",
-    "pre-commit": "pnpm format && pnpm lint"
+    "pre-commit": "pnpm lint"
   }
 }

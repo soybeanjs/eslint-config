@@ -71,6 +71,7 @@ module.exports = {
   }
 }
 ```
+
 > soy 是依赖包 [@soybeanjs/cli](https://github.com/soybeanjs/cli) 的一个命令
 
 - 然后在项目中可以使用下面的命令对代码进行格式化修复

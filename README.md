@@ -71,6 +71,7 @@ the following code is the default config(there is no need to add), please change
   }
 }
 ```
+
 > soy is the command of the package [@soybeanjs/cli](https://github.com/soybeanjs/cli)
 
 - then use the following scripts to format and fix the project code
