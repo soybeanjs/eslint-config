@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-soybeanjs",
+  "name": "eslint-config-soybeanjs",
   "version": "0.2.6",
   "description": "SoybeanJS's eslint plugin",
   "author": {
@@ -16,9 +16,18 @@
     "url": "https://github.com/soybeanjs/eslint-config/issues"
   },
   "files": [
-    "src"
+    "lib"
   ],
-  "main": "src/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./vue": "./lib/configs/vue.js",
+    "./vue2": "./lib/configs/vue2.js",
+    "./react": "./lib/configs/react.js",
+    "./react-native": "./lib/configs/react-native.js",
+    "./solid": "./lib/configs/solid.js",
+    "./svelte": "./lib/configs/svelte.js",
+    "./astro": "./lib/configs/astro.js"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -58,20 +67,20 @@
   "devDependencies": {
     "@soybeanjs/cli": "0.1.6",
     "@types/eslint": "^8.21.1",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
     "astro": "^2.1.2",
     "bumpp": "9.0.0",
     "eslint": "8.35.0",
     "eslint-plugin-solid": "^0.11.0",
     "eslint-plugin-soybeanjs": "link:",
     "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "simple-git-hooks": "^2.8.1",
-    "solid": "^0.2.1",
+    "solid-js": "^1.6.13",
     "svelte": "^3.56.0",
-    "tsup": "6.6.3",
-    "tsx": "^3.12.3",
     "typescript": "4.9.5",
-    "vue": "^3.2.47",
-    "zx": "7.2.0"
+    "vue": "^3.2.47"
   },
   "peerDependencies": {
     "eslint": "8.35.0",

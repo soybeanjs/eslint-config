@@ -10,7 +10,7 @@
 ### 安装
 
 ```bash
-pnpm i -D eslint typescript eslint-plugin-soybeanjs
+pnpm i -D eslint typescript eslint-config-soybeanjs
 ```
 
 ### eslint 配置文件
@@ -19,18 +19,20 @@ pnpm i -D eslint typescript eslint-plugin-soybeanjs
 
 ```js
 module.exports = {
-  extends: "plugin:soybeanjs/base",
+  extends: "soybeanjs",
 };
 ```
 
-- plugin:soybeanjs/base : 基础配置，用于格式化 JS、TS、JSON
-- plugin:soybeanjs/vue : 继承基础配置，用于格式化 Vue
-- plugin:soybeanjs/vue2 : 继承基础配置，用于格式化 Vue2
-- plugin:soybeanjs/react : 继承基础配置，用于格式化 React
-- plugin:soybeanjs/react-native : 继承 react 配置，用于格式化 ReactNative
-- plugin:soybeanjs/solid : 继承基础配置，用于格式化 Solid
-- plugin:soybeanjs/svelte : 继承基础配置，用于格式化 Svelte
-- plugin:soybeanjs/astro : 继承基础配置，用于格式化 Astro
+### 配置介绍
+
+- soybeanjs: 基础配置，用于格式化 JS、TS、JSON
+- soybeanjs/vue: 继承基础配置，用于格式化 Vue
+- soybeanjs/vue2: 继承基础配置，用于格式化 Vue2
+- soybeanjs/react: 继承基础配置，用于格式化 React
+- soybeanjs/react-native: 继承 react 配置，用于格式化 ReactNative
+- soybeanjs/solid: 继承基础配置，用于格式化 Solid
+- soybeanjs/svelte: 继承基础配置，用于格式化 Svelte
+- soybeanjs/astro: 继承基础配置，用于格式化 Astro
 
 > 请选择适合自己项目的配置
 > 通常不需要添加 .eslintignore 配置文件，因为已经预设了一些配置，如果项目需要，可以自行添加

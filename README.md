@@ -21,18 +21,18 @@ create config file ".eslintrc.js"
 
 ```js
 module.exports = {
-  extends: "plugin:soybeanjs/base",
+  extends: "soybeanjs",
 };
 ```
 
-- "plugin:soybeanjs/base": base config, lint JS, TS, JSON
-- "plugin:soybeanjs/vue": extend base config，lint Vue
-- "plugin:soybeanjs/vue2": extend base config，lint Vue2
-- "plugin:soybeanjs/react": extend base config，lint React
-- "plugin:soybeanjs/react-native": extend react config，lint ReactNative
-- "plugin:soybeanjs/solid": extend base config，lint Solid
-- "plugin:soybeanjs/svelte": extend base config，lint Svelte
-- "plugin:soybeanjs/astro": extend base config，lint Astro
+- soybeanjs: base config, lint JS, TS, JSON
+- soybeanjs/vue: extend base config，lint Vue
+- soybeanjs/vue2: extend base config，lint Vue2
+- soybeanjs/react: extend base config，lint React
+- soybeanjs/react-native: extend react config，lint ReactNative
+- soybeanjs/solid: extend base config，lint Solid
+- soybeanjs/svelte: extend base config，lint Svelte
+- soybeanjs/astro: extend base config，lint Astro
 
 > please choose the suitable config for your project
 > You don't need .eslintignore normally as it has been provided by the preset.
