@@ -12,7 +12,7 @@ English | [中文](./README.zh_CN.md)
 ### Install
 
 ```bash
-pnpm i -D eslint typescript eslint-plugin-soybeanjs
+pnpm i -D eslint typescript eslint-config-soybeanjs
 ```
 
 ### Eslint config file
