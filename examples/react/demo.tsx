@@ -1,5 +1,3 @@
-/** @jsxImportSource react */
-
 import type { FC } from 'react';
 
 export const ReactDemo: FC = () => (
