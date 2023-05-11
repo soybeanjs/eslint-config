@@ -2,7 +2,7 @@
 
 English | [中文](./README.zh_CN.md)
 
-- Auto fix for formatting with Prettier
+- Auto fix and format, and integrate Prettier
 - Mulit eslint config presets: JavaScript, JSON, TypeScript, Vue, React, ReactNative, Svelte, Solid and Astro
 - Format other files by Prettier: HTML, CSS, Less, Sass, Scss, Markdown, MDX, yaml and yml
 - Default Alias mapping "@" => "src", "~" => "./"
@@ -26,15 +26,16 @@ module.exports = {
 ```
 
 - soybeanjs: base config, lint JS, TS, JSON
-- soybeanjs/vue: extend base config，lint Vue
-- soybeanjs/vue2: extend base config，lint Vue2
-- soybeanjs/react: extend base config，lint React
-- soybeanjs/react-native: extend react config，lint ReactNative
-- soybeanjs/solid: extend base config，lint Solid
-- soybeanjs/svelte: extend base config，lint Svelte
-- soybeanjs/astro: extend base config，lint Astro
+- soybeanjs/vue: extend base config, lint Vue
+- soybeanjs/vue2: extend base config, lint Vue2
+- soybeanjs/react: extend base config, lint React
+- soybeanjs/react-native: extend react config, lint ReactNative
+- soybeanjs/solid: extend base config, lint Solid
+- soybeanjs/svelte: extend base config, lint Svelte
+- soybeanjs/astro: extend base config, lint Astro
 
 > please choose the suitable config for your project
+
 > You don't need .eslintignore normally as it has been provided by the preset.
 
 **set multi eslint configs in a project**
@@ -58,6 +59,27 @@ the following code is the default config(there is no need to add), please change
       }
     }
   }
+}
+```
+
+### VSCode settings for ESlint
+
+```json
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": false,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "svelte",
+    "astro",
+    "json"
+  ]
 }
 ```
 

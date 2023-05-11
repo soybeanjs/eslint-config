@@ -1,6 +1,6 @@
 # SoybeanJS 的 eslint 配置插件
 
-- 集成了 prettier，自动修复并格式化
+- 集成了 Prettier，自动修复并格式化
 - 多种 Eslint 预设配置: JavaScript, JSON, TypeScript, Vue, React, ReactNative, Svelte, Solid 和 Astro
 - 通过 Prettier 去格式化其他类型文件: HTML, CSS, Less, Sass, Scss, Markdown, MDX, yaml 和 yml
 - 默认的别名映射 "@" => "src", "~" => "./"
@@ -35,6 +35,7 @@ module.exports = {
 - soybeanjs/astro: 继承基础配置，用于格式化 Astro
 
 > 请选择适合自己项目的配置
+
 > 通常不需要添加 .eslintignore 配置文件，因为已经预设了一些配置，如果项目需要，可以自行添加
 
 **一个项目中配置多个 eslint 配置**
@@ -58,6 +59,27 @@ module.exports = {
       }
     }
   }
+}
+```
+
+### ESlint 的 VSCode 配置
+
+```json
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": false,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "svelte",
+    "astro",
+    "json"
+  ]
 }
 ```
 
