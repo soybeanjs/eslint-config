@@ -1,3 +1,12 @@
+## [0.4.2](https://github.com/soybeanjs/eslint-config/compare/v0.4.1...v0.4.2) (2023-05-24)
+
+
+### Bug Fixes
+
+* **projects:** fix github action script [修复github action脚本] ([2409a6f](https://github.com/soybeanjs/eslint-config/commit/2409a6f9996bc42dea90bf45c3a0c937e7942611))
+
+
+
 ## [0.4.1](https://github.com/soybeanjs/eslint-config/compare/v0.4.0...v0.4.1) (2023-05-24)
 
 
