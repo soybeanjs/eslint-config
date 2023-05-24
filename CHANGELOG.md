@@ -1,3 +1,12 @@
+## [0.4.1](https://github.com/soybeanjs/eslint-config/compare/v0.4.0...v0.4.1) (2023-05-24)
+
+
+### Features
+
+* **projects:** add github auto release [添加github自动发布] ([f1bb149](https://github.com/soybeanjs/eslint-config/commit/f1bb1498088d299d862ac51233af9b4cacd091e6))
+
+
+
 # [0.4.0](https://github.com/soybeanjs/eslint-config/compare/v0.3.9...v0.4.0) (2023-05-24)
 
 
