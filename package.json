@@ -39,10 +39,10 @@
     "update-pkg": "soy update-pkg",
     "init-git": "soy init-git-hooks",
     "tsx": "tsx",
-    "update-version": "bumpp package.json --execute=\"pnpm changelog\"",
+    "update-version": "bumpp package.json --execute=\"pnpm gen-log\" --commit --all --push --tag",
     "publish-pkg": "pnpm -r publish --access public",
     "release": "pnpm update-version && pnpm publish-pkg",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "gen-log": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "prepare": "pnpm -r run stub"
   },
   "dependencies": {
