@@ -2,4 +2,4 @@
 
 import type { FunctionalComponent } from 'vue';
 
-export const SolidDemo: FunctionalComponent = () => <div>123</div>;
+export const VueDemo: FunctionalComponent = () => <div>123</div>;

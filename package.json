@@ -39,9 +39,10 @@
     "update-pkg": "soy update-pkg",
     "init-git": "soy init-git-hooks",
     "tsx": "tsx",
-    "update-version": "bumpp package.json",
+    "update-version": "bumpp package.json --execute=\"pnpm changelog\"",
     "publish-pkg": "pnpm -r publish --access public",
     "release": "pnpm update-version && pnpm publish-pkg",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "prepare": "pnpm -r run stub"
   },
   "dependencies": {
@@ -68,10 +69,11 @@
   "devDependencies": {
     "@soybeanjs/cli": "0.1.9",
     "@types/eslint": "8.40.0",
-    "@types/react": "18.2.6",
+    "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
-    "astro": "2.5.3",
+    "astro": "2.5.5",
     "bumpp": "9.1.0",
+    "conventional-changelog-cli": "^2.2.2",
     "eslint": "8.41.0",
     "eslint-plugin-soybeanjs": "link:",
     "react": "18.2.0",
