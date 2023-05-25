@@ -1,3 +1,16 @@
+## v0.4.6
+
+[compare changes](https://github.com/soybeanjs/eslint-config/compare/v0.4.5...v0.4.6)
+
+
+### 💅 Refactors
+
+  - **projects:** Use soy release replace bumpp,conventional-changelog-cli ([53ed625](https://github.com/soybeanjs/eslint-config/commit/53ed625))
+
+### ❤️  Contributors
+
+- Soybean ([@soybeanjs](http://github.com/soybeanjs))
+
 ## [0.4.5](https://github.com/soybeanjs/eslint-config/compare/v0.4.4...v0.4.5) (2023-05-24)
 
 
