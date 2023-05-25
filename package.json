@@ -39,11 +39,8 @@
     "update-pkg": "soy update-pkg",
     "init-git": "soy init-git-hooks",
     "tsx": "tsx",
-    "update-version": "bumpp package.json --execute=\"pnpm gen-log\" --commit --all --push --tag",
     "publish-pkg": "pnpm -r publish --access public",
-    "release": "pnpm update-version && pnpm publish-pkg",
-    "gen-log": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "prepare": "pnpm -r run stub"
+    "release": "soy release && pnpm publish-pkg"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "5.59.7",
@@ -67,15 +64,14 @@
     "prettier-plugin-svelte": "2.10.0"
   },
   "devDependencies": {
-    "@soybeanjs/cli": "0.1.9",
+    "@soybeanjs/cli": "0.2.10",
     "@types/eslint": "8.40.0",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
     "astro": "2.5.5",
-    "bumpp": "9.1.0",
-    "conventional-changelog-cli": "^2.2.2",
     "eslint": "8.41.0",
     "eslint-plugin-soybeanjs": "link:",
+    "lint-staged": "^13.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "simple-git-hooks": "2.8.1",
@@ -91,5 +87,10 @@
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
     "pre-commit": "pnpm lint"
+  },
+  "lint-staged": {
+    "*.{js,json}": [
+      "eslint . --fix"
+    ]
   }
 }
