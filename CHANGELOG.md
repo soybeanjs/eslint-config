@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.4.6...v0.4.7
+
+[compare changes](https://github.com/soybeanjs/eslint-config/compare/v0.4.6...v0.4.7)
+
+### 🏡 Chore
+
+- **projects:** Add githublogen and update package.json ([67a5e61](https://github.com/soybeanjs/eslint-config/commit/67a5e61))
+- **deps:** Update deps ([4c789f0](https://github.com/soybeanjs/eslint-config/commit/4c789f0))
+- Release v0.4.7 ([9fbae31](https://github.com/soybeanjs/eslint-config/commit/9fbae31))
+
+### 🎨 Styles
+
+- **projects:** Format package.json ([31ca571](https://github.com/soybeanjs/eslint-config/commit/31ca571))
+
+### ❤️ Contributors
+
+- Soybean ([@soybeanjs](http://github.com/soybeanjs))
+
 ## v0.4.6
 
 [compare changes](https://github.com/soybeanjs/eslint-config/compare/v0.4.5...v0.4.6)
