@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-soybeanjs",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "description": "SoybeanJS's eslint config resets",
   "author": {
     "name": "Soybean",
