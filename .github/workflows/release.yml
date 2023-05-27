@@ -20,6 +20,6 @@ jobs:
         with:
           node-version: 16.x
 
-      - run: npx changelogithub # or changelogithub@0.12 if ensure the stable result
+      - run: npx githublogen
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

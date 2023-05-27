@@ -3,9 +3,9 @@
   "version": "0.4.6",
   "description": "SoybeanJS's eslint config resets",
   "author": {
-    "name": "SoybeanJS",
+    "name": "Soybean",
     "email": "honghuangdc@gmail.com",
-    "url": "https://github.com/soybeanjs"
+    "url": "https://github.com/honghuangdc"
   },
   "license": "MIT",
   "homepage": "https://github.com/soybeanjs/eslint-config",
@@ -39,8 +39,9 @@
     "update-pkg": "soy update-pkg",
     "init-git": "soy init-git-hooks",
     "tsx": "tsx",
+    "update-version": "bumpp --commit --push --tag",
     "publish-pkg": "pnpm -r publish --access public",
-    "release": "soy release && pnpm publish-pkg"
+    "release": "pnpm update-version && pnpm publish-pkg"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "5.59.7",
@@ -69,6 +70,7 @@
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
     "astro": "2.5.5",
+    "bumpp": "9.1.0",
     "eslint": "8.41.0",
     "eslint-plugin-soybeanjs": "link:",
     "lint-staged": "^13.2.2",
@@ -89,8 +91,7 @@
     "pre-commit": "pnpm lint"
   },
   "lint-staged": {
-    "*.{js,json}": [
-      "eslint . --fix"
-    ]
+    "*.{js,mjs,jsx,ts,mts,tsx,json,vue,svelte,astro}": "eslint . --fix",
+    "*.!{js,mjs,jsx,ts,mts,tsx,json,vue,svelte,astro}": "format"
   }
 }

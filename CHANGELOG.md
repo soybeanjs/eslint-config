@@ -1,3 +1,5 @@
+# Changelog
+
 ## v0.4.6
 
 [compare changes](https://github.com/soybeanjs/eslint-config/compare/v0.4.5...v0.4.6)
