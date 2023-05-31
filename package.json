@@ -73,7 +73,6 @@
     "bumpp": "9.1.0",
     "eslint": "8.41.0",
     "eslint-plugin-soybeanjs": "link:",
-    "lint-staged": "^13.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "simple-git-hooks": "2.8.1",
@@ -88,10 +87,6 @@
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
-    "pre-commit": "pnpm lint"
-  },
-  "lint-staged": {
-    "*.{js,mjs,jsx,ts,mts,tsx,json,vue,svelte,astro}": "eslint . --fix",
-    "*.!{js,mjs,jsx,ts,mts,tsx,json,vue,svelte,astro}": "format"
+    "pre-commit": "pnpm lint && soy lint-staged"
   }
 }

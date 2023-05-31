@@ -84,9 +84,6 @@ devDependencies:
   eslint-plugin-soybeanjs:
     specifier: 'link:'
     version: 'link:'
-  lint-staged:
-    specifier: ^13.2.2
-    version: 13.2.2(enquirer@2.3.6)
   react:
     specifier: 18.2.0
     version: 18.2.0
