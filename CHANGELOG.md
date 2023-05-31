@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.4.7...v0.4.8
+
+[compare changes](https://github.com/soybeanjs/eslint-config/compare/v0.4.7...v0.4.8)
+
+### 📖 Documentation
+
+- **projects:** CHANGELOG.md ([b87b339](https://github.com/soybeanjs/eslint-config/commit/b87b339))
+
+### 🏡 Chore
+
+- **deps:** Update deps ([3597483](https://github.com/soybeanjs/eslint-config/commit/3597483))
+- **projects:** Use soy lint-staged replace lint-staged ([25b924c](https://github.com/soybeanjs/eslint-config/commit/25b924c))
+- Release v0.4.8 ([e36c22a](https://github.com/soybeanjs/eslint-config/commit/e36c22a))
+
+### ❤️ Contributors
+
+- Soybean ([@soybeanjs](http://github.com/soybeanjs))
+
 ## v0.4.6...v0.4.7
 
 [compare changes](https://github.com/soybeanjs/eslint-config/compare/v0.4.6...v0.4.7)
