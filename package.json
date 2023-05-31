@@ -44,8 +44,8 @@
     "release": "pnpm update-version && pnpm publish-pkg"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "5.59.7",
-    "@typescript-eslint/parser": "5.59.7",
+    "@typescript-eslint/eslint-plugin": "5.59.8",
+    "@typescript-eslint/parser": "5.59.8",
     "eslint-config-prettier": "8.8.0",
     "eslint-import-resolver-alias": "1.1.2",
     "eslint-plugin-astro": "0.27.1",
@@ -62,14 +62,14 @@
     "eslint-plugin-vue": "9.14.1",
     "prettier": "2.8.8",
     "prettier-plugin-astro": "0.9.1",
-    "prettier-plugin-svelte": "2.10.0"
+    "prettier-plugin-svelte": "2.10.1"
   },
   "devDependencies": {
-    "@soybeanjs/cli": "0.3.0",
+    "@soybeanjs/cli": "0.4.1",
     "@types/eslint": "8.40.0",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
-    "astro": "2.5.5",
+    "astro": "2.5.6",
     "bumpp": "9.1.0",
     "eslint": "8.41.0",
     "eslint-plugin-soybeanjs": "link:",
@@ -77,7 +77,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "simple-git-hooks": "2.8.1",
-    "solid-js": "1.7.5",
+    "solid-js": "1.7.6",
     "svelte": "3.59.1",
     "typescript": "5.0.4",
     "vue": "3.3.4"
