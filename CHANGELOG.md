@@ -1,6 +1,26 @@
 # Changelog
 
 
+## [v0.4.9](https://github.com/soybeanjs/eslint-config/compare/v0.4.8...main) (23-06-11)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: add export for prettier rules &nbsp;-&nbsp; by @soybeanjs [<samp>(3b4f1)</samp>](https://github.com/soybeanjs/eslint-config/commit/3b4f101)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**:
+  - CHANGELOG.md &nbsp;-&nbsp; by @soybeanjs [<samp>(2825d)</samp>](https://github.com/soybeanjs/eslint-config/commit/2825d7f)
+  - generate CHANGELOG.md &nbsp;-&nbsp; by @soybeanjs [<samp>(4a144)</samp>](https://github.com/soybeanjs/eslint-config/commit/4a1443c)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(a78ee)</samp>](https://github.com/soybeanjs/eslint-config/commit/a78eeaa)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.4.8](https://github.com/soybeanjs/eslint-config/compare/v0.4.7...v0.4.8) (2023-06-01)
 
 ### &nbsp;&nbsp;&nbsp;📖 Documentation
