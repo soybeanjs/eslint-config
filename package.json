@@ -26,7 +26,12 @@
     "./react-native": "./lib/configs/react-native.js",
     "./solid": "./lib/configs/solid.js",
     "./svelte": "./lib/configs/svelte.js",
-    "./astro": "./lib/configs/astro.js"
+    "./astro": "./lib/configs/astro.js",
+    "./prettier": {
+      "import": "./lib/prettier.js",
+      "require": "./lib/prettier.js",
+      "types": "./lib/prettier.d.ts"
+    }
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
@@ -44,8 +49,8 @@
     "release": "pnpm update-version && pnpm publish-pkg"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "5.59.8",
-    "@typescript-eslint/parser": "5.59.8",
+    "@typescript-eslint/eslint-plugin": "5.59.9",
+    "@typescript-eslint/parser": "5.59.9",
     "eslint-config-prettier": "8.8.0",
     "eslint-import-resolver-alias": "1.1.2",
     "eslint-plugin-astro": "0.27.1",
@@ -65,13 +70,13 @@
     "prettier-plugin-svelte": "2.10.1"
   },
   "devDependencies": {
-    "@soybeanjs/cli": "0.4.1",
-    "@types/eslint": "8.40.0",
-    "@types/react": "18.2.8",
+    "@soybeanjs/cli": "0.5.4",
+    "@types/eslint": "8.40.1",
+    "@types/react": "18.2.11",
     "@types/react-dom": "18.2.4",
-    "astro": "2.5.6",
-    "bumpp": "9.1.0",
-    "eslint": "8.41.0",
+    "astro": "2.6.2",
+    "bumpp": "9.1.1",
+    "eslint": "8.42.0",
     "eslint-plugin-soybeanjs": "link:",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -87,6 +92,6 @@
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
-    "pre-commit": "pnpm lint && soy lint-staged"
+    "pre-commit": "pnpm soy lint-staged"
   }
 }
