@@ -1,7 +1,7 @@
 # Changelog
 
 
-## [v0.4.9](https://github.com/soybeanjs/eslint-config/compare/v0.4.8...main) (23-06-11)
+## [v0.4.9](https://github.com/soybeanjs/eslint-config/compare/v0.4.8...v0.4.9) (2023-06-11)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
 
@@ -16,6 +16,7 @@
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
 - **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(a78ee)</samp>](https://github.com/soybeanjs/eslint-config/commit/a78eeaa)
+- **projects**: release v0.4.9 &nbsp;-&nbsp; by @soybeanjs [<samp>(086f3)</samp>](https://github.com/soybeanjs/eslint-config/commit/086f3d8)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
@@ -576,20 +577,6 @@
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
 - release v0.0.5 &nbsp;-&nbsp; by @soybeanjs [<samp>(417b1)</samp>](https://github.com/soybeanjs/eslint-config/commit/417b19c)
-
-### &nbsp;&nbsp;&nbsp;❤️ Contributors
-
-[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
-
-## [v0.4.8](https://github.com/soybeanjs/eslint-config/compare/v0.0.3...v0.04) (23-06-11)
-
-### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
-
-- **projects**: fix base config &nbsp;-&nbsp; by @soybeanjs [<samp>(f11a5)</samp>](https://github.com/soybeanjs/eslint-config/commit/f11a576)
-
-### &nbsp;&nbsp;&nbsp;🏡 Chore
-
-- release v0.0.4 &nbsp;-&nbsp; by @soybeanjs [<samp>(75aa3)</samp>](https://github.com/soybeanjs/eslint-config/commit/75aa30e)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
