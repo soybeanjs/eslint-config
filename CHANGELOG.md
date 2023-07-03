@@ -1,6 +1,23 @@
 # Changelog
 
 
+## [v0.4.10](https://github.com/soybeanjs/eslint-config/compare/v0.4.9...v0.4.10) (23-07-03)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**: fix CHANGELOG.md &nbsp;-&nbsp; by **Soybean** [<samp>(88e88)</samp>](https://github.com/soybeanjs/eslint-config/commit/88e885e)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**:
+  - update deps and remove prettier export &nbsp;-&nbsp; by **Soybean** [<samp>(375f1)</samp>](https://github.com/soybeanjs/eslint-config/commit/375f141)
+  - update package.json &nbsp;-&nbsp; by **Soybean** [<samp>(93931)</samp>](https://github.com/soybeanjs/eslint-config/commit/939312b)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+
+[Soybean](mailto:honghuangdc@gmail.com)
+
 ## [v0.4.9](https://github.com/soybeanjs/eslint-config/compare/v0.4.8...v0.4.9) (2023-06-11)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
