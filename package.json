@@ -33,15 +33,12 @@
   },
   "scripts": {
     "lint": "eslint . --fix",
-    "format": "soy prettier-format",
+    "format": "soy prettier-write",
     "commit": "soy git-commit",
     "cleanup": "soy cleanup",
-    "update-pkg": "soy update-pkg",
-    "init-git": "soy init-git-hooks",
-    "tsx": "tsx",
-    "update-version": "bumpp --commit --push --tag",
+    "ncu": "soy ncu",
     "publish-pkg": "pnpm -r publish --access public",
-    "release": "pnpm update-version && pnpm publish-pkg"
+    "release": "soy release && pnpm publish-pkg"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "5.60.1",
@@ -70,7 +67,6 @@
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
     "astro": "2.7.3",
-    "bumpp": "9.1.1",
     "eslint": "8.44.0",
     "eslint-plugin-soybeanjs": "link:",
     "react": "18.2.0",
@@ -88,5 +84,8 @@
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
     "pre-commit": "pnpm soy lint-staged"
+  },
+  "soybean": {
+    "useSoybeanToken": true
   }
 }

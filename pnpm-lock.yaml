@@ -79,9 +79,6 @@ devDependencies:
   astro:
     specifier: 2.7.3
     version: 2.7.3
-  bumpp:
-    specifier: 9.1.1
-    version: 9.1.1
   eslint:
     specifier: 8.44.0
     version: 8.44.0
