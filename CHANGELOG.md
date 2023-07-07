@@ -1,6 +1,5 @@
 # Changelog
 
-
 ## [v0.4.10](https://github.com/soybeanjs/eslint-config/compare/v0.4.9...v0.4.10) (23-07-03)
 
 ### &nbsp;&nbsp;&nbsp;📖 Documentation
@@ -14,7 +13,6 @@
   - update package.json &nbsp;-&nbsp; by **Soybean** [<samp>(93931)</samp>](https://github.com/soybeanjs/eslint-config/commit/939312b)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
-
 
 [Soybean](mailto:honghuangdc@gmail.com)
 
@@ -89,7 +87,7 @@
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
-- **projects**: fix github action [修复github action] &nbsp;-&nbsp; by @soybeanjs [<samp>(83b30)</samp>](https://github.com/soybeanjs/eslint-config/commit/83b301c)
+- **projects**: fix github action [修复 github action] &nbsp;-&nbsp; by @soybeanjs [<samp>(83b30)</samp>](https://github.com/soybeanjs/eslint-config/commit/83b301c)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
@@ -103,7 +101,7 @@
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
-- **projects**: fix github action [修复github action] &nbsp;-&nbsp; by @soybeanjs [<samp>(742f8)</samp>](https://github.com/soybeanjs/eslint-config/commit/742f842)
+- **projects**: fix github action [修复 github action] &nbsp;-&nbsp; by @soybeanjs [<samp>(742f8)</samp>](https://github.com/soybeanjs/eslint-config/commit/742f842)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
@@ -117,7 +115,7 @@
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
-- **projects**: fix rename github workflows [修正github workflows名称] &nbsp;-&nbsp; by @soybeanjs [<samp>(2dbed)</samp>](https://github.com/soybeanjs/eslint-config/commit/2dbed70)
+- **projects**: fix rename github workflows [修正 github workflows 名称] &nbsp;-&nbsp; by @soybeanjs [<samp>(2dbed)</samp>](https://github.com/soybeanjs/eslint-config/commit/2dbed70)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
@@ -131,7 +129,7 @@
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
-- **projects**: fix github action script [修复github action脚本] &nbsp;-&nbsp; by @soybeanjs [<samp>(2409a)</samp>](https://github.com/soybeanjs/eslint-config/commit/2409a6f)
+- **projects**: fix github action script [修复 github action 脚本] &nbsp;-&nbsp; by @soybeanjs [<samp>(2409a)</samp>](https://github.com/soybeanjs/eslint-config/commit/2409a6f)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
@@ -145,7 +143,7 @@
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
 
-- **projects**: add github auto release [添加github自动发布] &nbsp;-&nbsp; by @soybeanjs [<samp>(f1bb1)</samp>](https://github.com/soybeanjs/eslint-config/commit/f1bb149)
+- **projects**: add github auto release [添加 github 自动发布] &nbsp;-&nbsp; by @soybeanjs [<samp>(f1bb1)</samp>](https://github.com/soybeanjs/eslint-config/commit/f1bb149)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
@@ -187,7 +185,7 @@
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
-- **projects**: fix prettier fule htmlWhitespaceSensitivity [修复prettier的规则] &nbsp;-&nbsp; by @soybeanjs [<samp>(fb318)</samp>](https://github.com/soybeanjs/eslint-config/commit/fb31894)
+- **projects**: fix prettier fule htmlWhitespaceSensitivity [修复 prettier 的规则] &nbsp;-&nbsp; by @soybeanjs [<samp>(fb318)</samp>](https://github.com/soybeanjs/eslint-config/commit/fb31894)
 
 ### &nbsp;&nbsp;&nbsp;📦 Build
 
@@ -206,7 +204,7 @@
 ### &nbsp;&nbsp;&nbsp;📦 Build
 
 - **deps**: update deps [升级依赖] &nbsp;-&nbsp; by @soybeanjs [<samp>(8365b)</samp>](https://github.com/soybeanjs/eslint-config/commit/8365bda)
-- **projects**: update VSCode extentions.json [更新VSCode的extentions.json] &nbsp;-&nbsp; by @soybeanjs [<samp>(d39a3)</samp>](https://github.com/soybeanjs/eslint-config/commit/d39a381)
+- **projects**: update VSCode extentions.json [更新 VSCode 的 extentions.json] &nbsp;-&nbsp; by @soybeanjs [<samp>(d39a3)</samp>](https://github.com/soybeanjs/eslint-config/commit/d39a381)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
@@ -234,7 +232,7 @@
 
 ### &nbsp;&nbsp;&nbsp;📖 Documentation
 
-- **projects**: update README.md [更新README.md] &nbsp;-&nbsp; by @soybeanjs [<samp>(90163)</samp>](https://github.com/soybeanjs/eslint-config/commit/901639b)
+- **projects**: update README.md [更新 README.md] &nbsp;-&nbsp; by @soybeanjs [<samp>(90163)</samp>](https://github.com/soybeanjs/eslint-config/commit/901639b)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
@@ -614,6 +612,3 @@
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
-
-
-

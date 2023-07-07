@@ -1,4 +1,4 @@
-# SoybeanJS 的 eslint 配置插件
+# SoybeanJS 的 ESLint 配置插件
 
 - 集成了 Prettier，自动修复并格式化
 - 多种 Eslint 预设配置: JavaScript, JSON, TypeScript, Vue, React, ReactNative, Svelte, Solid 和 Astro
@@ -12,17 +12,15 @@
 pnpm i -D eslint typescript eslint-config-soybeanjs
 ```
 
-### eslint 配置文件
+### ESLint 配置文件
 
-创建配置文件 .eslintrc.js
+创建配置文件 .eslintrc
 
-```js
-module.exports = {
-  extends: "soybeanjs",
-};
+```json
+{
+  "extends": "soybeanjs"
+}
 ```
-
-> 如果项目是以 ESM 的形式运行 (package.json 的 type 属性为 "module")，则需创建配置文件 .eslintrc.cjs
 
 ### 配置介绍
 
@@ -64,24 +62,31 @@ module.exports = {
 }
 ```
 
-### ESlint 的 VSCode 配置
+### ESLint 的 VSCode 配置
 
 ```json
 {
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": true // 在保存文件时自动格式化
   },
   "editor.formatOnSave": false,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "vue",
-    "svelte",
-    "astro",
-    "json"
-  ]
+  "eslint.validate": ["svelte", "astro", "json"]
+}
+```
+
+- `eslint.validate`: 配置需要校验的文件类型, eslint 插件默认校验的文件类型为 js, jsx, ts, tsx, vue, 如果需要校验其他类型文件，需要在这里添加(如下面添加的 svelte, astro 和 json)
+
+  > 这里的校验是指 eslint 插件的校验，即界面上实时地显示错误，通过保存触发自动修复，和通过命令 eslint 去修复区别开来，通过命令 `eslint --fix --ext .svelte`可以指定校验和修复的文件类型
+
+- `editor.formatOnSave`: 关闭编辑器自带的格式化，以免和 eslint 的格式化冲突，当然也可以为不通过 eslint 校验的文件类型开启编辑器自带的格式化，如下面的配置, 保存时编辑器会自动格式化 html, css, less, scss, sass, markdown, yaml 和 yml 文件
+
+```json
+{
+  "editor.formatOnSave": false,
+  "[html][css][less][scss][sass][markdown][yaml][yml][jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  }
 }
 ```
 
@@ -90,8 +95,7 @@ module.exports = {
 ```json
 {
   "scripts": {
-    "lint": "eslint . --fix",
-    "format": "soy prettier-format"
+    "lint": "eslint . --fix"
   }
 }
 ```
@@ -102,10 +106,4 @@ module.exports = {
 
 ```bash
 pnpm lint
-```
-
-- 对于其他文件，使用 format 命令进行格式化
-
-```bash
-pnpm format
 ```

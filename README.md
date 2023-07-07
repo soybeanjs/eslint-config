@@ -1,9 +1,9 @@
-# SoybeanJS's eslint config presets
+# SoybeanJS's ESLint config presets
 
 English | [中文](./README.zh_CN.md)
 
 - Auto fix and format, and integrate Prettier
-- Mulit eslint config presets: JavaScript, JSON, TypeScript, Vue, React, ReactNative, Svelte, Solid and Astro
+- Multi eslint config presets: JavaScript, JSON, TypeScript, Vue, React, ReactNative, Svelte, Solid and Astro
 - Format other files by Prettier: HTML, CSS, Less, Sass, Scss, Markdown, MDX, yaml and yml
 
 ## Usage
@@ -14,7 +14,7 @@ English | [中文](./README.zh_CN.md)
 pnpm i -D eslint typescript eslint-config-soybeanjs
 ```
 
-### Eslint config file
+### ESLint config file
 
 create config file ".eslintrc.js"
 
@@ -23,8 +23,6 @@ module.exports = {
   extends: "soybeanjs",
 };
 ```
-
-> If the project is running in ESM (the type property of package.json is "module"), you need to create the config file ".eslintrc.cjs"
 
 - soybeanjs: base config, lint JS, TS, JSON
 - soybeanjs/vue: extend base config, lint Vue
@@ -64,48 +62,48 @@ it will read the path alias from tsconfig.json, the following code is default se
 }
 ```
 
-### VSCode settings for ESlint
+### ESLint settings in VSCode
 
 ```json
 {
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": true // auto format on save
   },
   "editor.formatOnSave": false,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "vue",
-    "svelte",
-    "astro",
-    "json"
-  ]
+  "eslint.validate": ["svelte", "astro", "json"]
 }
 ```
 
-### Add scripts for package.json
+- `eslint.validate`: configure the file types to be validated, the default file types are js, jsx, ts, tsx, vue, if you want to validate other file types, you need to add them here (such as svelte, astro and json below)
+
+  > the validate here is the validation of eslint plugin, which means to display the error in real time on the interface, and trigger auto fix by saving, which is different from auto fix by command eslint, you can specify the validate and fix file types by command `eslint --fix --ext .svelte`
+
+- `editor.formatOnSave`: close the editor's built-in formatting to avoid conflicts with eslint's formatting, of course, you can also enable the editor's built-in formatting for file types that do not pass eslint verification, such as the following configuration, the editor will automatically format html, css, less, scss, sass, markdown, yaml and yml files when saving
 
 ```json
 {
-  "scripts": {
-    "lint": "eslint . --fix",
-    "format": "soy prettier-format"
+  "editor.formatOnSave": false,
+  "[html][css][less][scss][sass][markdown][yaml][yml][jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   }
 }
 ```
 
-> soy is the command of the package [@soybeanjs/cli](https://github.com/soybeanjs/cli)
+### Add script command in package.json
 
-- then use the following scripts to format and fix the project code
+```json
+{
+  "scripts": {
+    "lint": "eslint . --fix"
+  }
+}
+```
+
+> `soy` is a command of dependency package [@soybeanjs/cli](https://github.com/soybeanjs/cli)
+
+- then you can use the following command to format and fix the code
 
 ```bash
 pnpm lint
-```
-
-- format other files
-
-```bash
-pnpm format
 ```

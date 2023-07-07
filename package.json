@@ -33,7 +33,6 @@
   },
   "scripts": {
     "lint": "eslint . --fix",
-    "format": "soy prettier-write",
     "commit": "soy git-commit",
     "cleanup": "soy cleanup",
     "ncu": "soy ncu",
