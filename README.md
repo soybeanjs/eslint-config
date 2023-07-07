@@ -5,7 +5,6 @@ English | [中文](./README.zh_CN.md)
 - Auto fix and format, and integrate Prettier
 - Mulit eslint config presets: JavaScript, JSON, TypeScript, Vue, React, ReactNative, Svelte, Solid and Astro
 - Format other files by Prettier: HTML, CSS, Less, Sass, Scss, Markdown, MDX, yaml and yml
-- Default Alias mapping "@" => "src", "~" => "./"
 
 ## Usage
 
@@ -25,6 +24,8 @@ module.exports = {
 };
 ```
 
+> If the project is running in ESM (the type property of package.json is "module"), you need to create the config file ".eslintrc.cjs"
+
 - soybeanjs: base config, lint JS, TS, JSON
 - soybeanjs/vue: extend base config, lint Vue
 - soybeanjs/vue2: extend base config, lint Vue2
@@ -42,20 +43,21 @@ module.exports = {
 
 For example, there are some tsx files written by Solid under the folder "solid", and there are some tsx files written by React under the folder "react", then you can create the eslint config file under the folder, which are "soybeanjs/solid" and "soybeanjs/react"
 
-### Config alias
+### Resolve path alias like `@/`, `~/`, etc
 
-the following code is the default config(there is no need to add), please change the alias follow the following code if need
+it will read the path alias from tsconfig.json, the following code is default settings, as well as you can update by yourself
 
 ```json
 {
   "settings": {
     "import/resolver": {
-      "alias": {
-        "map": [
-          ["~", "."],
-          ["@", "./src"]
-        ],
-        "extensions": [".js", ".jsx", ".mjs", ".ts", ".tsx", "mts", ".d.ts"]
+      "typescript": {
+        "project": [
+          "tsconfig.json",
+          "packages/*/tsconfig.json",
+          "examples/*/tsconfig.json",
+          "docs/*/tsconfig.json"
+        ]
       }
     }
   }

@@ -3,7 +3,6 @@
 - 集成了 Prettier，自动修复并格式化
 - 多种 Eslint 预设配置: JavaScript, JSON, TypeScript, Vue, React, ReactNative, Svelte, Solid 和 Astro
 - 通过 Prettier 去格式化其他类型文件: HTML, CSS, Less, Sass, Scss, Markdown, MDX, yaml 和 yml
-- 默认的别名映射 "@" => "src", "~" => "./"
 
 ## 用法
 
@@ -22,6 +21,8 @@ module.exports = {
   extends: "soybeanjs",
 };
 ```
+
+> 如果项目是以 ESM 的形式运行 (package.json 的 type 属性为 "module")，则需创建配置文件 .eslintrc.cjs
 
 ### 配置介绍
 
@@ -42,20 +43,21 @@ module.exports = {
 
 例如：文件夹 solid 下面是用 SolidJS 写的 TSX，文件夹 react 下面是用 React 写的 TSX，那么分别在对应文件夹下面创建配置文件 .eslintrc.js, 配置值分别为 "soybeanjs/solid" 和 "soybeanjs/react"
 
-### 别名配置
+### 解析别名 `@/`, `~/` 等
 
-下面是默认的别名配置(不需要添加)，如果需要更改，请自行在 eslint 配置文件中按照下面的代码格式去变更别名
+默认会读取项目的 tsconfig.json 的 paths 作为别名解析，以下为默认配置，也可以自行修改进行覆盖
 
 ```json
 {
   "settings": {
     "import/resolver": {
-      "alias": {
-        "map": [
-          ["~", "."],
-          ["@", "./src"]
-        ],
-        "extensions": [".js", ".jsx", ".mjs", ".ts", ".tsx", "mts", ".d.ts"]
+      "typescript": {
+        "project": [
+          "tsconfig.json",
+          "packages/*/tsconfig.json",
+          "examples/*/tsconfig.json",
+          "docs/*/tsconfig.json"
+        ]
       }
     }
   }
