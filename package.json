@@ -40,8 +40,8 @@
     "release": "soy release && pnpm publish-pkg"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "5.60.1",
-    "@typescript-eslint/parser": "5.60.1",
+    "@typescript-eslint/eslint-plugin": "5.61.0",
+    "@typescript-eslint/parser": "5.61.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-import-resolver-typescript": "3.5.5",
     "eslint-plugin-astro": "0.27.2",
@@ -62,17 +62,17 @@
   },
   "devDependencies": {
     "@soybeanjs/cli": "0.6.2",
-    "@types/eslint": "8.40.2",
+    "@types/eslint": "8.44.0",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
-    "astro": "2.7.3",
+    "astro": "2.8.0",
     "eslint": "8.44.0",
     "eslint-plugin-soybeanjs": "link:",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "simple-git-hooks": "2.8.1",
     "solid-js": "1.7.7",
-    "svelte": "4.0.2",
+    "svelte": "4.0.5",
     "typescript": "5.1.6",
     "vue": "3.3.4"
   },
