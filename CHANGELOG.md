@@ -1,5 +1,25 @@
 # Changelog
 
+## [v0.5.0](https://github.com/soybeanjs/eslint-config/compare/v0.4.10...v0.5.0) (23-07-09)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: use eslint-import-resolver-typescript replace eslint-import-resolver-alias &nbsp;-&nbsp; by @honghuangdc [<samp>(1459b)</samp>](https://github.com/soybeanjs/eslint-config/commit/1459b88)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**: update docs for path alias &nbsp;-&nbsp; by @honghuangdc [<samp>(07904)</samp>](https://github.com/soybeanjs/eslint-config/commit/0790480)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**:
+  - update package author info &nbsp;-&nbsp; by @honghuangdc [<samp>(02864)</samp>](https://github.com/soybeanjs/eslint-config/commit/028645a)
+  - update README & update vscode settings &nbsp;-&nbsp; by @honghuangdc [<samp>(402ea)</samp>](https://github.com/soybeanjs/eslint-config/commit/402ea98)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.4.10](https://github.com/soybeanjs/eslint-config/compare/v0.4.9...v0.4.10) (23-07-03)
 
 ### &nbsp;&nbsp;&nbsp;📖 Documentation
