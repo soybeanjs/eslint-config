@@ -16,16 +16,16 @@ pnpm i -D eslint typescript eslint-config-soybeanjs
 
 ### ESLint config file
 
-create config file ".eslintrc.js"
+create config file ".eslintrc"
 
-```js
-module.exports = {
-  extends: "soybeanjs",
-};
+```json
+{
+  "extends": "soybeanjs"
+}
 ```
 
 - soybeanjs: base config, lint JS, TS, JSON
-- soybeanjs/vue: extend base config, lint Vue
+- soybeanjs/vue: extend base config, lint Vue3
 - soybeanjs/vue2: extend base config, lint Vue2
 - soybeanjs/react: extend base config, lint React
 - soybeanjs/react-native: extend react config, lint ReactNative

@@ -25,7 +25,7 @@ pnpm i -D eslint typescript eslint-config-soybeanjs
 ### 配置介绍
 
 - soybeanjs: 基础配置，用于格式化 JS、TS、JSON
-- soybeanjs/vue: 继承基础配置，用于格式化 Vue
+- soybeanjs/vue: 继承基础配置，用于格式化 Vue3
 - soybeanjs/vue2: 继承基础配置，用于格式化 Vue2
 - soybeanjs/react: 继承基础配置，用于格式化 React
 - soybeanjs/react-native: 继承 react 配置，用于格式化 ReactNative
