@@ -1,5 +1,19 @@
 # Changelog
 
+## [v0.5.2](https://github.com/soybeanjs/eslint-config/compare/v0.5.1...v0.5.2) (23-07-19)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**: update README.md &nbsp;-&nbsp; by @honghuangdc [<samp>(abe2d)</samp>](https://github.com/soybeanjs/eslint-config/commit/abe2dc3)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: update deps & update config &nbsp;-&nbsp; by @honghuangdc [<samp>(2c61b)</samp>](https://github.com/soybeanjs/eslint-config/commit/2c61b3f)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.5.1](https://github.com/soybeanjs/eslint-config/compare/v0.5.0...v0.5.1) (23-07-09)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
