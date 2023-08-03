@@ -40,39 +40,39 @@
     "release": "soy release && pnpm publish-pkg"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "6.2.0",
-    "@typescript-eslint/parser": "6.2.0",
-    "eslint-config-prettier": "8.8.0",
+    "@typescript-eslint/eslint-plugin": "6.2.1",
+    "@typescript-eslint/parser": "6.2.1",
+    "eslint-config-prettier": "8.10.0",
     "eslint-import-resolver-typescript": "3.5.5",
-    "eslint-plugin-astro": "0.27.2",
-    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-astro": "0.28.0",
+    "eslint-plugin-import": "2.28.0",
     "eslint-plugin-jsonc": "2.9.0",
     "eslint-plugin-n": "16.0.1",
     "eslint-plugin-prettier": "5.0.0",
     "eslint-plugin-promise": "6.1.1",
-    "eslint-plugin-react": "7.33.0",
+    "eslint-plugin-react": "7.33.1",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-react-native": "4.0.0",
     "eslint-plugin-solid": "0.12.1",
     "eslint-plugin-svelte": "2.32.4",
-    "eslint-plugin-vue": "9.15.1",
-    "prettier": "3.0.0",
+    "eslint-plugin-vue": "9.16.1",
+    "prettier": "3.0.1",
     "prettier-plugin-astro": "0.11.0",
-    "prettier-plugin-svelte": "3.0.1"
+    "prettier-plugin-svelte": "3.0.3"
   },
   "devDependencies": {
-    "@soybeanjs/cli": "0.6.2",
+    "@soybeanjs/cli": "0.6.5",
     "@types/eslint": "8.44.1",
-    "@types/react": "18.2.17",
+    "@types/react": "18.2.18",
     "@types/react-dom": "18.2.7",
-    "astro": "2.9.3",
-    "eslint": "8.45.0",
+    "astro": "2.10.0",
+    "eslint": "8.46.0",
     "eslint-plugin-soybeanjs": "link:",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "simple-git-hooks": "2.9.0",
     "solid-js": "1.7.8",
-    "svelte": "4.1.1",
+    "svelte": "4.1.2",
     "typescript": "5.1.6",
     "vue": "3.3.4"
   },
@@ -83,8 +83,5 @@
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
     "pre-commit": "pnpm soy lint-staged"
-  },
-  "soybean": {
-    "useSoybeanToken": true
   }
 }
