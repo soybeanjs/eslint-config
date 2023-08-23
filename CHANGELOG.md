@@ -1,6 +1,24 @@
 # Changelog
 
 
+## [v0.5.6](https://github.com/soybeanjs/eslint-config/compare/v0.5.5...v0.5.6) (23-08-23)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**: regenerate CHANGELOG &nbsp;-&nbsp; by @honghuangdc [<samp>(a32c5)</samp>](https://github.com/soybeanjs/eslint-config/commit/a32c5e7)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(99e0a)</samp>](https://github.com/soybeanjs/eslint-config/commit/99e0a3a)
+
+### &nbsp;&nbsp;&nbsp;🤖 CI
+
+- **projects**: update github action release.yml &nbsp;-&nbsp; by @honghuangdc [<samp>(0a00f)</samp>](https://github.com/soybeanjs/eslint-config/commit/0a00f98)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.5.5](https://github.com/soybeanjs/eslint-config/compare/v0.5.4...v0.5.5) (2023-08-22)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
