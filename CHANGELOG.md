@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.5.8](https://github.com/soybeanjs/eslint-config/compare/v0.5.7...v0.5.8) (23-10-30)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(ec3fc)</samp>](https://github.com/soybeanjs/eslint-config/commit/ec3fc21)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.5.7](https://github.com/soybeanjs/eslint-config/compare/v0.5.6...v0.5.7) (23-10-12)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
