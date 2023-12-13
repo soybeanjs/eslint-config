@@ -35,9 +35,10 @@
     "lint": "eslint . --fix",
     "commit": "soy git-commit",
     "cleanup": "soy cleanup",
-    "ncu": "soy ncu",
+    "update-pkg": "soy ncu",
     "publish-pkg": "pnpm -r publish --access public",
-    "release": "soy release && pnpm publish-pkg"
+    "release": "soy release && pnpm publish-pkg",
+    "prepare": "simple-git-hooks"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "6.14.0",
@@ -84,5 +85,8 @@
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
     "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }
