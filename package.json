@@ -83,10 +83,6 @@
     "typescript": ">=4.8.0"
   },
   "simple-git-hooks": {
-    "commit-msg": "pnpm soy git-commit-verify",
-    "pre-commit": "pnpm lint-staged"
-  },
-  "lint-staged": {
-    "*": "eslint --fix"
+    "commit-msg": "pnpm soy git-commit-verify"
   }
 }

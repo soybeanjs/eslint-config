@@ -1,3 +1,6 @@
+>[!IMPORTANT]
+> ESlint will use new flat config when released 10.0.0, It's recommend to SoybeanJS's ESLint Flat Config: [@soybeanjs/eslint-config](https://github.com/soybeanjs/eslint-flat-config)
+
 # SoybeanJS's ESLint config presets
 
 English | [中文](./README.zh_CN.md)
