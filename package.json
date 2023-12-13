@@ -40,41 +40,42 @@
     "release": "soy release && pnpm publish-pkg"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "6.9.0",
-    "@typescript-eslint/parser": "6.9.0",
-    "eslint-config-prettier": "9.0.0",
+    "@typescript-eslint/eslint-plugin": "6.14.0",
+    "@typescript-eslint/parser": "6.14.0",
+    "eslint-config-prettier": "9.1.0",
     "eslint-import-resolver-typescript": "3.6.1",
-    "eslint-plugin-astro": "0.29.1",
+    "eslint-plugin-astro": "0.30.0",
     "eslint-plugin-import": "2.29.0",
-    "eslint-plugin-jsonc": "2.10.0",
-    "eslint-plugin-n": "16.2.0",
+    "eslint-plugin-jsonc": "2.11.0",
+    "eslint-plugin-n": "16.4.0",
     "eslint-plugin-prettier": "5.0.1",
     "eslint-plugin-promise": "6.1.1",
     "eslint-plugin-react": "7.33.2",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-react-native": "4.1.0",
     "eslint-plugin-solid": "0.13.0",
-    "eslint-plugin-svelte": "2.34.0",
-    "eslint-plugin-vue": "9.18.1",
-    "prettier": "3.0.3",
-    "prettier-plugin-astro": "0.12.1",
-    "prettier-plugin-svelte": "3.0.3"
+    "eslint-plugin-svelte": "2.35.1",
+    "eslint-plugin-vue": "9.19.2",
+    "prettier": "3.1.1",
+    "prettier-plugin-astro": "0.12.2",
+    "prettier-plugin-svelte": "3.1.2"
   },
   "devDependencies": {
-    "@soybeanjs/cli": "0.7.4",
-    "@types/eslint": "8.44.6",
-    "@types/react": "18.2.33",
-    "@types/react-dom": "18.2.14",
-    "astro": "3.4.0",
-    "eslint": "8.52.0",
+    "@soybeanjs/cli": "1.0.0-beta.7",
+    "@types/eslint": "8.44.9",
+    "@types/react": "18.2.45",
+    "@types/react-dom": "18.2.17",
+    "astro": "4.0.4",
+    "eslint": "8.55.0",
     "eslint-plugin-soybeanjs": "link:",
+    "lint-staged": "15.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "simple-git-hooks": "2.9.0",
-    "solid-js": "1.8.4",
-    "svelte": "4.2.2",
-    "typescript": "5.2.2",
-    "vue": "3.3.7"
+    "solid-js": "1.8.7",
+    "svelte": "4.2.8",
+    "typescript": "5.3.3",
+    "vue": "3.3.11"
   },
   "peerDependencies": {
     "eslint": ">=7.4.0",
@@ -82,6 +83,6 @@
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
-    "pre-commit": "pnpm soy lint-staged"
+    "pre-commit": "pnpm lint-staged"
   }
 }
