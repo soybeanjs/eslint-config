@@ -69,12 +69,13 @@ export async function createVueConfig(options?: RequiredVueOptions) {
         'vue/component-options-name-casing': ['warn', 'PascalCase'],
         'vue/custom-event-name-casing': ['warn', 'camelCase'],
         'vue/define-emits-declaration': ['warn', 'type-based'],
-        'vue/define-macros-order': [
-          'warn',
-          {
-            order: ['defineOptions', 'defineProps', 'defineEmits', 'defineSlots']
-          }
-        ],
+        'vue/define-macros-order': 'off',
+        // 'vue/define-macros-order': [
+        //   'warn',
+        //   {
+        //     order: ['defineOptions', 'defineProps', 'defineEmits', 'defineSlots']
+        //   }
+        // ],
         'vue/define-props-declaration': ['warn', 'type-based'],
         'vue/html-comment-content-newline': 'warn',
         'vue/multi-word-component-names': 'warn',
