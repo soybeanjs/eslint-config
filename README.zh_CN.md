@@ -1,3 +1,6 @@
+>[!CAUTION]
+> 这是旧的配置，ESlint 9.0.0 发布后将默认使用新的扁平化配置，建议使用主分支的扁平化配置 [main](https://github.com/soybeanjs/eslint-config)
+
 # SoybeanJS 的 ESLint 配置插件
 
 - 集成了 Prettier，自动修复并格式化

@@ -1,5 +1,5 @@
->[!IMPORTANT]
-> ESlint will use new flat config when released 10.0.0, It's recommend to SoybeanJS's ESLint Flat Config: [@soybeanjs/eslint-config](https://github.com/soybeanjs/eslint-flat-config)
+>[!CAUTION]
+> This is legacy config, ESlint will use new flat config by default when released 9.0.0, it's recommend to use new flat config on branch [main](https://github.com/soybeanjs/eslint-config)
 
 # SoybeanJS's ESLint config presets
 
