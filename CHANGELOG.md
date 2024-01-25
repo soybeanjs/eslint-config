@@ -1,6 +1,27 @@
 # Changelog
 
 
+## [v0.5.9](https://github.com/soybeanjs/eslint-config/compare/v0.5.8...v0.5.9) (24-01-25)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**:
+  - update README.md &nbsp;-&nbsp; by @honghuangdc [<samp>(99182)</samp>](https://github.com/soybeanjs/eslint-config/commit/991822f)
+  - update README.md &nbsp;-&nbsp; by @honghuangdc [<samp>(09be6)</samp>](https://github.com/soybeanjs/eslint-config/commit/09be6bd)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**:
+  - update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(fd615)</samp>](https://github.com/soybeanjs/eslint-config/commit/fd615e9)
+  - update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(16703)</samp>](https://github.com/soybeanjs/eslint-config/commit/16703dc)
+- **projects**:
+  - update vscode settings &nbsp;-&nbsp; by @honghuangdc [<samp>(0de56)</samp>](https://github.com/soybeanjs/eslint-config/commit/0de56b2)
+  - update package.json &nbsp;-&nbsp; by @honghuangdc [<samp>(d90a7)</samp>](https://github.com/soybeanjs/eslint-config/commit/d90a7bb)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.5.8](https://github.com/soybeanjs/eslint-config/compare/v0.5.7...v0.5.8) (23-10-30)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
