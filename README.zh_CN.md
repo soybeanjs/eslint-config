@@ -1,28 +1,28 @@
 # @soybeanjs/eslint-config
 
-English | [中文](./README.zh_CN.md)
+[English](./README.md) | 中文
 
-**SoybeanJS's ESLint flat config presets with prettier.**
+**SoybeanJS 的 ESLint 扁平化配置预设，包含 prettier。**
 
-- Default config Lint JavaScript and TypeScript.
-- Support Vue, React, ReactNative, Solid, Svelte and Astro on demand.
-- Use ESlint and Prettier to format HTML, CSS, LESS, SCSS, JSON, JSONC, YAML, TOML, Markdown.
+- 默认配置支持 JavaScript 和 TypeScript。
+- 支持 Vue、React、ReactNative、Solid、Svelte 和 Astro。
+- 使用 ESlint 和 Prettier 格式化 HTML、CSS、LESS、SCSS、JSON、JSONC、YAML、TOML、Markdown。
 
-## Usage
+## 用法
 
-### Install
+### 安装
 
 ```bash
 pnpm i -D eslint typescript @soybeanjs/eslint-config
 ```
 
-### ESLint config file
+### ESLint 配置文件
 
-- With [`"type": "module"`](https://nodejs.org/api/packages.html#type) in `package.json`
+- 在 `package.json` 中添加 [`"type": "module"`](https://nodejs.org/api/packages.html#type)
 
-- Create config file `eslint.config.js`
+- 创建配置文件 `eslint.config.js`
 
-- Import config from `@soybeanjs/eslint-config`
+- 导入配置 `@soybeanjs/eslint-config`
 
 ```js
 import { defineConfig } from '@soybeanjs/eslint-config';
@@ -33,9 +33,9 @@ export default defineConfig({
 ```
 
 > [!NOTE]
-> See [Options](#options) for more details.
+> 查看 [Options](#options) 获取更多细节。
 
-### ESLint settings in VSCode
+### VSCode 中的 ESLint 设置
 
 ```json
 {
@@ -46,12 +46,12 @@ export default defineConfig({
   "editor.formatOnSave": false,
   "eslint.experimental.useFlatConfig": true,
   "eslint.validate": [
-    // "javascript", // support builtin
-    // "javascriptreact", // support builtin
-    // "typescript",  // support builtin
-    // "typescriptreact", // support builtin
-    // "vue", // support builtin
-    // add the languages you want to lint
+    // "javascript", // 默认支持
+    // "javascriptreact", // 默认支持
+    // "typescript",  // 默认支持
+    // "typescriptreact", // 默认支持
+    // "vue", // 默认支持
+    // 添加你想要检查和格式化的语言
     "svelte",
     "astro",
     "html",
@@ -66,7 +66,7 @@ export default defineConfig({
 }
 ```
 
-### Scripts in package.json
+### 在package.json 中添加命令
 
 ```json
 {
@@ -76,22 +76,24 @@ export default defineConfig({
 }
 ```
 
-## Options
+## 配置
 
 #### interface Options
 
 ````typescript
 interface Options {
   /**
-   * The current working directory
+   * 项目根目录
    *
    * @default process.cwd()
    */
   cwd: string;
-  /** The globs to ignore lint */
+  /**
+   * 被忽略的 glob
+   */
   ignores: string[];
   /**
-   * Default prettier rules
+   * 默认的Prettier配置
    *
    * @default
    * ```json
@@ -106,16 +108,17 @@ interface Options {
    */
   prettierRules: PartialPrettierExtendedOptions;
   /**
-   * Whether to use prettierrc
+   * 是否使用 prettierrc 进行 prettier 配置
    *
-   * If true, the rules in prettierrc will override the default rules
+   * 如果为 true，prettierrc 中的规则将会覆盖默认规则
    *
    * @default true
    */
   usePrettierrc: boolean;
 
   /**
-   * @default
+   * 格式化器
+   * @default 默认支持的格式化器
    * {
    *  "html": true,
    *  "css": true,
@@ -139,15 +142,19 @@ interface Options {
 }
 
 type RuleBaseOptions<T = NonNullable<unknown>> = T & {
-  /** The glob patterns to lint */
+  /**
+   * 需要被检测的文件
+   */
   files?: string[];
-  /** Override rules */
+  /**
+   * 覆盖的规则
+   */
   overrides?: PartialEslintFlatRules;
 };
 
 type VueOptions = RuleBaseOptions<{
   /**
-   * The vue version
+   * Vue 版本
    *
    * @default 3
    */
@@ -155,9 +162,9 @@ type VueOptions = RuleBaseOptions<{
 }>;
 ````
 
-## Thanks
+## 感谢
 
-**Inspired by the following projects:**
+**灵感来自以下项目：**
 
 - [Antfu's eslint-config](https://github.com/antfu/eslint-config)
 - [Sxzz's eslint-config](https://github.com/sxzz/eslint-config)
