@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v1.2.0](https://github.com/soybeanjs/eslint-config/compare/v0.5.9...v1.2.0) (24-01-25)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **projects**: move eslint-flat-config to repository &nbsp;-&nbsp; by @honghuangdc [<samp>(54d30)</samp>](https://github.com/soybeanjs/eslint-config/commit/54d3045)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**: add README.zh_CN.md &nbsp;-&nbsp; by @honghuangdc [<samp>(139a9)</samp>](https://github.com/soybeanjs/eslint-config/commit/139a97f)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.1.8](https://github.com/soybeanjs/eslint-flat-config/compare/v1.1.7...v1.1.8) (24-01-25)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
