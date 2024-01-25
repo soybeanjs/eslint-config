@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.2.2](https://github.com/soybeanjs/eslint-config/compare/v1.2.1...v1.2.2) (24-01-25)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **projects**: turn off vue/no-ref-object-reactivity-loss &nbsp;-&nbsp; by @honghuangdc [<samp>(19556)</samp>](https://github.com/soybeanjs/eslint-config/commit/19556f6)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.2.1](https://github.com/soybeanjs/eslint-config/compare/v1.2.0...v1.2.1) (24-01-25)
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
