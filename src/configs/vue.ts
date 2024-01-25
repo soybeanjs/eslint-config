@@ -81,7 +81,6 @@ export async function createVueConfig(options?: RequiredVueOptions) {
         'vue/multi-word-component-names': 'warn',
         'vue/next-tick-style': ['warn', 'promise'],
         'vue/no-duplicate-attr-inheritance': 'warn',
-        'vue/no-ref-object-reactivity-loss': 'error',
         'vue/no-required-prop-with-default': 'warn',
         'vue/no-static-inline-styles': 'warn',
         'vue/no-template-target-blank': 'error',
