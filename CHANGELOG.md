@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.2.1](https://github.com/soybeanjs/eslint-config/compare/v1.2.0...v1.2.1) (24-01-25)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **projects**: turn off vue/define-macros-order &nbsp;-&nbsp; by @honghuangdc [<samp>(8744d)</samp>](https://github.com/soybeanjs/eslint-config/commit/8744da2)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.2.0](https://github.com/soybeanjs/eslint-config/compare/v0.5.9...v1.2.0) (24-01-25)
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
