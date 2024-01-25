@@ -28,7 +28,3 @@ stats.html
 *.njsproj
 *.sln
 *.sw?
-
-package-lock.json
-yarn.lock
-pnpm-lock.yaml

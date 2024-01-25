@@ -1,99 +1,71 @@
->[!CAUTION]
-> This is legacy config, ESlint will use new flat config by default when released 9.0.0, it's recommend to use new flat config on branch [main](https://github.com/soybeanjs/eslint-config)
+# SoybeanJS's ESLint flat config presets
 
-# SoybeanJS's ESLint config presets
+- Default config Lint JavaScript and TypeScript.
+- Support Vue, React, ReactNative, Solid, Svelte and Astro on demand.
+- Use ESlint and Prettier to format HTML, CSS, LESS, SCSS, JSON, JSONC, YAML, TOML, Markdown.
 
-English | [中文](./README.zh_CN.md)
-
-- Auto fix and format, and integrate Prettier
-- Multi eslint config presets: JavaScript, JSON, TypeScript, Vue, React, ReactNative, Svelte, Solid and Astro
-- Format other files by Prettier: HTML, CSS, Less, Sass, Scss, Markdown, MDX, yaml and yml
+> [!IMPORTANT]
+> ESlint will use new flat config by default in next major version v9.0.0, It's recommended to use flat config. see more: [What's coming in ESLint v9.0.0](https://eslint.org/blog/2023/11/whats-coming-in-eslint-9.0.0/)
 
 ## Usage
 
 ### Install
 
 ```bash
-pnpm i -D eslint typescript eslint-config-soybeanjs
+pnpm i -D eslint typescript @soybeanjs/eslint-config
 ```
 
 ### ESLint config file
 
-create config file ".eslintrc"
+- With [`"type": "module"`](https://nodejs.org/api/packages.html#type) in `package.json`
 
-```json
-{
-  "extends": "soybeanjs"
-}
+- Create config file `eslint.config.js`
+
+- Import config from `@soybeanjs/eslint-config`
+
+```js
+import { defineConfig } from '@soybeanjs/eslint-config';
+
+export default defineConfig({
+  // options
+});
 ```
 
-- soybeanjs: base config, lint JS, TS, JSON
-- soybeanjs/vue: extend base config, lint Vue3
-- soybeanjs/vue2: extend base config, lint Vue2
-- soybeanjs/react: extend base config, lint React
-- soybeanjs/react-native: extend react config, lint ReactNative
-- soybeanjs/solid: extend base config, lint Solid
-- soybeanjs/svelte: extend base config, lint Svelte
-- soybeanjs/astro: extend base config, lint Astro
-
-> please choose the suitable config for your project
-
-> You don't need .eslintignore normally as it has been provided by the preset.
-
-**set multi eslint configs in a project**
-
-For example, there are some tsx files written by Solid under the folder "solid", and there are some tsx files written by React under the folder "react", then you can create the eslint config file under the folder, which are "soybeanjs/solid" and "soybeanjs/react"
-
-### Resolve path alias like `@/`, `~/`, etc
-
-it will read the path alias from tsconfig.json, the following code is default settings, as well as you can update by yourself
-
-```json
-{
-  "settings": {
-    "import/resolver": {
-      "typescript": {
-        "project": [
-          "tsconfig.json",
-          "packages/*/tsconfig.json",
-          "examples/*/tsconfig.json",
-          "docs/*/tsconfig.json"
-        ]
-      }
-    }
-  }
-}
-```
+> [!NOTE]
+> See [Options](#options) for more details.
 
 ### ESLint settings in VSCode
 
 ```json
 {
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true // auto format on save
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
   },
   "editor.formatOnSave": false,
-  "eslint.validate": ["svelte", "astro", "json"]
+  "eslint.experimental.useFlatConfig": true,
+  "eslint.validate": [
+    // "javascript", // support builtin
+    // "javascriptreact", // support builtin
+    // "typescript",  // support builtin
+    // "typescriptreact", // support builtin
+    // "vue", // support builtin
+    // add the languages you want to lint
+    "svelte",
+    "astro",
+    "html",
+    "css",
+    "json",
+    "jsonc",
+    "yaml"
+    "toml",
+    "markdown"
+  ],
+  "prettier.enable": false
 }
 ```
 
-- `eslint.validate`: configure the file types to be validated, the default file types are js, jsx, ts, tsx, vue, if you want to validate other file types, you need to add them here (such as svelte, astro and json below)
-
-  > the validate here is the validation of eslint plugin, which means to display the error in real time on the interface, and trigger auto fix by saving, which is different from auto fix by command eslint, you can specify the validate and fix file types by command `eslint --fix --ext .svelte`
-
-- `editor.formatOnSave`: close the editor's built-in formatting to avoid conflicts with eslint's formatting, of course, you can also enable the editor's built-in formatting for file types that do not pass eslint verification, such as the following configuration, the editor will automatically format html, css, less, scss, sass, markdown, yaml and yml files when saving
-
-```json
-{
-  "editor.formatOnSave": false,
-  "[html][css][less][scss][sass][markdown][yaml][yml][jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  }
-}
-```
-
-### Add script command in package.json
+### Scripts in package.json
 
 ```json
 {
@@ -103,10 +75,88 @@ it will read the path alias from tsconfig.json, the following code is default se
 }
 ```
 
-> `soy` is a command of dependency package [@soybeanjs/cli](https://github.com/soybeanjs/cli)
+## Options
 
-- then you can use the following command to format and fix the code
+#### interface Options
 
-```bash
-pnpm lint
-```
+````typescript
+interface Options {
+  /**
+   * The current working directory
+   *
+   * @default process.cwd()
+   */
+  cwd: string;
+  /** The globs to ignore lint */
+  ignores: string[];
+  /**
+   * Default prettier rules
+   *
+   * @default
+   * ```json
+   * {
+   *   "printWidth": 120,
+   *   "singleQuote": true,
+   *   "trailingComma": "none",
+   *   "arrowParens": "avoid",
+   *   "htmlWhitespaceSensitivity": "ignore"
+   * }
+   * ```
+   */
+  prettierRules: PartialPrettierExtendedOptions;
+  /**
+   * Whether to use prettierrc
+   *
+   * If true, the rules in prettierrc will override the default rules
+   *
+   * @default true
+   */
+  usePrettierrc: boolean;
+
+  /**
+   * @default
+   * {
+   *  "html": true,
+   *  "css": true,
+   *  "json": true,
+   * }
+   */
+  formatter: {
+    html?: boolean;
+    css?: boolean;
+    json?: boolean;
+    markdown?: boolean;
+    yaml?: boolean;
+    toml?: boolean;
+  };
+  vue?: VueOptions | boolean;
+  react?: RuleBaseOptions | boolean;
+  'react-native'?: RuleBaseOptions | boolean;
+  solid?: RuleBaseOptions | boolean;
+  svelte?: RuleBaseOptions | boolean;
+  astro?: RuleBaseOptions | boolean;
+}
+
+type RuleBaseOptions<T = NonNullable<unknown>> = T & {
+  /** The glob patterns to lint */
+  files?: string[];
+  /** Override rules */
+  overrides?: PartialEslintFlatRules;
+};
+
+type VueOptions = RuleBaseOptions<{
+  /**
+   * The vue version
+   *
+   * @default 3
+   */
+  version?: 2 | 3;
+}>;
+````
+
+## Thanks
+
+**Inspired by the following projects:**
+
+- [Antfu's eslint-config](https://github.com/antfu/eslint-config)
+- [Sxzz's eslint-config](https://github.com/sxzz/eslint-config)
