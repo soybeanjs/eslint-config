@@ -19,7 +19,7 @@ export async function createOptions(options: Partial<Options> = {}) {
     }
   };
 
-  const { cwd, ignores, prettierRules, usePrettierrc, formatter, ...rest } = options;
+  const { cwd, ignores, prettierRules, usePrettierrc, formatter, unocss, ...rest } = options;
 
   if (cwd) {
     opts.cwd = cwd;
@@ -69,6 +69,8 @@ export async function createOptions(options: Partial<Options> = {}) {
   if (rest['react-native'] && !rest.react) {
     opts.react = createItemDemandOptions('react', true, onDemandFiles.react);
   }
+
+  opts.unocss = Boolean(unocss);
 
   return opts;
 }

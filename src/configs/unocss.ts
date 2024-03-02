@@ -6,7 +6,7 @@ export async function createUnocssConfig(enable?: boolean) {
 
   await ensurePackages(['@unocss/eslint-config']);
 
-  const unocss = await interopDefault(import('@unocss/eslint-config'));
+  const unocss = await interopDefault(import('@unocss/eslint-config/flat'));
 
   return [unocss as FlatConfigItem];
 }
