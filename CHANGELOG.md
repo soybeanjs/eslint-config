@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v1.2.3-beta.0](https://github.com/soybeanjs/eslint-config/compare/v1.2.2...v1.2.3-beta.0) (24-03-03)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: add unocss &nbsp;-&nbsp; by @honghuangdc [<samp>(86891)</samp>](https://github.com/soybeanjs/eslint-config/commit/86891d3)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(e5bea)</samp>](https://github.com/soybeanjs/eslint-config/commit/e5beae8)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.2.2](https://github.com/soybeanjs/eslint-config/compare/v1.2.1...v1.2.2) (24-01-25)
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
