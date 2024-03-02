@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.2.3-beta.1](https://github.com/soybeanjs/eslint-config/compare/v1.2.3-beta.0...v1.2.3-beta.1) (24-03-03)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix resolve unocss option &nbsp;-&nbsp; by @honghuangdc [<samp>(0d31b)</samp>](https://github.com/soybeanjs/eslint-config/commit/0d31b7f)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.2.3-beta.0](https://github.com/soybeanjs/eslint-config/compare/v1.2.2...v1.2.3-beta.0) (24-03-03)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
