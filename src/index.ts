@@ -11,6 +11,7 @@ import {
   createSvelteConfig,
   createTsConfig,
   createUnicornConfig,
+  createUnocssConfig,
   createVueConfig
 } from './configs';
 import { createOptions } from './options';
@@ -34,6 +35,7 @@ export async function defineConfig(options: Partial<Options> = {}, ...userConfig
   const reactNative = await createReactNativeConfig(opts['react-native']);
   const svelte = await createSvelteConfig(opts.svelte, opts.prettierRules);
   const astro = await createAstroConfig(opts.astro);
+  const unocss = await createUnocssConfig(opts.unocss);
   const prettier = await createPrettierConfig(opts.prettierRules);
   const formatter = await createFormatterConfig(opts.formatter, opts.prettierRules);
 
@@ -52,6 +54,7 @@ export async function defineConfig(options: Partial<Options> = {}, ...userConfig
     ...solid,
     ...astro,
     ...svelte,
+    ...unocss,
     ...userResolved,
     ...prettier,
     ...formatter

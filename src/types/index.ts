@@ -65,11 +65,15 @@ export interface BaseOptions {
 
 export type Options = Partial<BaseOptions> & {
   vue?: VueOptions | boolean;
-} & OnDemandRuleOptions;
+} & OnDemandRuleOptions & {
+    unocss?: boolean;
+  };
 
 export type ParsedOptions = BaseOptions & {
   vue?: RequiredVueOptions;
-} & Partial<RequiredOnDemandRuleOptions>;
+} & Partial<RequiredOnDemandRuleOptions> & {
+    unocss?: boolean;
+  };
 
 export type {
   FlatConfigItem,

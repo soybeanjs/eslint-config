@@ -8,5 +8,6 @@ export * from './react';
 export * from './solid';
 export * from './svelte';
 export * from './astro';
+export * from './unocss';
 export * from './prettier';
 export * from './formatter';

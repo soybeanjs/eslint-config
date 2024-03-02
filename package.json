@@ -55,6 +55,7 @@
     "update-pkg": "soy ncu"
   },
   "peerDependencies": {
+    "@unocss/eslint-config": ">=0.58.0",
     "eslint": ">=8.40.0",
     "eslint-plugin-astro": ">=0.30.0",
     "eslint-plugin-react": ">=7.0.0",
@@ -72,6 +73,9 @@
   },
   "peerDependenciesMeta": {
     "@toml-tools/parser": {
+      "optional": true
+    },
+    "@unocss/eslint-config": {
       "optional": true
     },
     "eslint-plugin-astro": {
@@ -141,6 +145,7 @@
     "@types/prompts": "2.4.9",
     "@types/react": "18.2.61",
     "@types/react-dom": "18.2.19",
+    "@unocss/eslint-config": "0.58.5",
     "astro": "4.4.9",
     "eslint": "8.57.0",
     "eslint-plugin-astro": "0.31.4",
