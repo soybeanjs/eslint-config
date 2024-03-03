@@ -136,7 +136,7 @@
     "prompts": "2.4.2"
   },
   "devDependencies": {
-    "@soybeanjs/cli": "1.0.7",
+    "@soybeanjs/cli": "1.0.9",
     "@toml-tools/parser": "1.0.0",
     "@types/eslint": "8.56.5",
     "@types/eslint-config-prettier": "6.11.3",
