@@ -1,6 +1,18 @@
 # Changelog
 
 
+## [v1.2.4](https://github.com/soybeanjs/eslint-config/compare/v1.2.3...v1.2.4) (24-03-13)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**:
+  - update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(236ef)</samp>](https://github.com/soybeanjs/eslint-config/commit/236efb1)
+  - update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(55f6f)</samp>](https://github.com/soybeanjs/eslint-config/commit/55f6fbf)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.2.3-beta.1](https://github.com/soybeanjs/eslint-config/compare/v1.2.3-beta.0...v1.2.3-beta.1) (24-03-03)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
