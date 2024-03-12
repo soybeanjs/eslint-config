@@ -18,7 +18,7 @@ export default defineConfig(
     solid: { files: ['**/*solid.tsx'] },
     svelte: true,
     astro: true,
-    unocss: true,
+    unocss: false,
     formatter: {
       html: true,
       css: true,
