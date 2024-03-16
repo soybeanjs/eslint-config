@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v1.2.5](https://github.com/soybeanjs/eslint-config/compare/v1.2.4...v1.2.5) (24-03-17)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: turn off some rules &nbsp;-&nbsp; by @honghuangdc [<samp>(69ccd)</samp>](https://github.com/soybeanjs/eslint-config/commit/69ccd48)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(c64ba)</samp>](https://github.com/soybeanjs/eslint-config/commit/c64ba39)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.2.4](https://github.com/soybeanjs/eslint-config/compare/v1.2.3...v1.2.4) (24-03-13)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
