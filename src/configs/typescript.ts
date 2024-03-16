@@ -37,6 +37,7 @@ export async function createTsRules(): Promise<FlatConfigItem['rules']> {
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': 'error',
     // off
+    '@typescript-eslint/ban-types': 'off',
     '@typescript-eslint/consistent-type-definitions': 'off',
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-explicit-any': 'off',

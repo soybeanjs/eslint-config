@@ -149,6 +149,7 @@ export function createJsConfig() {
         'prefer-destructuring': 'off',
         'prefer-named-capture-group': 'off',
         'prefer-regex-literals': ['error', { disallowRedundantWrapping: true }],
+        'require-atomic-updates': 'off',
         'require-await': 'off',
         'require-unicode-regexp': 'off',
         'sort-imports': [
