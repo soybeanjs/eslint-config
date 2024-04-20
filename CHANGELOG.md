@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.3.0](https://github.com/soybeanjs/eslint-config/compare/v1.2.5...v1.3.0) (24-04-20)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: sopprt eslint v9 &nbsp;-&nbsp; by @honghuangdc [<samp>(39567)</samp>](https://github.com/soybeanjs/eslint-config/commit/3956726)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.2.5](https://github.com/soybeanjs/eslint-config/compare/v1.2.4...v1.2.5) (24-03-17)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
