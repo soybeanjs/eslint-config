@@ -15,7 +15,6 @@ export default defineConfig(
   {
     vue: true,
     react: { files: ['**/*react.tsx'] },
-    solid: { files: ['**/*solid.tsx'] },
     svelte: true,
     astro: true,
     unocss: false,
