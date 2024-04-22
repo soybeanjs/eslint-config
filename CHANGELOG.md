@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.3.2](https://github.com/soybeanjs/eslint-config/compare/v1.3.1...v1.3.2) (24-04-22)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: update config reportUnusedDisableDirectives: false &nbsp;-&nbsp; by @honghuangdc [<samp>(cd26b)</samp>](https://github.com/soybeanjs/eslint-config/commit/cd26b3d)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.3.1](https://github.com/soybeanjs/eslint-config/compare/v1.3.0...v1.3.1) (24-04-22)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
