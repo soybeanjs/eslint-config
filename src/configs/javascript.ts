@@ -25,6 +25,9 @@ export function createJsConfig() {
         },
         sourceType: 'module'
       },
+      linterOptions: {
+        reportUnusedDisableDirectives: false
+      },
       rules: {
         ...jsRules.configs.all.rules,
         'accessor-pairs': ['error', { enforceForClassMembers: true, setWithoutGet: true }],
