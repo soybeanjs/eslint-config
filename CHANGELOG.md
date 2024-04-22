@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v1.3.1](https://github.com/soybeanjs/eslint-config/compare/v1.3.0...v1.3.1) (24-04-22)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: turn off rule: no-useless-assignment &nbsp;-&nbsp; by @honghuangdc [<samp>(0d7e9)</samp>](https://github.com/soybeanjs/eslint-config/commit/0d7e980)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: update pnpm version &nbsp;-&nbsp; by @honghuangdc [<samp>(f013a)</samp>](https://github.com/soybeanjs/eslint-config/commit/f013abe)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.3.0](https://github.com/soybeanjs/eslint-config/compare/v1.2.5...v1.3.0) (24-04-20)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
