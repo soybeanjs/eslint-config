@@ -122,6 +122,7 @@ export function createJsConfig() {
             argsIgnorePattern: '^_'
           }
         ],
+        'no-useless-assignment': 'off',
         'no-use-before-define': ['error', { functions: false, classes: false, variables: true }],
         'object-shorthand': [
           'error',
