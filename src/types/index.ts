@@ -21,6 +21,8 @@ export interface BaseOptions {
   cwd: string;
   /** The globs to ignore lint */
   ignores: string[];
+  /** The override rules */
+  overrides: FlatConfigItem['rules'];
   /**
    * Default prettier rules
    *

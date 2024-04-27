@@ -39,6 +39,10 @@ export async function defineConfig(options: Partial<Options> = {}, ...userConfig
   const prettier = await createPrettierConfig(opts.prettierRules);
   const formatter = await createFormatterConfig(opts.formatter, opts.prettierRules);
 
+  const overrides: FlatConfigItem = {
+    rules: opts.overrides
+  };
+
   const userResolved = await Promise.all(userConfigs);
 
   const configs: FlatConfigItem[] = [
@@ -55,6 +59,7 @@ export async function defineConfig(options: Partial<Options> = {}, ...userConfig
     ...astro,
     ...svelte,
     ...unocss,
+    overrides,
     ...userResolved,
     ...prettier,
     ...formatter

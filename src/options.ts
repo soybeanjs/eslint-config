@@ -8,6 +8,7 @@ export async function createOptions(options: Partial<Options> = {}) {
   const opts: ParsedOptions = {
     cwd: process.cwd(),
     ignores: GLOB_EXCLUDE,
+    overrides: {},
     prettierRules: {
       ...DEFAULT_PRETTIER_RULES
     },
@@ -19,7 +20,7 @@ export async function createOptions(options: Partial<Options> = {}) {
     }
   };
 
-  const { cwd, ignores, prettierRules, usePrettierrc, formatter, unocss, ...rest } = options;
+  const { cwd, ignores, overrides, prettierRules, usePrettierrc, formatter, unocss, ...rest } = options;
 
   if (cwd) {
     opts.cwd = cwd;
@@ -27,6 +28,10 @@ export async function createOptions(options: Partial<Options> = {}) {
 
   if (ignores?.length) {
     opts.ignores = [...opts.ignores, ...ignores];
+  }
+
+  if (overrides) {
+    opts.overrides = overrides;
   }
 
   if (prettierRules) {

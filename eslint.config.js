@@ -11,30 +11,26 @@ const useBuild = false;
 /** @type {import('./src/index.ts').defineConfig} */
 const defineConfig = useBuild ? defineConfig2 : defineConfig1;
 
-export default defineConfig(
-  {
-    vue: true,
-    react: { files: ['**/*react.tsx'] },
-    svelte: true,
-    astro: true,
-    unocss: false,
-    formatter: {
-      html: true,
-      css: true,
-      json: true,
-      markdown: true,
-      yaml: true,
-      toml: true
-    }
+export default defineConfig({
+  vue: true,
+  react: { files: ['**/*react.tsx'] },
+  svelte: true,
+  astro: true,
+  unocss: false,
+  formatter: {
+    html: true,
+    css: true,
+    json: true,
+    markdown: true,
+    yaml: true,
+    toml: true
   },
-  {
-    rules: {
-      'vue/multi-word-component-names': [
-        'warn',
-        {
-          ignores: ['index', 'App', '[id]']
-        }
-      ]
-    }
+  overrides: {
+    'vue/multi-word-component-names': [
+      'warn',
+      {
+        ignores: ['index', 'App', '[id]']
+      }
+    ]
   }
-);
+});
