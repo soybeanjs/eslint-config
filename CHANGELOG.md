@@ -1,6 +1,22 @@
 # Changelog
 
 
+## [v1.3.3](https://github.com/soybeanjs/eslint-config/compare/v1.3.2...v1.3.3) (2024-04-27)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: add overrides for options &nbsp;-&nbsp; by @honghuangdc [<samp>(4485b)</samp>](https://github.com/soybeanjs/eslint-config/commit/4485bc3)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**:
+  - update deps & fix astro config &nbsp;-&nbsp; by @honghuangdc [<samp>(60049)</samp>](https://github.com/soybeanjs/eslint-config/commit/60049af)
+  - add packageManager &nbsp;-&nbsp; by @honghuangdc [<samp>(0eaf1)</samp>](https://github.com/soybeanjs/eslint-config/commit/0eaf1a3)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.3.2](https://github.com/soybeanjs/eslint-config/compare/v1.3.1...v1.3.2) (24-04-22)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
