@@ -12,9 +12,8 @@ export async function createAstroConfig(
 
   await ensurePackages(['eslint-plugin-astro', 'astro-eslint-parser', 'prettier-plugin-astro']);
 
-  const [pluginAstro, parserAstro, pluginTs, pluginPrettier] = await Promise.all([
+  const [pluginAstro, pluginTs, pluginPrettier] = await Promise.all([
     interopDefault(import('eslint-plugin-astro')),
-    interopDefault(import('astro-eslint-parser')),
     interopDefault(import('@typescript-eslint/eslint-plugin')),
     interopDefault(import('eslint-plugin-prettier'))
   ]);
@@ -29,25 +28,15 @@ export async function createAstroConfig(
   };
 
   const configs: FlatConfigItem[] = [
+    ...(pluginAstro.configs.recommended as FlatConfigItem[]),
     {
       files,
-      languageOptions: {
-        parser: parserAstro,
-        parserOptions: {
-          extraFileExtensions: ['.astro'],
-          parser: '@typescript-eslint/parser',
-          sourceType: 'module'
-        }
-      },
       plugins: {
         '@typescript-eslint': pluginTs,
-        astro: pluginAstro,
         prettier: pluginPrettier
       },
-      processor: pluginAstro.processors.astro,
       rules: {
         ...tsRules,
-        ...(pluginAstro.configs.recommended.rules as FlatConfigItem['rules']),
         ...overrides,
         'prettier/prettier': [
           'warn',
@@ -56,12 +45,6 @@ export async function createAstroConfig(
             parser: 'astro'
           }
         ]
-      }
-    },
-    {
-      files: ['**/*.astro/*.js', '*.astro/*.js'],
-      languageOptions: {
-        parser: '@typescript-eslint/parser'
       }
     }
   ];
