@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.3.4](https://github.com/soybeanjs/eslint-config/compare/v1.3.3...v1.3.4) (2024-05-05)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: update deps & update config &nbsp;-&nbsp; by @honghuangdc [<samp>(68b91)</samp>](https://github.com/soybeanjs/eslint-config/commit/68b9189)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.3.3](https://github.com/soybeanjs/eslint-config/compare/v1.3.2...v1.3.3) (2024-04-27)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
