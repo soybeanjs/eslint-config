@@ -14,6 +14,7 @@ const defineConfig = useBuild ? defineConfig2 : defineConfig1;
 export default defineConfig({
   vue: true,
   react: { files: ['**/*react.tsx'] },
+  solid: { files: ['**/*solid.tsx'] },
   svelte: true,
   astro: true,
   unocss: false,
