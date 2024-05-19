@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [v1.3.5](https://github.com/soybeanjs/eslint-config/compare/v1.3.4...v1.3.5) (2024-05-20)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: turn off rule: vue/prefer-true-attribute-shorthand &nbsp;-&nbsp; by @honghuangdc [<samp>(74491)</samp>](https://github.com/soybeanjs/eslint-config/commit/7449133)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(2fed9)</samp>](https://github.com/soybeanjs/eslint-config/commit/2fed990)
+- **projects**: update pnpm version &nbsp;-&nbsp; by @honghuangdc [<samp>(735c3)</samp>](https://github.com/soybeanjs/eslint-config/commit/735c3b8)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.3.4](https://github.com/soybeanjs/eslint-config/compare/v1.3.3...v1.3.4) (2024-05-05)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
