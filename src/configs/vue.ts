@@ -97,7 +97,7 @@ export async function createVueConfig(options?: RequiredVueOptions) {
         'vue/padding-line-between-blocks': 'warn',
         'vue/prefer-define-options': 'warn',
         'vue/prefer-separate-static-class': 'warn',
-        'vue/prefer-true-attribute-shorthand': 'warn',
+        // 'vue/prefer-true-attribute-shorthand': 'warn',
         'vue/prop-name-casing': ['warn', 'camelCase'],
         'vue/require-macro-variable-name': [
           'warn',
