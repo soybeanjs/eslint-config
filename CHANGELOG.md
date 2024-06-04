@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v1.3.6](https://github.com/soybeanjs/eslint-config/compare/v1.3.5...v1.3.6) (2024-06-05)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**:
+  - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(e2e0c)</samp>](https://github.com/soybeanjs/eslint-config/commit/e2e0c11)
+- **projects**:
+  - update pnpm version &nbsp;-&nbsp; by @soybeanjs [<samp>(9550d)</samp>](https://github.com/soybeanjs/eslint-config/commit/9550d5d)
+  - update tsx require ts file &nbsp;-&nbsp; by @soybeanjs [<samp>(2e653)</samp>](https://github.com/soybeanjs/eslint-config/commit/2e65393)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.3.5](https://github.com/soybeanjs/eslint-config/compare/v1.3.4...v1.3.5) (2024-05-20)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
