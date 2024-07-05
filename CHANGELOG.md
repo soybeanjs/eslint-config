@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [v1.3.8](https://github.com/soybeanjs/eslint-config/compare/v1.3.7...v1.3.8) (2024-07-05)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(0ed54)</samp>](https://github.com/soybeanjs/eslint-config/commit/0ed543f)
+- **projects**: update pnpm version &nbsp;-&nbsp; by @honghuangdc [<samp>(5306a)</samp>](https://github.com/soybeanjs/eslint-config/commit/5306a93)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.3.7](https://github.com/soybeanjs/eslint-config/compare/v1.3.6...v1.3.7) (2024-06-14)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
