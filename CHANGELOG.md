@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [v1.4.0](https://github.com/soybeanjs/eslint-config/compare/v1.3.8...v1.4.0) (2024-08-01)
+
+### &nbsp;&nbsp;&nbsp;🚨 Breaking Changes
+
+- **projects**: support different overrides in one config &nbsp;-&nbsp; by @honghuangdc [<samp>(683f0)</samp>](https://github.com/soybeanjs/eslint-config/commit/683f060)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(087e8)</samp>](https://github.com/soybeanjs/eslint-config/commit/087e8d8)
+- **projects**: update vscode settings &nbsp;-&nbsp; by @honghuangdc [<samp>(cd145)</samp>](https://github.com/soybeanjs/eslint-config/commit/cd14568)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.3.8](https://github.com/soybeanjs/eslint-config/compare/v1.3.7...v1.3.8) (2024-07-05)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
