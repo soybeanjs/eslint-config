@@ -1,6 +1,7 @@
 import {
   createAstroConfig,
   createFormatterConfig,
+  createGitignoreRule,
   createImportConfig,
   createJsConfig,
   createNodeConfig,
@@ -15,6 +16,7 @@ import {
   createVueConfig
 } from './configs';
 import { createOptions } from './options';
+import { getOverridesRules } from './shared';
 import type { Awaitable, FlatConfigItem, Options } from './types';
 
 export async function defineConfig(options: Partial<Options> = {}, ...userConfigs: Awaitable<FlatConfigItem>[]) {
@@ -24,28 +26,28 @@ export async function defineConfig(options: Partial<Options> = {}, ...userConfig
     ignores: opts.ignores
   };
 
-  const js = createJsConfig();
-  const node = await createNodeConfig();
-  const imp = await createImportConfig();
-  const unicorn = await createUnicornConfig();
-  const ts = await createTsConfig();
-  const vue = await createVueConfig(opts.vue);
-  const solid = await createSolidConfig(opts.solid);
-  const react = await createReactConfig(opts.react);
-  const reactNative = await createReactNativeConfig(opts['react-native']);
-  const svelte = await createSvelteConfig(opts.svelte, opts.prettierRules);
-  const astro = await createAstroConfig(opts.astro);
-  const unocss = await createUnocssConfig(opts.unocss);
+  const overrideRecord = getOverridesRules(opts.overrides);
+
+  const gitignore = await createGitignoreRule(opts.gitignore);
+  const js = createJsConfig(overrideRecord.js);
+  const node = await createNodeConfig(overrideRecord.n);
+  const imp = await createImportConfig(overrideRecord.import);
+  const unicorn = await createUnicornConfig(overrideRecord.unicorn);
+  const ts = await createTsConfig(overrideRecord.ts);
+  const vue = await createVueConfig(opts.vue, overrideRecord.vue);
+  const solid = await createSolidConfig(opts.solid, overrideRecord.solid);
+  const react = await createReactConfig(opts.react, overrideRecord.react);
+  const reactNative = await createReactNativeConfig(opts['react-native'], overrideRecord['react-native']);
+  const svelte = await createSvelteConfig(opts.svelte, opts.prettierRules, overrideRecord.svelte);
+  const astro = await createAstroConfig(opts.astro, opts.prettierRules, overrideRecord.astro);
+  const unocss = await createUnocssConfig(opts.unocss, overrideRecord.unocss);
   const prettier = await createPrettierConfig(opts.prettierRules);
   const formatter = await createFormatterConfig(opts.formatter, opts.prettierRules);
-
-  const overrides: FlatConfigItem = {
-    rules: opts.overrides
-  };
 
   const userResolved = await Promise.all(userConfigs);
 
   const configs: FlatConfigItem[] = [
+    ...gitignore,
     ignore,
     ...js,
     ...node,
@@ -59,7 +61,6 @@ export async function defineConfig(options: Partial<Options> = {}, ...userConfig
     ...astro,
     ...svelte,
     ...unocss,
-    overrides,
     ...userResolved,
     ...prettier,
     ...formatter

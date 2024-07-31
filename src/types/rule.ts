@@ -11,6 +11,7 @@ import type {
   UnicornRules,
   VueRules
 } from '@antfu/eslint-define-config';
+import type { FlatGitignoreOptions } from 'eslint-config-flat-gitignore';
 import type { BuiltInParserName, LiteralUnion, RequiredOptions } from 'prettier';
 import type { JsdocOptions } from 'prettier-plugin-jsdoc';
 
@@ -36,8 +37,6 @@ export type EslintFlatRules = WrapRuleConfig<
   >
 >;
 
-type PartialEslintFlatRules = Partial<EslintFlatRules>;
-
 export type FlatConfigItem = Omit<FlatESLintConfigItem<EslintFlatRules, false>, 'plugins'> & {
   plugins?: Record<string, any>;
 };
@@ -45,8 +44,6 @@ export type FlatConfigItem = Omit<FlatESLintConfigItem<EslintFlatRules, false>, 
 export type RuleBaseOptions<T = NonNullable<unknown>> = T & {
   /** The glob patterns to lint */
   files?: string[];
-  /** Override rules */
-  overrides?: PartialEslintFlatRules;
 };
 
 export type RequiredRuleBaseOptions = Required<RuleBaseOptions>;
@@ -67,3 +64,5 @@ export type RequiredVueOptions = Required<VueOptions>;
 export type OnDemandRuleOptions = Partial<Record<Exclude<OnDemandRuleKey, 'vue'>, RuleBaseOptions | boolean>>;
 
 export type RequiredOnDemandRuleOptions = Record<Exclude<OnDemandRuleKey, 'vue'>, RequiredRuleBaseOptions>;
+
+export type { FlatGitignoreOptions };

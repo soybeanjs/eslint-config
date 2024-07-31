@@ -1,5 +1,6 @@
 import type {
   FlatConfigItem,
+  FlatGitignoreOptions,
   OnDemandRuleKey,
   OnDemandRuleOptions,
   PartialPrettierExtendedOptions,
@@ -21,8 +22,17 @@ export interface BaseOptions {
   cwd: string;
   /** The globs to ignore lint */
   ignores: string[];
+  /**
+   * Enable gitignore support.
+   *
+   * Passing an object to configure the options.
+   *
+   * @default true
+   * @see https://github.com/antfu/eslint-config-flat-gitignore
+   */
+  gitignore?: boolean | FlatGitignoreOptions;
   /** The override rules */
-  overrides: FlatConfigItem['rules'];
+  overrides: Record<string, string>;
   /**
    * Default prettier rules
    *

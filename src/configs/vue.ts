@@ -2,10 +2,10 @@ import { ensurePackages, interopDefault } from '../shared';
 import type { FlatConfigItem, RequiredVueOptions } from '../types';
 import { createTsRules } from './typescript';
 
-export async function createVueConfig(options?: RequiredVueOptions) {
+export async function createVueConfig(options?: RequiredVueOptions, overrides: Record<string, string> = {}) {
   if (!options) return [];
 
-  const { version, files, overrides } = options;
+  const { version, files } = options;
 
   await ensurePackages(['eslint-plugin-vue', 'vue-eslint-parser']);
 

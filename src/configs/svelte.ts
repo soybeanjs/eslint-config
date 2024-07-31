@@ -4,11 +4,12 @@ import { createTsRules } from './typescript';
 
 export async function createSvelteConfig(
   options?: RequiredRuleBaseOptions,
-  prettierRules: PartialPrettierExtendedOptions = {}
+  prettierRules: PartialPrettierExtendedOptions = {},
+  overrides: Record<string, string> = {}
 ) {
   if (!options) return [];
 
-  const { files, overrides } = options;
+  const { files } = options;
 
   await ensurePackages(['eslint-plugin-svelte', 'svelte-eslint-parser', 'prettier-plugin-svelte']);
 

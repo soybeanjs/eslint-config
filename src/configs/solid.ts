@@ -1,10 +1,10 @@
 import { ensurePackages, interopDefault } from '../shared';
 import type { FlatConfigItem, RequiredRuleBaseOptions } from '../types';
 
-export async function createSolidConfig(options?: RequiredRuleBaseOptions) {
+export async function createSolidConfig(options?: RequiredRuleBaseOptions, overrides: Record<string, string> = {}) {
   if (!options) return [];
 
-  const { files, overrides } = options;
+  const { files } = options;
 
   await ensurePackages(['eslint-plugin-solid']);
 
@@ -27,7 +27,7 @@ export async function createSolidConfig(options?: RequiredRuleBaseOptions) {
       },
       rules: {
         ...pluginSolid.configs.typescript.rules,
-        ...overrides
+        ...(overrides as any)
       }
     }
   ];

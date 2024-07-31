@@ -3,7 +3,7 @@ import jsRules from '@eslint/js';
 import { GLOB_SRC, GLOB_SRC_EXT, GLOB_TESTS } from '../constants/glob';
 import type { FlatConfigItem } from '../types';
 
-export function createJsConfig() {
+export function createJsConfig(overrides: Record<string, string> = {}) {
   const js: FlatConfigItem[] = [
     {
       languageOptions: {
@@ -179,7 +179,8 @@ export function createJsConfig() {
             }
           }
         ],
-        'unicode-bom': ['error', 'never']
+        'unicode-bom': ['error', 'never'],
+        ...overrides
       }
     },
     {

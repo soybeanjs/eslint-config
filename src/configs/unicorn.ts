@@ -1,7 +1,7 @@
 import { interopDefault } from '../shared';
 import type { FlatConfigItem } from '../types';
 
-export async function createUnicornConfig() {
+export async function createUnicornConfig(overrides: Record<string, string> = {}) {
   const pluginUnicorn = await interopDefault(import('eslint-plugin-unicorn'));
 
   const configs: FlatConfigItem[] = [
@@ -22,7 +22,8 @@ export async function createUnicornConfig() {
         'unicorn/prefer-number-properties': 'error',
         'unicorn/prefer-string-starts-ends-with': 'error',
         'unicorn/prefer-type-error': 'error',
-        'unicorn/throw-new-error': 'error'
+        'unicorn/throw-new-error': 'error',
+        ...overrides
       }
     }
   ];

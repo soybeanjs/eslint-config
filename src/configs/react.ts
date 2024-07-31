@@ -2,10 +2,10 @@ import { isPackageExists } from 'local-pkg';
 import { ensurePackages, interopDefault } from '../shared';
 import type { FlatConfigItem, RequiredRuleBaseOptions } from '../types';
 
-export async function createReactConfig(options?: RequiredRuleBaseOptions) {
+export async function createReactConfig(options?: RequiredRuleBaseOptions, overrides: Record<string, string> = {}) {
   if (!options) return [];
 
-  const { files, overrides } = options;
+  const { files } = options;
 
   await ensurePackages(['eslint-plugin-react', 'eslint-plugin-react-hooks', 'eslint-plugin-react-refresh']);
 
@@ -62,10 +62,13 @@ export async function createReactConfig(options?: RequiredRuleBaseOptions) {
   return configs;
 }
 
-export async function createReactNativeConfig(options?: RequiredRuleBaseOptions) {
+export async function createReactNativeConfig(
+  options?: RequiredRuleBaseOptions,
+  overrides: Record<string, string> = {}
+) {
   if (!options) return [];
 
-  const { files, overrides } = options;
+  const { files } = options;
 
   await ensurePackages(['eslint-plugin-react-native']);
 
@@ -91,7 +94,7 @@ export async function createReactNativeConfig(options?: RequiredRuleBaseOptions)
       },
       rules: {
         ...pluginReactNative.configs.all.rules,
-        ...overrides
+        ...(overrides as any)
       }
     }
   ];

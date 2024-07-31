@@ -93,6 +93,10 @@ interface Options {
    */
   ignores: string[];
   /**
+   * 覆盖的规则
+   */
+  overrides?: FlatConfigItem['rules'];
+  /**
    * 默认的Prettier配置
    *
    * @default
@@ -146,10 +150,6 @@ type RuleBaseOptions<T = NonNullable<unknown>> = T & {
    * 需要被检测的文件
    */
   files?: string[];
-  /**
-   * 覆盖的规则
-   */
-  overrides?: PartialEslintFlatRules;
 };
 
 type VueOptions = RuleBaseOptions<{

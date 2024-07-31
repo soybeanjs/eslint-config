@@ -1,7 +1,7 @@
 import { interopDefault } from '../shared';
 import type { FlatConfigItem } from '../types';
 
-export async function createNodeConfig() {
+export async function createNodeConfig(overrides: Record<string, string> = {}) {
   const pluginNode = await interopDefault(import('eslint-plugin-n'));
 
   const configs: FlatConfigItem[] = [
@@ -17,7 +17,8 @@ export async function createNodeConfig() {
         'n/no-path-concat': 'error',
         'n/prefer-global/buffer': ['error', 'never'],
         'n/prefer-global/process': ['error', 'never'],
-        'n/process-exit-as-throw': 'error'
+        'n/process-exit-as-throw': 'error',
+        ...overrides
       }
     }
   ];

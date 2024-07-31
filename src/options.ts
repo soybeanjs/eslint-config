@@ -8,6 +8,7 @@ export async function createOptions(options: Partial<Options> = {}) {
   const opts: ParsedOptions = {
     cwd: process.cwd(),
     ignores: GLOB_EXCLUDE,
+    gitignore: true,
     overrides: {},
     prettierRules: {
       ...DEFAULT_PRETTIER_RULES
@@ -20,7 +21,7 @@ export async function createOptions(options: Partial<Options> = {}) {
     }
   };
 
-  const { cwd, ignores, overrides, prettierRules, usePrettierrc, formatter, unocss, ...rest } = options;
+  const { cwd, ignores, gitignore, overrides, prettierRules, usePrettierrc, formatter, unocss, ...rest } = options;
 
   if (cwd) {
     opts.cwd = cwd;
@@ -28,6 +29,10 @@ export async function createOptions(options: Partial<Options> = {}) {
 
   if (ignores?.length) {
     opts.ignores = [...opts.ignores, ...ignores];
+  }
+
+  if (gitignore) {
+    opts.gitignore = gitignore;
   }
 
   if (overrides) {
@@ -94,8 +99,7 @@ function createItemDemandOptions<K extends OnDemandRuleKey>(key: K, options: Opt
   if (key === 'vue') {
     const vueOptions: RequiredVueOptions = {
       version: 3,
-      files,
-      overrides: {}
+      files
     };
 
     if (typeof options === 'object') {
@@ -106,8 +110,7 @@ function createItemDemandOptions<K extends OnDemandRuleKey>(key: K, options: Opt
   }
 
   const itemOptions: RequiredRuleBaseOptions = {
-    files,
-    overrides: {}
+    files
   };
 
   if (typeof options === 'object') {

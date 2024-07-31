@@ -1,3 +1,4 @@
+export * from './gitignore';
 export * from './javascript';
 export * from './node';
 export * from './import';

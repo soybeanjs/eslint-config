@@ -48,7 +48,7 @@ export async function createTsRules(): Promise<FlatConfigItem['rules']> {
   return tsRules as unknown as FlatConfigItem['rules'];
 }
 
-export async function createTsConfig() {
+export async function createTsConfig(overrides: Record<string, string> = {}) {
   const [pluginTs, parserTs] = await Promise.all([
     interopDefault(import('@typescript-eslint/eslint-plugin')),
     interopDefault(import('@typescript-eslint/parser'))
@@ -69,7 +69,8 @@ export async function createTsConfig() {
         '@typescript-eslint': pluginTs
       },
       rules: {
-        ...tsRules
+        ...tsRules,
+        ...(overrides as any)
       }
     },
     {

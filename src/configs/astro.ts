@@ -4,11 +4,12 @@ import { createTsRules } from './typescript';
 
 export async function createAstroConfig(
   options?: RequiredRuleBaseOptions,
-  prettierRules: PartialPrettierExtendedOptions = {}
+  prettierRules: PartialPrettierExtendedOptions = {},
+  overrides: Record<string, string> = {}
 ) {
   if (!options) return [];
 
-  const { files, overrides } = options;
+  const { files } = options;
 
   await ensurePackages(['eslint-plugin-astro', 'astro-eslint-parser', 'prettier-plugin-astro']);
 

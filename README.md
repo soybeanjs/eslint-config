@@ -141,8 +141,6 @@ interface Options {
 type RuleBaseOptions<T = NonNullable<unknown>> = T & {
   /** The glob patterns to lint */
   files?: string[];
-  /** Override rules */
-  overrides?: PartialEslintFlatRules;
 };
 
 type VueOptions = RuleBaseOptions<{

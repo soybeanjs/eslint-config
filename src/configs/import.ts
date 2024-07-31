@@ -1,7 +1,7 @@
-import type { FlatConfigItem } from '../types';
 import { interopDefault } from '../shared';
+import type { FlatConfigItem } from '../types';
 
-export async function createImportConfig() {
+export async function createImportConfig(overrides: Record<string, string> = {}) {
   const pluginImport = await interopDefault(import('eslint-plugin-import-x'));
 
   const configs: FlatConfigItem[] = [
@@ -22,7 +22,8 @@ export async function createImportConfig() {
             groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object'],
             pathGroups: [{ group: 'internal', pattern: '{{@,~}/,#}**' }]
           }
-        ]
+        ],
+        ...overrides
       }
     }
   ];
