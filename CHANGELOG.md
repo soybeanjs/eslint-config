@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.4.1](https://github.com/soybeanjs/eslint-config/compare/v1.4.0...v1.4.1) (2024-09-07)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(2482c)</samp>](https://github.com/soybeanjs/eslint-config/commit/2482c34)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.4.0](https://github.com/soybeanjs/eslint-config/compare/v1.3.8...v1.4.0) (2024-08-01)
 
 ### &nbsp;&nbsp;&nbsp;🚨 Breaking Changes
