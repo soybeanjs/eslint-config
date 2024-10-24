@@ -72,9 +72,6 @@ importers:
       '@toml-tools/parser':
         specifier: 1.0.0
         version: 1.0.0
-      '@types/eslint':
-        specifier: 9.6.1
-        version: 9.6.1
       '@types/eslint-config-prettier':
         specifier: 6.11.3
         version: 6.11.3

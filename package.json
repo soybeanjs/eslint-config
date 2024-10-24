@@ -139,7 +139,6 @@
   "devDependencies": {
     "@soybeanjs/cli": "1.1.1",
     "@toml-tools/parser": "1.0.0",
-    "@types/eslint": "9.6.1",
     "@types/eslint-config-prettier": "6.11.3",
     "@types/eslint__js": "8.42.3",
     "@types/node": "22.7.9",

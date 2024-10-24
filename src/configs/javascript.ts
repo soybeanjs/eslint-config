@@ -7,10 +7,10 @@ export function createJsConfig(overrides: Record<string, string> = {}) {
   const js: FlatConfigItem[] = [
     {
       languageOptions: {
-        ecmaVersion: 2022,
+        ecmaVersion: 2023,
         globals: {
           ...globals.browser,
-          ...globals.es2021,
+          ...globals.es2025,
           ...globals.node,
           document: 'readonly',
           navigator: 'readonly',
