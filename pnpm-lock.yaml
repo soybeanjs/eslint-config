@@ -91,8 +91,8 @@ importers:
         specifier: 18.3.1
         version: 18.3.1
       '@unocss/core':
-        specifier: ^0.63.6
-        version: 0.63.6
+        specifier: ^0.64.0
+        version: 0.64.0
       '@unocss/eslint-config':
         specifier: 0.63.6
         version: 0.63.6(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3)
@@ -1203,6 +1203,9 @@ packages:
 
   '@unocss/core@0.63.6':
     resolution: {integrity: sha512-Q4QPgJ271Up89+vIqqOKgtdCKkFpHqvHN8W1LUlKPqtYnOvVYaOIVNAZowaIdEhPuc83yLc6Tg2+7riK18QKEw==}
+
+  '@unocss/core@0.64.0':
+    resolution: {integrity: sha512-Qb8wWPYNlTagCdJGzULew+e3NMM8Bd7fr38lDLgrMj+njop+wzkSe1ZZOyMMH9yHSq/Rznn5eCjnyzyHwxGslQ==}
 
   '@unocss/eslint-config@0.63.6':
     resolution: {integrity: sha512-D+fTTy+3I3yMAVvpziSZA3gc2L6nI4Y/BIXd6QUu1MEL4y9lKmgyEbt/Z9Tnwt5FUyX/2kZMx0WcY4h3S8XxBw==}
@@ -4997,6 +5000,8 @@ snapshots:
       - supports-color
 
   '@unocss/core@0.63.6': {}
+
+  '@unocss/core@0.64.0': {}
 
   '@unocss/eslint-config@0.63.6(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3)':
     dependencies:
