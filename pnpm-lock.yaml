@@ -68,7 +68,7 @@ importers:
     devDependencies:
       '@soybeanjs/cli':
         specifier: 1.1.1
-        version: 1.1.1(@toml-tools/parser@1.0.0)(@types/eslint@9.6.1)(@unocss/eslint-config@0.63.6(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-astro@1.3.0(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-react-hooks@5.0.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-native@4.1.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-refresh@0.4.13(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react@7.37.2(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-solid@0.14.3(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-svelte@2.46.0(eslint@9.13.0(jiti@1.21.6))(svelte@5.1.0))(eslint-plugin-vue@9.29.1(eslint@9.13.0(jiti@1.21.6)))(eslint@9.13.0(jiti@1.21.6))(magicast@0.3.5)(prettier-plugin-astro@0.14.1)(prettier-plugin-svelte@3.2.7(prettier@3.3.3)(svelte@5.1.0))(prettier-plugin-toml@2.0.1(prettier@3.3.3))(typescript@5.6.3)(vue-eslint-parser@9.4.3(eslint@9.13.0(jiti@1.21.6)))
+        version: 1.1.1(@toml-tools/parser@1.0.0)(@types/eslint@9.6.1)(@unocss/eslint-config@0.63.6(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-astro@1.3.1(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-react-hooks@5.0.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-native@4.1.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-refresh@0.4.13(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react@7.37.2(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-solid@0.14.3(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-svelte@2.46.0(eslint@9.13.0(jiti@1.21.6))(svelte@5.1.0))(eslint-plugin-vue@9.29.1(eslint@9.13.0(jiti@1.21.6)))(eslint@9.13.0(jiti@1.21.6))(magicast@0.3.5)(prettier-plugin-astro@0.14.1)(prettier-plugin-svelte@3.2.7(prettier@3.3.3)(svelte@5.1.0))(prettier-plugin-toml@2.0.1(prettier@3.3.3))(typescript@5.6.3)(vue-eslint-parser@9.4.3(eslint@9.13.0(jiti@1.21.6)))
       '@toml-tools/parser':
         specifier: 1.0.0
         version: 1.0.0
@@ -106,8 +106,8 @@ importers:
         specifier: 9.13.0
         version: 9.13.0(jiti@1.21.6)
       eslint-plugin-astro:
-        specifier: 1.3.0
-        version: 1.3.0(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3)
+        specifier: 1.3.1
+        version: 1.3.1(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3)
       eslint-plugin-react:
         specifier: 7.37.2
         version: 7.37.2(eslint@9.13.0(jiti@1.21.6))
@@ -1807,6 +1807,12 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
+  eslint-compat-utils@0.6.0:
+    resolution: {integrity: sha512-1vVBdI/HLS6HTHVQCJGlN+LOF0w1Rs/WB9se23mQr84cRM0iMM8PulMFFhQdQ1BvS0cGwjpis4xziI91Rk0l6g==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      eslint: '>=6.0.0'
+
   eslint-config-flat-gitignore@0.3.0:
     resolution: {integrity: sha512-0Ndxo4qGhcewjTzw52TK06Mc00aDtHNTdeeW2JfONgDcLkRO/n/BteMRzNVpLQYxdCC/dFEilfM9fjjpGIJ9Og==}
     peerDependencies:
@@ -1824,8 +1830,8 @@ packages:
   eslint-parser-plain@0.1.0:
     resolution: {integrity: sha512-oOeA6FWU0UJT/Rxc3XF5Cq0nbIZbylm7j8+plqq0CZoE6m4u32OXJrR+9iy4srGMmF6v6pmgvP1zPxSRIGh3sg==}
 
-  eslint-plugin-astro@1.3.0:
-    resolution: {integrity: sha512-T4bAYOdF0V8zqFF/EeQat5xcYQV5nDmLeZgD1eHbcogY94HBOncwZxsOgcPNGpdCLXkpBDNbF2OMtrj26f5RFA==}
+  eslint-plugin-astro@1.3.1:
+    resolution: {integrity: sha512-2XaLCMQm8htW1UvJvy1Zcmg8l0ziskitiUfJTn/w1Mk7r4Mxj0fZeNpN6UTNrm64XBIXSa5h8UCGrg8mdu47+g==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.57.0'
@@ -3176,6 +3182,10 @@ packages:
 
   postcss-selector-parser@6.1.2:
     resolution: {integrity: sha512-Q8qQfPiZ+THO/3ZrOrO0cJJKfpYCagtMUkXbnEfmgUjwXg6z/WBeOyS9APBBPCTSiDV+s4SwQGu8yFsiMRIudg==}
+    engines: {node: '>=4'}
+
+  postcss-selector-parser@7.0.0:
+    resolution: {integrity: sha512-9RbEr1Y7FFfptd/1eEdntyjMwLeghW1bHX9GWjXo19vx4ytPQhANltvVxDggzJl7mnWM+dX28kb6cyS/4iQjlQ==}
     engines: {node: '>=4'}
 
   postcss@8.4.47:
@@ -4626,9 +4636,9 @@ snapshots:
 
   '@sindresorhus/merge-streams@4.0.0': {}
 
-  '@soybeanjs/changelog@0.3.24(@toml-tools/parser@1.0.0)(@types/eslint@9.6.1)(@unocss/eslint-config@0.63.6(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-astro@1.3.0(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-react-hooks@5.0.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-native@4.1.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-refresh@0.4.13(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react@7.37.2(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-solid@0.14.3(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-svelte@2.46.0(eslint@9.13.0(jiti@1.21.6))(svelte@5.1.0))(eslint-plugin-vue@9.29.1(eslint@9.13.0(jiti@1.21.6)))(eslint@9.13.0(jiti@1.21.6))(prettier-plugin-astro@0.14.1)(prettier-plugin-svelte@3.2.7(prettier@3.3.3)(svelte@5.1.0))(prettier-plugin-toml@2.0.1(prettier@3.3.3))(typescript@5.6.3)(vue-eslint-parser@9.4.3(eslint@9.13.0(jiti@1.21.6)))':
+  '@soybeanjs/changelog@0.3.24(@toml-tools/parser@1.0.0)(@types/eslint@9.6.1)(@unocss/eslint-config@0.63.6(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-astro@1.3.1(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-react-hooks@5.0.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-native@4.1.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-refresh@0.4.13(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react@7.37.2(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-solid@0.14.3(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-svelte@2.46.0(eslint@9.13.0(jiti@1.21.6))(svelte@5.1.0))(eslint-plugin-vue@9.29.1(eslint@9.13.0(jiti@1.21.6)))(eslint@9.13.0(jiti@1.21.6))(prettier-plugin-astro@0.14.1)(prettier-plugin-svelte@3.2.7(prettier@3.3.3)(svelte@5.1.0))(prettier-plugin-toml@2.0.1(prettier@3.3.3))(typescript@5.6.3)(vue-eslint-parser@9.4.3(eslint@9.13.0(jiti@1.21.6)))':
     dependencies:
-      '@soybeanjs/eslint-config': 1.4.1(@toml-tools/parser@1.0.0)(@types/eslint@9.6.1)(@unocss/eslint-config@0.63.6(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-astro@1.3.0(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-react-hooks@5.0.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-native@4.1.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-refresh@0.4.13(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react@7.37.2(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-solid@0.14.3(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-svelte@2.46.0(eslint@9.13.0(jiti@1.21.6))(svelte@5.1.0))(eslint-plugin-vue@9.29.1(eslint@9.13.0(jiti@1.21.6)))(eslint@9.13.0(jiti@1.21.6))(prettier-plugin-astro@0.14.1)(prettier-plugin-svelte@3.2.7(prettier@3.3.3)(svelte@5.1.0))(prettier-plugin-toml@2.0.1(prettier@3.3.3))(typescript@5.6.3)(vue-eslint-parser@9.4.3(eslint@9.13.0(jiti@1.21.6)))
+      '@soybeanjs/eslint-config': 1.4.1(@toml-tools/parser@1.0.0)(@types/eslint@9.6.1)(@unocss/eslint-config@0.63.6(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-astro@1.3.1(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-react-hooks@5.0.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-native@4.1.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-refresh@0.4.13(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react@7.37.2(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-solid@0.14.3(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-svelte@2.46.0(eslint@9.13.0(jiti@1.21.6))(svelte@5.1.0))(eslint-plugin-vue@9.29.1(eslint@9.13.0(jiti@1.21.6)))(eslint@9.13.0(jiti@1.21.6))(prettier-plugin-astro@0.14.1)(prettier-plugin-svelte@3.2.7(prettier@3.3.3)(svelte@5.1.0))(prettier-plugin-toml@2.0.1(prettier@3.3.3))(typescript@5.6.3)(vue-eslint-parser@9.4.3(eslint@9.13.0(jiti@1.21.6)))
       cli-progress: 3.12.0
       convert-gitmoji: 0.1.5
       dayjs: 1.11.11
@@ -4655,9 +4665,9 @@ snapshots:
       - typescript
       - vue-eslint-parser
 
-  '@soybeanjs/cli@1.1.1(@toml-tools/parser@1.0.0)(@types/eslint@9.6.1)(@unocss/eslint-config@0.63.6(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-astro@1.3.0(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-react-hooks@5.0.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-native@4.1.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-refresh@0.4.13(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react@7.37.2(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-solid@0.14.3(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-svelte@2.46.0(eslint@9.13.0(jiti@1.21.6))(svelte@5.1.0))(eslint-plugin-vue@9.29.1(eslint@9.13.0(jiti@1.21.6)))(eslint@9.13.0(jiti@1.21.6))(magicast@0.3.5)(prettier-plugin-astro@0.14.1)(prettier-plugin-svelte@3.2.7(prettier@3.3.3)(svelte@5.1.0))(prettier-plugin-toml@2.0.1(prettier@3.3.3))(typescript@5.6.3)(vue-eslint-parser@9.4.3(eslint@9.13.0(jiti@1.21.6)))':
+  '@soybeanjs/cli@1.1.1(@toml-tools/parser@1.0.0)(@types/eslint@9.6.1)(@unocss/eslint-config@0.63.6(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-astro@1.3.1(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-react-hooks@5.0.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-native@4.1.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-refresh@0.4.13(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react@7.37.2(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-solid@0.14.3(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-svelte@2.46.0(eslint@9.13.0(jiti@1.21.6))(svelte@5.1.0))(eslint-plugin-vue@9.29.1(eslint@9.13.0(jiti@1.21.6)))(eslint@9.13.0(jiti@1.21.6))(magicast@0.3.5)(prettier-plugin-astro@0.14.1)(prettier-plugin-svelte@3.2.7(prettier@3.3.3)(svelte@5.1.0))(prettier-plugin-toml@2.0.1(prettier@3.3.3))(typescript@5.6.3)(vue-eslint-parser@9.4.3(eslint@9.13.0(jiti@1.21.6)))':
     dependencies:
-      '@soybeanjs/changelog': 0.3.24(@toml-tools/parser@1.0.0)(@types/eslint@9.6.1)(@unocss/eslint-config@0.63.6(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-astro@1.3.0(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-react-hooks@5.0.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-native@4.1.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-refresh@0.4.13(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react@7.37.2(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-solid@0.14.3(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-svelte@2.46.0(eslint@9.13.0(jiti@1.21.6))(svelte@5.1.0))(eslint-plugin-vue@9.29.1(eslint@9.13.0(jiti@1.21.6)))(eslint@9.13.0(jiti@1.21.6))(prettier-plugin-astro@0.14.1)(prettier-plugin-svelte@3.2.7(prettier@3.3.3)(svelte@5.1.0))(prettier-plugin-toml@2.0.1(prettier@3.3.3))(typescript@5.6.3)(vue-eslint-parser@9.4.3(eslint@9.13.0(jiti@1.21.6)))
+      '@soybeanjs/changelog': 0.3.24(@toml-tools/parser@1.0.0)(@types/eslint@9.6.1)(@unocss/eslint-config@0.63.6(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-astro@1.3.1(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-react-hooks@5.0.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-native@4.1.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-refresh@0.4.13(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react@7.37.2(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-solid@0.14.3(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-svelte@2.46.0(eslint@9.13.0(jiti@1.21.6))(svelte@5.1.0))(eslint-plugin-vue@9.29.1(eslint@9.13.0(jiti@1.21.6)))(eslint@9.13.0(jiti@1.21.6))(prettier-plugin-astro@0.14.1)(prettier-plugin-svelte@3.2.7(prettier@3.3.3)(svelte@5.1.0))(prettier-plugin-toml@2.0.1(prettier@3.3.3))(typescript@5.6.3)(vue-eslint-parser@9.4.3(eslint@9.13.0(jiti@1.21.6)))
       bumpp: 9.5.2(magicast@0.3.5)
       c12: 1.11.2(magicast@0.3.5)
       cac: 6.7.14
@@ -4688,7 +4698,7 @@ snapshots:
       - typescript
       - vue-eslint-parser
 
-  '@soybeanjs/eslint-config@1.4.1(@toml-tools/parser@1.0.0)(@types/eslint@9.6.1)(@unocss/eslint-config@0.63.6(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-astro@1.3.0(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-react-hooks@5.0.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-native@4.1.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-refresh@0.4.13(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react@7.37.2(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-solid@0.14.3(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-svelte@2.46.0(eslint@9.13.0(jiti@1.21.6))(svelte@5.1.0))(eslint-plugin-vue@9.29.1(eslint@9.13.0(jiti@1.21.6)))(eslint@9.13.0(jiti@1.21.6))(prettier-plugin-astro@0.14.1)(prettier-plugin-svelte@3.2.7(prettier@3.3.3)(svelte@5.1.0))(prettier-plugin-toml@2.0.1(prettier@3.3.3))(typescript@5.6.3)(vue-eslint-parser@9.4.3(eslint@9.13.0(jiti@1.21.6)))':
+  '@soybeanjs/eslint-config@1.4.1(@toml-tools/parser@1.0.0)(@types/eslint@9.6.1)(@unocss/eslint-config@0.63.6(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-astro@1.3.1(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-react-hooks@5.0.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-native@4.1.0(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react-refresh@0.4.13(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-react@7.37.2(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-solid@0.14.3(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3))(eslint-plugin-svelte@2.46.0(eslint@9.13.0(jiti@1.21.6))(svelte@5.1.0))(eslint-plugin-vue@9.29.1(eslint@9.13.0(jiti@1.21.6)))(eslint@9.13.0(jiti@1.21.6))(prettier-plugin-astro@0.14.1)(prettier-plugin-svelte@3.2.7(prettier@3.3.3)(svelte@5.1.0))(prettier-plugin-toml@2.0.1(prettier@3.3.3))(typescript@5.6.3)(vue-eslint-parser@9.4.3(eslint@9.13.0(jiti@1.21.6)))':
     dependencies:
       '@antfu/eslint-define-config': 1.23.0-2
       '@antfu/install-pkg': 0.4.1
@@ -4714,7 +4724,7 @@ snapshots:
     optionalDependencies:
       '@toml-tools/parser': 1.0.0
       '@unocss/eslint-config': 0.63.6(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3)
-      eslint-plugin-astro: 1.3.0(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3)
+      eslint-plugin-astro: 1.3.1(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3)
       eslint-plugin-react: 7.37.2(eslint@9.13.0(jiti@1.21.6))
       eslint-plugin-react-hooks: 5.0.0(eslint@9.13.0(jiti@1.21.6))
       eslint-plugin-react-native: 4.1.0(eslint@9.13.0(jiti@1.21.6))
@@ -4948,7 +4958,7 @@ snapshots:
       fast-glob: 3.3.2
       is-glob: 4.0.3
       minimatch: 9.0.5
-      semver: 7.6.2
+      semver: 7.6.3
       ts-api-utils: 1.3.0(typescript@5.6.3)
     optionalDependencies:
       typescript: 5.6.3
@@ -5832,6 +5842,11 @@ snapshots:
       eslint: 9.13.0(jiti@1.21.6)
       semver: 7.6.3
 
+  eslint-compat-utils@0.6.0(eslint@9.13.0(jiti@1.21.6)):
+    dependencies:
+      eslint: 9.13.0(jiti@1.21.6)
+      semver: 7.6.3
+
   eslint-config-flat-gitignore@0.3.0(eslint@9.13.0(jiti@1.21.6)):
     dependencies:
       '@eslint/compat': 1.2.1(eslint@9.13.0(jiti@1.21.6))
@@ -5852,17 +5867,17 @@ snapshots:
 
   eslint-parser-plain@0.1.0: {}
 
-  eslint-plugin-astro@1.3.0(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3):
+  eslint-plugin-astro@1.3.1(eslint@9.13.0(jiti@1.21.6))(typescript@5.6.3):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@9.13.0(jiti@1.21.6))
       '@jridgewell/sourcemap-codec': 1.5.0
       '@typescript-eslint/types': 8.11.0
       astro-eslint-parser: 1.0.3(typescript@5.6.3)
       eslint: 9.13.0(jiti@1.21.6)
-      eslint-compat-utils: 0.5.1(eslint@9.13.0(jiti@1.21.6))
+      eslint-compat-utils: 0.6.0(eslint@9.13.0(jiti@1.21.6))
       globals: 15.11.0
       postcss: 8.4.47
-      postcss-selector-parser: 6.1.2
+      postcss-selector-parser: 7.0.0
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -5918,7 +5933,7 @@ snapshots:
       globals: 15.11.0
       ignore: 5.3.2
       minimatch: 9.0.5
-      semver: 7.6.2
+      semver: 7.6.3
 
   eslint-plugin-n@17.11.1(eslint@9.13.0(jiti@1.21.6)):
     dependencies:
@@ -6028,7 +6043,7 @@ snapshots:
       read-pkg-up: 7.0.1
       regexp-tree: 0.1.27
       regjsparser: 0.10.0
-      semver: 7.6.2
+      semver: 7.6.3
       strip-indent: 3.0.0
 
   eslint-plugin-unicorn@56.0.0(eslint@9.13.0(jiti@1.21.6)):
@@ -7541,6 +7556,11 @@ snapshots:
       postcss: 8.4.47
 
   postcss-selector-parser@6.1.2:
+    dependencies:
+      cssesc: 3.0.0
+      util-deprecate: 1.0.2
+
+  postcss-selector-parser@7.0.0:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
