@@ -145,7 +145,7 @@
     "@types/prompts": "2.4.9",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
-    "@unocss/core": "^0.63.6",
+    "@unocss/core": "^0.64.0",
     "@unocss/eslint-config": "0.63.6",
     "@unocss/preset-uno": "^0.63.6",
     "astro": "4.16.12",
