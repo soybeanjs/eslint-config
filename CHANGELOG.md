@@ -1,6 +1,31 @@
 # Changelog
 
 
+## [v1.4.3](https://github.com/soybeanjs/eslint-config/compare/v1.4.2...v1.4.3) (2024-11-25)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**:
+  - bump eslint-plugin-n from 17.11.1 to 17.13.1 &nbsp;-&nbsp; by **dependabot[bot]** in https://github.com/soybeanjs/eslint-config/issues/6 [<samp>(61c24)</samp>](https://github.com/soybeanjs/eslint-config/commit/61c2476)
+  - bump @eslint/js from 9.13.0 to 9.14.0 &nbsp;-&nbsp; by **dependabot[bot]** in https://github.com/soybeanjs/eslint-config/issues/10 [<samp>(ca91e)</samp>](https://github.com/soybeanjs/eslint-config/commit/ca91e24)
+  - bump @typescript-eslint/parser from 8.11.0 to 8.14.0 &nbsp;-&nbsp; by **dependabot[bot]** in https://github.com/soybeanjs/eslint-config/issues/11 [<samp>(d224c)</samp>](https://github.com/soybeanjs/eslint-config/commit/d224c6e)
+  - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(323b6)</samp>](https://github.com/soybeanjs/eslint-config/commit/323b67f)
+- **deps-dev**:
+  - bump eslint-plugin-astro from 1.3.0 to 1.3.1 &nbsp;-&nbsp; by **dependabot[bot]** in https://github.com/soybeanjs/eslint-config/issues/4 [<samp>(e4fd7)</samp>](https://github.com/soybeanjs/eslint-config/commit/e4fd7d2)
+  - bump tsup from 8.3.0 to 8.3.5 &nbsp;-&nbsp; by **dependabot[bot]** in https://github.com/soybeanjs/eslint-config/issues/5 [<samp>(42bda)</samp>](https://github.com/soybeanjs/eslint-config/commit/42bda58)
+  - bump astro from 4.16.7 to 4.16.12 &nbsp;-&nbsp; by **dependabot[bot]** in https://github.com/soybeanjs/eslint-config/issues/7 [<samp>(ba831)</samp>](https://github.com/soybeanjs/eslint-config/commit/ba83142)
+  - bump @unocss/core from 0.63.6 to 0.64.0 &nbsp;-&nbsp; by **dependabot[bot]** in https://github.com/soybeanjs/eslint-config/issues/8 [<samp>(851cd)</samp>](https://github.com/soybeanjs/eslint-config/commit/851cd1e)
+  - bump @unocss/eslint-config from 0.63.6 to 0.64.0 &nbsp;-&nbsp; by **dependabot[bot]** in https://github.com/soybeanjs/eslint-config/issues/9 [<samp>(0942d)</samp>](https://github.com/soybeanjs/eslint-config/commit/0942d06)
+- **projects**:
+  - add dependabot.yml &nbsp;-&nbsp; by @soybeanjs [<samp>(67873)</samp>](https://github.com/soybeanjs/eslint-config/commit/67873ac)
+  - update package.json &nbsp;-&nbsp; by @soybeanjs [<samp>(f179d)</samp>](https://github.com/soybeanjs/eslint-config/commit/f179d66)
+  - update pnpm-lock.yaml &nbsp;-&nbsp; by @soybeanjs [<samp>(73f4e)</samp>](https://github.com/soybeanjs/eslint-config/commit/73f4e0a)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+[dependabot[bot]](mailto:49699333+dependabot[bot]@users.noreply.github.com)
+
 ## [v1.4.2](https://github.com/soybeanjs/eslint-config/compare/v1.4.1...v1.4.2) (2024-10-24)
 
 ### &nbsp;&nbsp;&nbsp;🛠 Optimizations
