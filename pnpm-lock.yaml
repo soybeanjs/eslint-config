@@ -91,13 +91,13 @@ importers:
         specifier: 18.3.1
         version: 18.3.1
       '@unocss/core':
-        specifier: ^0.64.1
+        specifier: 0.64.1
         version: 0.64.1
       '@unocss/eslint-config':
         specifier: 0.64.1
         version: 0.64.1(eslint@9.15.0(jiti@1.21.6))(typescript@5.7.2)
       '@unocss/preset-uno':
-        specifier: ^0.64.1
+        specifier: 0.64.1
         version: 0.64.1
       astro:
         specifier: 4.16.14
