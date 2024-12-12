@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [v1.4.4](https://github.com/soybeanjs/eslint-config/compare/v1.4.3...v1.4.4) (2024-12-12)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(94ef0)</samp>](https://github.com/soybeanjs/eslint-config/commit/94ef0a9)
+- **projects**: remove dependabot.yml &nbsp;-&nbsp; by @soybeanjs [<samp>(a46da)</samp>](https://github.com/soybeanjs/eslint-config/commit/a46da4d)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.4.3](https://github.com/soybeanjs/eslint-config/compare/v1.4.2...v1.4.3) (2024-11-25)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
