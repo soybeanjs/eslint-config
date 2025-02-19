@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [v1.5.0](https://github.com/soybeanjs/eslint-config/compare/v1.4.4...v1.5.0) (2025-02-19)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: add more default sort config &nbsp;-&nbsp; by @soybeanjs [<samp>(3bc20)</samp>](https://github.com/soybeanjs/eslint-config/commit/3bc20e4)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(4a04a)</samp>](https://github.com/soybeanjs/eslint-config/commit/4a04ad6)
+- **projects**: update deps & fix types &nbsp;-&nbsp; by @soybeanjs [<samp>(901a1)</samp>](https://github.com/soybeanjs/eslint-config/commit/901a1ef)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.4.4](https://github.com/soybeanjs/eslint-config/compare/v1.4.3...v1.4.4) (2024-12-12)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
