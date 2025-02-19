@@ -22,8 +22,9 @@ export async function createImportConfig(overrides: Record<string, string> = {})
     'element-plus',
     'ant-design-vue',
     'soybean-ui',
-    'sou-ui',
-    '@soybean-ui/**'
+    '@soybean-ui/**',
+    'soy-ui',
+    '@soy-ui/**'
   ];
   const externalReact = ['react', 'react-dom', 'react-router-dom', 'react-query', 'react-i18next', 'antd'];
   const externalCommon = ['lodash-es', 'es-toolkit', 'date-fns', 'dayjs', 'axios', '@tanstack/**', 'zod', 'valibot'];
