@@ -9,6 +9,7 @@ export async function createImportConfig(overrides: Record<string, string> = {})
     'vite/**',
     'vitepress',
     'vitepress/**',
+    '@vitejs/**',
     'vite-plugin-**',
     'vue',
     '@vue/**',
@@ -21,13 +22,14 @@ export async function createImportConfig(overrides: Record<string, string> = {})
     'naive-ui',
     'element-plus',
     'ant-design-vue',
+    'soy-ui',
+    '@soy-ui/**',
     'soybean-ui',
     '@soybean-ui/**',
-    'soy-ui',
-    '@soy-ui/**'
+    '@soybeanjs/**'
   ];
   const externalReact = ['react', 'react-dom', 'react-router-dom', 'react-query', 'react-i18next', 'antd'];
-  const externalCommon = ['lodash-es', 'es-toolkit', 'date-fns', 'dayjs', 'axios', '@tanstack/**', 'zod', 'valibot'];
+  const externalCommon = ['axios', 'es-toolkit', 'date-fns', 'dayjs', 'lodash-es', '@tanstack/**', 'zod', 'valibot'];
   const internals = [
     '@/constant',
     '@/constant/**',
