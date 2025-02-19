@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.5.1](https://github.com/soybeanjs/eslint-config/compare/v1.5.0...v1.5.1) (2025-02-19)
+
+### &nbsp;&nbsp;&nbsp;🛠 Optimizations
+
+- **projects**: optimize import config &nbsp;-&nbsp; by @soybeanjs [<samp>(dd988)</samp>](https://github.com/soybeanjs/eslint-config/commit/dd9886d)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.5.0](https://github.com/soybeanjs/eslint-config/compare/v1.4.4...v1.5.0) (2025-02-19)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
