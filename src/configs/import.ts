@@ -5,10 +5,18 @@ export async function createImportConfig(overrides: Record<string, string> = {})
   const pluginImport = await interopDefault(import('eslint-plugin-import-x'));
 
   const externalVue = [
+    'vite',
+    'vite/**',
+    'vitepress',
+    'vitepress/**',
+    'vite-plugin-**',
     'vue',
     '@vue/**',
     'vue-router',
     '@vueuse/**',
+    'unocss',
+    '@unocss/**',
+    'unplugin-**',
     'pinia',
     'naive-ui',
     'element-plus',
