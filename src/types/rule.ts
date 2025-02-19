@@ -13,7 +13,7 @@ import type {
 } from '@antfu/eslint-define-config';
 import type { FlatGitignoreOptions } from 'eslint-config-flat-gitignore';
 import type { BuiltInParserName, LiteralUnion, RequiredOptions } from 'prettier';
-import type { JsdocOptions } from 'prettier-plugin-jsdoc';
+import type { Options as JsdocOptions } from 'prettier-plugin-jsdoc';
 
 export type PrettierCustomParser = 'astro' | 'svelte' | 'jsdoc-parser' | 'toml';
 
