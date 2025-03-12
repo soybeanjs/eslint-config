@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.6.0](https://github.com/soybeanjs/eslint-config/compare/v1.5.3...v1.6.0) (2025-03-12)
+
+### &nbsp;&nbsp;&nbsp;🚨 Breaking Changes
+
+- **projects**: update deps & update vue, svelte config &nbsp;-&nbsp; by @soybeanjs [<samp>(68c7e)</samp>](https://github.com/soybeanjs/eslint-config/commit/68c7e43)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.5.3](https://github.com/soybeanjs/eslint-config/compare/v1.5.2...v1.5.3) (2025-02-19)
 
 ### &nbsp;&nbsp;&nbsp;🛠 Optimizations
