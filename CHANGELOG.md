@@ -1,6 +1,22 @@
 # Changelog
 
 
+## [v1.7.0-beta.1](https://github.com/soybeanjs/eslint-config/compare/v1.6.1...v1.7.0-beta.1) (2025-06-27)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **projects**: replace tsup with tsdown &nbsp;-&nbsp; by @soybeanjs [<samp>(7a4e1)</samp>](https://github.com/soybeanjs/eslint-config/commit/7a4e150)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**:
+  - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(3f722)</samp>](https://github.com/soybeanjs/eslint-config/commit/3f722db)
+  - update package versions and remove jsdoc plugin from prettier config &nbsp;-&nbsp; by @soybeanjs [<samp>(46d9c)</samp>](https://github.com/soybeanjs/eslint-config/commit/46d9cb0)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.6.1](https://github.com/soybeanjs/eslint-config/compare/v1.6.0...v1.6.1) (2025-05-14)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
