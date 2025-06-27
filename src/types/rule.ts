@@ -13,7 +13,6 @@ import type {
 } from '@antfu/eslint-define-config';
 import type { FlatGitignoreOptions } from 'eslint-config-flat-gitignore';
 import type { BuiltInParserName, LiteralUnion, RequiredOptions } from 'prettier';
-import type { Options as JsdocOptions } from 'prettier-plugin-jsdoc';
 
 export type PrettierCustomParser = 'astro' | 'svelte' | 'jsdoc-parser' | 'toml';
 
@@ -23,9 +22,9 @@ export interface PrettierOptions extends RequiredOptions {
   parser: LiteralUnion<PrettierParser>;
 }
 
-export type PrettierExtendedOptions = PrettierOptions & Partial<JsdocOptions>;
+export type PrettierExtendedOptions = PrettierOptions;
 
-export type PartialPrettierExtendedOptions = Partial<PrettierOptions> & Partial<JsdocOptions>;
+export type PartialPrettierExtendedOptions = Partial<PrettierOptions>;
 
 type WrapRuleConfig<T extends { [key: string]: any }> = {
   [K in keyof T]: T[K] extends RuleConfig ? T[K] : RuleConfig<T[K]>;

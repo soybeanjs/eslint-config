@@ -12,7 +12,7 @@ export async function createPrettierConfig(rules: PartialPrettierExtendedOptions
 
   const pRules: PartialPrettierExtendedOptions = {
     ...rules,
-    plugins: plugins.concat('prettier-plugin-jsdoc')
+    plugins
   };
 
   const configs: FlatConfigItem[] = [
