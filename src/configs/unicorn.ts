@@ -1,7 +1,7 @@
 import { interopDefault } from '../shared';
 import type { FlatConfigItem } from '../types';
 
-export async function createUnicornConfig(overrides: Record<string, string> = {}) {
+export async function createUnicornConfig(overrides: Record<string, any> = {}) {
   const pluginUnicorn = await interopDefault(import('eslint-plugin-unicorn'));
 
   const configs: FlatConfigItem[] = [

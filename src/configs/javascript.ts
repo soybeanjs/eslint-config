@@ -3,7 +3,7 @@ import jsRules from '@eslint/js';
 import { GLOB_SRC, GLOB_SRC_EXT, GLOB_TESTS } from '../constants/glob';
 import type { FlatConfigItem } from '../types';
 
-export function createJsConfig(overrides: Record<string, string> = {}) {
+export function createJsConfig(overrides: Record<string, any> = {}) {
   const js: FlatConfigItem[] = [
     {
       languageOptions: {
@@ -29,7 +29,7 @@ export function createJsConfig(overrides: Record<string, string> = {}) {
         reportUnusedDisableDirectives: false
       },
       rules: {
-        ...jsRules.configs.all.rules,
+        ...(jsRules.configs.all.rules as Record<string, any>),
         'accessor-pairs': ['error', { enforceForClassMembers: true, setWithoutGet: true }],
         camelcase: 'off',
         'capitalized-comments': 'off',

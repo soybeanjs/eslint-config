@@ -5,7 +5,7 @@ import { createTsRules } from './typescript';
 export async function createSvelteConfig(
   options?: RequiredRuleBaseOptions,
   prettierRules: PartialPrettierExtendedOptions = {},
-  overrides: Record<string, string> = {}
+  overrides: Record<string, any> = {}
 ) {
   if (!options) return [];
 

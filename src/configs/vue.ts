@@ -2,7 +2,7 @@ import { ensurePackages, interopDefault } from '../shared';
 import type { FlatConfigItem, RequiredVueOptions } from '../types';
 import { createTsRules } from './typescript';
 
-export async function createVueConfig(options?: RequiredVueOptions, overrides: Record<string, string> = {}) {
+export async function createVueConfig(options?: RequiredVueOptions, overrides: Record<string, any> = {}) {
   if (!options) return [];
 
   const { version, files } = options;
@@ -57,7 +57,7 @@ export async function createVueConfig(options?: RequiredVueOptions, overrides: R
       },
       rules: {
         ...tsRules,
-        ...pluginVue.configs.base.rules,
+        ...(pluginVue.configs.base.rules as Record<string, any>),
         ...vueRules,
         'vue/block-order': ['warn', { order: ['script', 'template', 'style'] }],
         'vue/component-api-style': ['warn', ['script-setup', 'composition']],

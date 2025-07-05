@@ -60,7 +60,7 @@ type OverrideRuleKey =
   | 'solid'
   | 'unocss';
 
-export function getOverridesRules(overrides: Record<string, string> = {}) {
+export function getOverridesRules(overrides: Record<string, any> = {}) {
   const overrideRecord = {
     js: {}
   } as Record<OverrideRuleKey | 'js', Record<string, string>>;

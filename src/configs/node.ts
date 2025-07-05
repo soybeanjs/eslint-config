@@ -1,7 +1,7 @@
 import { interopDefault } from '../shared';
 import type { FlatConfigItem } from '../types';
 
-export async function createNodeConfig(overrides: Record<string, string> = {}) {
+export async function createNodeConfig(overrides: Record<string, any> = {}) {
   const pluginNode = await interopDefault(import('eslint-plugin-n'));
 
   const configs: FlatConfigItem[] = [

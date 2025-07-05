@@ -32,7 +32,7 @@ export interface BaseOptions {
    */
   gitignore?: boolean | FlatGitignoreOptions;
   /** The override rules */
-  overrides: Record<string, string>;
+  overrides: Record<string, any>;
   /**
    * Default prettier rules
    *

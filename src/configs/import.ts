@@ -1,7 +1,7 @@
 import { interopDefault } from '../shared';
 import type { FlatConfigItem } from '../types';
 
-export async function createImportConfig(overrides: Record<string, string> = {}) {
+export async function createImportConfig(overrides: Record<string, any> = {}) {
   const pluginImport = await interopDefault(import('eslint-plugin-import-x'));
 
   const externalVue = [

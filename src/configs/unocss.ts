@@ -1,7 +1,7 @@
 import { ensurePackages, interopDefault } from '../shared';
 import type { FlatConfigItem } from '../types';
 
-export async function createUnocssConfig(enable?: boolean, overrides: Record<string, string> = {}) {
+export async function createUnocssConfig(enable?: boolean, overrides: Record<string, any> = {}) {
   if (!enable) return [];
 
   await ensurePackages(['@unocss/eslint-config']);

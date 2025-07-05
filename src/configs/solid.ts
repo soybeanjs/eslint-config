@@ -1,7 +1,7 @@
 import { ensurePackages, interopDefault } from '../shared';
 import type { FlatConfigItem, RequiredRuleBaseOptions } from '../types';
 
-export async function createSolidConfig(options?: RequiredRuleBaseOptions, overrides: Record<string, string> = {}) {
+export async function createSolidConfig(options?: RequiredRuleBaseOptions, overrides: Record<string, any> = {}) {
   if (!options) return [];
 
   const { files } = options;

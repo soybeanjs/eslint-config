@@ -2,7 +2,7 @@ import { isPackageExists } from 'local-pkg';
 import { ensurePackages, interopDefault } from '../shared';
 import type { FlatConfigItem, RequiredRuleBaseOptions } from '../types';
 
-export async function createReactConfig(options?: RequiredRuleBaseOptions, overrides: Record<string, string> = {}) {
+export async function createReactConfig(options?: RequiredRuleBaseOptions, overrides: Record<string, any> = {}) {
   if (!options) return [];
 
   const { files } = options;
@@ -50,7 +50,7 @@ export async function createReactConfig(options?: RequiredRuleBaseOptions, overr
         // react refresh
         'react-refresh/only-export-components': ['warn', { allowConstantExport: isAllowConstantExport }],
 
-        ...pluginReact.configs.recommended.rules,
+        ...(pluginReact.configs.recommended.rules as Record<string, any>),
         // react runtime
         'react/react-in-jsx-scope': 'off',
         'react/jsx-uses-react': 'off',
@@ -62,10 +62,7 @@ export async function createReactConfig(options?: RequiredRuleBaseOptions, overr
   return configs;
 }
 
-export async function createReactNativeConfig(
-  options?: RequiredRuleBaseOptions,
-  overrides: Record<string, string> = {}
-) {
+export async function createReactNativeConfig(options?: RequiredRuleBaseOptions, overrides: Record<string, any> = {}) {
   if (!options) return [];
 
   const { files } = options;
