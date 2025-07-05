@@ -1,7 +1,7 @@
 {
   "name": "@soybeanjs/eslint-config",
   "type": "module",
-  "version": "1.7.0",
+  "version": "1.7.1-beta.1",
   "packageManager": "pnpm@10.12.4",
   "description": "SoybeanJS's eslint flat config presets with prettier.",
   "author": {
