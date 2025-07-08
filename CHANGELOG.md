@@ -1,6 +1,22 @@
 # Changelog
 
 
+## [v1.7.1](https://github.com/soybeanjs/eslint-config/compare/v1.7.0...v1.7.1) (2025-07-09)
+
+### &nbsp;&nbsp;&nbsp;🛠 Optimizations
+
+- **projects**:
+  - optimize code &nbsp;-&nbsp; by @soybeanjs [<samp>(d6044)</samp>](https://github.com/soybeanjs/eslint-config/commit/d6044b4)
+  - optimize overrides type & optimize ts type error &nbsp;-&nbsp; by @soybeanjs [<samp>(4ba2c)</samp>](https://github.com/soybeanjs/eslint-config/commit/4ba2c6d)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(63c16)</samp>](https://github.com/soybeanjs/eslint-config/commit/63c1663)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.7.1-beta.1](https://github.com/soybeanjs/eslint-config/compare/v1.7.0...v1.7.1-beta.1) (2025-07-05)
 
 ### &nbsp;&nbsp;&nbsp;🛠 Optimizations
