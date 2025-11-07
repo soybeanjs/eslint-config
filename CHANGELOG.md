@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.7.3](https://github.com/soybeanjs/eslint-config/compare/v1.7.2...v1.7.3) (2025-11-08)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **tsdown**: update package import to use JSON type and fix build extension &nbsp;-&nbsp; by @soybeanjs [<samp>(f8cba)</samp>](https://github.com/soybeanjs/eslint-config/commit/f8cbab7)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.7.2](https://github.com/soybeanjs/eslint-config/compare/v1.7.1...v1.7.2) (2025-11-08)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
