@@ -1,5 +1,5 @@
 import { defineConfig } from 'tsdown';
-import pkg from './package.json';
+import pkg from './package.json' with { type: 'json' };
 
 export default defineConfig({
   entry: ['src/index.ts'],
@@ -9,6 +9,5 @@ export default defineConfig({
   dts: true,
   sourcemap: false,
   minify: true,
-  format: ['esm'],
-  target: 'node18'
+  fixedExtension: false
 });
