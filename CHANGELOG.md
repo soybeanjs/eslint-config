@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [v1.7.4](https://github.com/soybeanjs/eslint-config/compare/v1.7.3...v1.7.4) (2025-11-16)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by **Soybean** [<samp>(37bca)</samp>](https://github.com/soybeanjs/eslint-config/commit/37bcaf4)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+
+[Soybean](mailto:soybeanjs@outlook.com)
+
 ## [v1.7.3](https://github.com/soybeanjs/eslint-config/compare/v1.7.2...v1.7.3) (2025-11-08)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
