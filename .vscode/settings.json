@@ -19,5 +19,6 @@
     "markdown",
     "toml"
   ],
-  "prettier.enable": false
+  "prettier.enable": false,
+  "typescript.experimental.useTsgo": true
 }

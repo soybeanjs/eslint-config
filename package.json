@@ -51,7 +51,7 @@
     "publish-pkg": "pnpm -r publish --access public",
     "release": "soy release",
     "stub": "pnpm -r run stub",
-    "typecheck": "tsc --noEmit --skipLibCheck",
+    "typecheck": "tsgo --noEmit --skipLibCheck",
     "update-pkg": "soy ncu"
   },
   "peerDependencies": {
@@ -144,6 +144,7 @@
     "@types/prompts": "^2.4.9",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
+    "@typescript/native-preview": "7.0.0-dev.20251223.1",
     "@unocss/core": "^66.5.10",
     "@unocss/eslint-config": "^66.5.10",
     "@unocss/preset-uno": "^66.5.10",
