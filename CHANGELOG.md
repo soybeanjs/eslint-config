@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [v1.7.5](https://github.com/soybeanjs/eslint-config/compare/v1.7.4...v1.7.5) (2025-12-24)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(37950)</samp>](https://github.com/soybeanjs/eslint-config/commit/37950a0)
+- **projects**: use tsgo and update config &nbsp;-&nbsp; by @soybeanjs [<samp>(58106)</samp>](https://github.com/soybeanjs/eslint-config/commit/58106f9)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.7.4](https://github.com/soybeanjs/eslint-config/compare/v1.7.3...v1.7.4) (2025-11-16)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
