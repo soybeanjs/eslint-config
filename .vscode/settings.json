@@ -1,12 +1,9 @@
 {
   "editor.codeActionsOnSave": {
-    "source.fixAll.oxc": "explicit",
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"
   },
-  "editor.defaultFormatter": "oxc.oxc-vscode",
   "editor.formatOnSave": true,
-  "oxc.fmt.configPath": "./vite.config.ts",
   "eslint.useFlatConfig": true,
   "eslint.validate": [
     "svelte",
@@ -21,7 +18,5 @@
     "yml",
     "markdown",
     "toml"
-  ],
-  "prettier.enable": false,
-  "typescript.experimental.useTsgo": true
+  ]
 }
