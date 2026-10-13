@@ -1,4 +1,4 @@
-import { isPackageExists } from 'local-pkg';
+import { getPackageInfoSync, isPackageExists } from 'local-pkg';
 import { ensurePackages, interopDefault } from '../shared';
 import type { FlatConfigItem, RequiredRuleBaseOptions } from '../types';
 
@@ -20,6 +20,10 @@ export async function createReactConfig(options?: RequiredRuleBaseOptions, overr
 
   const isAllowConstantExport = ReactRefreshAllowConstantExportPackages.some(i => isPackageExists(i));
 
+  // resolving the version here keeps `eslint-plugin-react` from calling the removed
+  // `context.getFilename()` API, which throws on ESLint 10
+  const reactVersion = getPackageInfoSync('react')?.version ?? 'detect';
+
   const configs: FlatConfigItem[] = [
     {
       plugins: {
@@ -29,7 +33,7 @@ export async function createReactConfig(options?: RequiredRuleBaseOptions, overr
       },
       settings: {
         react: {
-          version: 'detect'
+          version: reactVersion
         }
       }
     },
