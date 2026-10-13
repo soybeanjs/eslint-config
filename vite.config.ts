@@ -3,7 +3,7 @@ import pkg from './package.json' with { type: 'json' };
 
 export default defineConfig({
   staged: {
-    '*': 'pnpm lint'
+    '*': 'eslint --no-warn-ignored --fix'
   },
   resolve: {
     tsconfigPaths: true
