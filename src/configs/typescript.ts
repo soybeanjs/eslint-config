@@ -1,5 +1,5 @@
-import { interopDefault } from '../shared';
 import { GLOB_SRC } from '../constants/glob';
+import { interopDefault } from '../shared';
 import type { FlatConfigItem } from '../types';
 
 export async function createTsRules(): Promise<FlatConfigItem['rules']> {

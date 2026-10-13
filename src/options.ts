@@ -1,7 +1,7 @@
 import process from 'node:process';
+import { GLOB_ASTRO, GLOB_EXCLUDE, GLOB_JSX, GLOB_SVELTE, GLOB_TSX, GLOB_VUE } from './constants/glob';
 import { DEFAULT_PRETTIER_RULES } from './constants/prettier';
 import { loadPrettierConfig } from './shared';
-import { GLOB_ASTRO, GLOB_EXCLUDE, GLOB_JSX, GLOB_SVELTE, GLOB_TSX, GLOB_VUE } from './constants/glob';
 import type { OnDemandRuleKey, Options, ParsedOptions, RequiredRuleBaseOptions, RequiredVueOptions } from './types';
 
 export async function createOptions(options: Partial<Options> = {}) {

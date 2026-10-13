@@ -1,4 +1,4 @@
-import presetUno from '@unocss/preset-uno';
+import { presetUno } from '@unocss/preset-uno';
 
 export default {
   content: {
