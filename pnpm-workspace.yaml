@@ -1,9 +1,10 @@
 catalog:
   vite: npm:@voidzero-dev/vite-plus-core@latest
   vite-plus: latest
+  typescript: 6.0.3
 overrides:
   vite: 'catalog:'
-  typescript: 6.0.3
+  typescript: 'catalog:'
 shamefullyHoist: true
 allowBuilds:
   esbuild: false
