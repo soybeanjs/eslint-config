@@ -1,29 +1,23 @@
-import { defineConfig } from 'vite-plus';
-import { fmt, lint } from '@soybeanjs/oxc-config';
-import pkg from './package.json' with { type: 'json' };
+import { defineConfig } from "vite-plus";
+import pkg from "./package.json" with { type: "json" };
 
 export default defineConfig({
   staged: {
-    '*': 'vp check --fix'
-  },
-  lint,
-  fmt: {
-    ...fmt,
-    ignorePatterns: ['CHANGELOG.md']
+    "*": "pnpm lint",
   },
   resolve: {
-    tsconfigPaths: true
+    tsconfigPaths: true,
   },
   pack: {
-    entry: ['src/index.ts'],
-    platform: 'node',
+    entry: ["src/index.ts"],
+    platform: "node",
     deps: {
-      neverBundle: Object.keys(pkg.devDependencies)
+      neverBundle: Object.keys(pkg.devDependencies),
     },
     clean: true,
     dts: true,
     sourcemap: false,
     minify: true,
-    fixedExtension: false
-  }
+    fixedExtension: false,
+  },
 });

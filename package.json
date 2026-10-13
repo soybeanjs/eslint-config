@@ -1,7 +1,22 @@
 {
   "name": "@soybeanjs/eslint-config",
+  "type": "module",
   "version": "1.7.5",
+  "packageManager": "pnpm@12.11.2",
   "description": "SoybeanJS's eslint flat config presets with prettier.",
+  "author": {
+    "name": "Soybean",
+    "email": "soybeanjs@outlook.com",
+    "url": "https://github.com/soybeanjs"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/soybeanjs/eslint-config",
+  "repository": {
+    "url": "https://github.com/soybeanjs/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/soybeanjs/eslint-config/issues"
+  },
   "keywords": [
     "eslint",
     "eslint-config",
@@ -13,26 +28,9 @@
     "eslint-config-vue",
     "prettier"
   ],
-  "homepage": "https://github.com/soybeanjs/eslint-config",
-  "bugs": {
-    "url": "https://github.com/soybeanjs/eslint-config/issues"
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
-  "license": "MIT",
-  "author": {
-    "name": "Soybean",
-    "email": "soybeanjs@outlook.com",
-    "url": "https://github.com/soybeanjs"
-  },
-  "repository": {
-    "url": "https://github.com/soybeanjs/eslint-config.git"
-  },
-  "files": [
-    "dist"
-  ],
-  "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -40,78 +38,21 @@
       "require": "./dist/index.js"
     }
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
   "scripts": {
     "build": "vp pack",
     "cleanup": "soy cleanup",
     "commit": "soy git-commit",
-    "fmt": "vp fmt",
-    "lint": "vp lint . --fix",
-    "lint:eslint": "eslint . --fix",
+    "lint": "eslint . --fix",
     "prepare": "vp config --no-agent",
     "publish-pkg": "pnpm -r publish --access public",
     "release": "soy release",
     "stub": "pnpm -r run stub",
     "typecheck": "tsc --noEmit --skipLibCheck",
     "upkg": "soy ncu"
-  },
-  "dependencies": {
-    "@antfu/eslint-define-config": "^1.23.0-2",
-    "@antfu/install-pkg": "^1.1.0",
-    "@eslint/eslintrc": "^3.3.3",
-    "@eslint/js": "^9.39.2",
-    "@typescript-eslint/eslint-plugin": "^8.50.1",
-    "@typescript-eslint/parser": "^8.50.1",
-    "eslint-config-flat-gitignore": "^2.1.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-parser-plain": "^0.1.1",
-    "eslint-plugin-import-x": "^4.16.1",
-    "eslint-plugin-n": "^17.23.1",
-    "eslint-plugin-prettier": "^5.5.4",
-    "eslint-plugin-unicorn": "^62.0.0",
-    "globals": "^16.5.0",
-    "local-pkg": "^1.1.2",
-    "prettier": "^3.7.4",
-    "prettier-plugin-json-sort": "^0.0.2",
-    "prompts": "^2.4.2"
-  },
-  "devDependencies": {
-    "@soybeanjs/cli": "^1.8.4",
-    "@soybeanjs/oxc-config": "^0.2.6",
-    "@toml-tools/parser": "^1.0.0",
-    "@types/eslint-config-prettier": "^6.11.3",
-    "@types/node": "^26.6.4",
-    "@types/prompts": "^2.4.9",
-    "@types/react": "^19.2.7",
-    "@types/react-dom": "^19.2.3",
-    "@unocss/core": "^66.5.10",
-    "@unocss/eslint-config": "^66.5.10",
-    "@unocss/preset-uno": "^66.5.10",
-    "astro": "^5.16.6",
-    "eslint": "^9.39.2",
-    "eslint-plugin-astro": "^1.5.0",
-    "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-react-native": "^5.0.0",
-    "eslint-plugin-react-refresh": "^0.4.26",
-    "eslint-plugin-solid": "^0.14.5",
-    "eslint-plugin-svelte": "^3.13.1",
-    "eslint-plugin-vue": "^10.6.2",
-    "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-svelte": "^3.4.1",
-    "prettier-plugin-toml": "^2.0.6",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3",
-    "solid-js": "^1.9.10",
-    "svelte": "^5.46.0",
-    "svelte-eslint-parser": "^1.4.1",
-    "tsx": "^4.23.15",
-    "typescript": "6.0.0-beta",
-    "vite-plus": "catalog:",
-    "vue": "^3.5.26",
-    "vue-eslint-parser": "^10.2.0"
   },
   "peerDependencies": {
     "@unocss/eslint-config": ">=0.58.0",
@@ -175,5 +116,60 @@
       "optional": true
     }
   },
-  "packageManager": "pnpm@12.10.1"
+  "dependencies": {
+    "@antfu/eslint-define-config": "^1.23.0-2",
+    "@antfu/install-pkg": "^2.1.0",
+    "@eslint/eslintrc": "^3.3.7",
+    "@eslint/js": "^10.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.71.2",
+    "@typescript-eslint/parser": "^8.71.2",
+    "eslint-config-flat-gitignore": "^2.4.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-parser-plain": "^0.1.1",
+    "eslint-plugin-import-x": "^4.17.1",
+    "eslint-plugin-n": "^18.4.1",
+    "eslint-plugin-prettier": "^5.5.6",
+    "eslint-plugin-unicorn": "^78.0.0",
+    "globals": "^17.13.0",
+    "local-pkg": "^1.2.1",
+    "prettier": "^3.9.10",
+    "prettier-plugin-json-sort": "^0.0.2",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@soybeanjs/cli": "^1.8.4",
+    "@soybeanjs/oxc-config": "^0.2.6",
+    "@toml-tools/parser": "^1.0.0",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/node": "^26.6.5",
+    "@types/prompts": "^2.4.9",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@unocss/core": "^66.11.0",
+    "@unocss/eslint-config": "^66.11.0",
+    "@unocss/preset-uno": "^66.11.0",
+    "astro": "^7.3.8",
+    "eslint": "^10.12.0",
+    "eslint-plugin-astro": "^3.2.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-native": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "eslint-plugin-solid": "^0.18.1",
+    "eslint-plugin-svelte": "^3.23.1",
+    "eslint-plugin-vue": "^10.11.1",
+    "prettier-plugin-astro": "^1.1.1",
+    "prettier-plugin-svelte": "^4.1.1",
+    "prettier-plugin-toml": "^3.0.2",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "solid-js": "^1.9.17",
+    "svelte": "^5.57.2",
+    "svelte-eslint-parser": "^1.9.0",
+    "tsx": "^4.23.15",
+    "typescript": "catalog:",
+    "vite-plus": "catalog:",
+    "vue": "^3.5.43",
+    "vue-eslint-parser": "^10.4.1"
+  }
 }
