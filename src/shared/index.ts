@@ -48,17 +48,7 @@ export async function loadPrettierConfig(cwd: string) {
 }
 
 type OverrideRuleKey =
-  | 'ts'
-  | 'import'
-  | 'n'
-  | 'unicorn'
-  | 'vue'
-  | 'react'
-  | 'react-native'
-  | 'astro'
-  | 'svelte'
-  | 'solid'
-  | 'unocss';
+  'ts' | 'import' | 'n' | 'unicorn' | 'vue' | 'react' | 'react-native' | 'astro' | 'svelte' | 'solid' | 'unocss';
 
 export function getOverridesRules(overrides: Record<string, any> = {}) {
   const overrideRecord = {
