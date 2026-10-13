@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "afzalsayed96.icones",
+    "antfu.iconify",
+    "antfu.unocss",
+    "editorconfig.editorconfig",
+    "mhutchie.git-graph",
+    "mikestead.dotenv",
+    "naumovs.color-highlight",
+    "oxc.oxc-vscode",
+    "pkief.material-icon-theme",
+    "whtouche.vscode-js-console-utils",
+    "zhuangtongfa.material-theme"
+  ]
+}

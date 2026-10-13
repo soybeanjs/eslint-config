@@ -13,14 +13,14 @@
     "types": ["node"],
     "strict": true,
     "strictNullChecks": true,
+    "noImplicitThis": true,
+    "noUncheckedIndexedAccess": false,
     "noUnusedLocals": true,
-    "outDir": "./dist",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
-    "skipLibCheck": true
+    "isolatedModules": true
   },
-  "include": ["./**/*"],
+  "include": ["src/**/*", "example/**/*", "vite.config.ts", "eslint.config.js"],
   "exclude": ["node_modules", "dist"]
 }

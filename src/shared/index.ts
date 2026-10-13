@@ -1,6 +1,6 @@
-import process from 'node:process';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
+import process from 'node:process';
 import { isPackageExists } from 'local-pkg';
 import type { Awaitable, PartialPrettierExtendedOptions } from '../types';
 

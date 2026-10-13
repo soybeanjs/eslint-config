@@ -15,8 +15,8 @@ import {
   createUnocssConfig,
   createVueConfig
 } from './configs';
-import { createOptions } from './options';
 import { getOverridesRules } from './shared';
+import { createOptions } from './options';
 import type { Awaitable, FlatConfigItem, Options } from './types';
 
 export async function defineConfig(options: Partial<Options> = {}, ...userConfigs: Awaitable<FlatConfigItem>[]) {

@@ -1,5 +1,5 @@
-import globals from 'globals';
 import jsRules from '@eslint/js';
+import globals from 'globals';
 import { GLOB_SRC, GLOB_SRC_EXT, GLOB_TESTS } from '../constants/glob';
 import type { FlatConfigItem } from '../types';
 

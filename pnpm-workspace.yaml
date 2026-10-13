@@ -1,0 +1,11 @@
+catalog:
+  vite: npm:@voidzero-dev/vite-plus-core@latest
+  vite-plus: latest
+overrides:
+  vite: 'catalog:'
+  typescript: 6.0.0-beta
+shamefullyHoist: true
+allowBuilds:
+  esbuild: false
+  sharp: false
+  unrs-resolver: false
